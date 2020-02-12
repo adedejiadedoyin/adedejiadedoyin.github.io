@@ -127,6 +127,12 @@ p {
   color: #0085a1 !important;
 }
 
+@media only screen and (max-width: 768px) {
+  .resume-content h3 {
+    font-size: 1em;
+  }
+}
+
 #mainNav {
   position: absolute;
   border-bottom: 1px solid #e9ecef;
@@ -357,33 +363,6 @@ header.masthead .post-heading .meta a {
   font-family: 'Lora', 'Times New Roman', serif;
 }
 
-section.resume-section .resume-item .resume-date {
-  min-width: none;
-}
-
-@media (min-width: 768px) {
-  section.resume-section .resume-item .resume-date {
-    min-width: 18rem;
-  }
-}
-
-@media (min-width: 992px) {
-  section.resume-section {
-    padding-top: 3rem !important;
-    padding-bottom: 3rem !important;
-  }
-}
-
-.dev-icons {
-  font-size: 3rem;
-}
-
-@media only screen and (max-width: 768px) {
-  .resume-content h3 {
-    font-size: 1em;
-  }
-}
-
 .floating-label-form-group {
   font-size: 14px;
   position: relative;
@@ -482,4 +461,33 @@ footer .copyright {
 .btn-lg {
   font-size: 16px;
   padding: 25px 35px;
+}
+
+section.resume-section {
+  padding-bottom: 5rem !important;
+}
+
+section.resume-section .resume-item .resume-date {
+  min-width: none;
+}
+
+@media (min-width: 768px) {
+  section.resume-section .resume-item .resume-date {
+    min-width: 18rem;
+  }
+}
+
+@media (min-width: 992px) {
+  section.resume-section {
+    padding-top: 3rem !important;
+    padding-bottom: 3rem !important;
+  }
+}
+
+.dev-icons {
+  font-size: 3rem;
+}
+
+.dev-icons .list-inline-item i:hover {
+  color: #0085a1;
 }

@@ -48,5 +48,6 @@
 .post-subtitle {
   font-weight: 400;
   margin: 0 0 10px;
-  @include sans-serif-font;
+  //@include sans-serif-font;
+  @include serif-font;
 }

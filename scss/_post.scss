@@ -1,53 +1,18 @@
-// Styling for the post page
-.post-preview {
-  > a {
-    color: $gray-900;
-    &:focus,
-    &:hover {
-      text-decoration: none;
-      color: $primary;
-    }
-    > .post-title {
-      font-size: 30px;
-      margin-top: 30px;
-      margin-bottom: 10px;
-    }
-    > .post-subtitle {
-      font-weight: 300;
-      margin: 0 0 10px;
-    }
-  }
-  > .post-meta {
-    font-size: 18px;
-    font-style: italic;
-    margin-top: 0;
-    color: $gray-600;
-    > a {
-      text-decoration: none;
-      color: $gray-900;
-      &:focus,
-      &:hover {
-        text-decoration: underline;
-        color: $primary;
-      }
-    }
-  }
-  @media only screen and (min-width: 768px) {
-    .post-title {
-      font-size: 30px;
-    }
-  }
-}
-
-.post-title {
-  font-size: 25px;
-  margin-top: 30px;
-  margin-bottom: 10px;
-}
-
 .post-subtitle {
-  font-weight: 400;
-  margin: 0 0 10px;
-  //@include sans-serif-font;
   @include serif-font;
+  margin-top: 0;
+  font-family: "Montserrat", sans-serif;
+  font-size: 13px;
+  -webkit-font-smoothing: antialiased;
+  //line-height: 1.8;
+  text-align: justify;
+  padding: 10px;
+  color: #a8abb6;
+}
+
+// for 992px devices and above ONLY
+@media only screen and (min-width: 992px) {
+  .post-subtitle {
+    font-size: 100%;
+  }
 }

@@ -470,7 +470,6 @@ button.explore:hover .icon-right.after:before {
   top: 0;
   left: 0;
   background-color: black;
-  background-color: rgba(0, 0, 0, 0.9);
   overflow-x: hidden;
   transition: 0.5s;
 }
@@ -579,6 +578,24 @@ button.explore:hover .icon-right.after:before {
   height: 60px;
   padding: 10px;
   background: #f1f3f5;
+}
+
+.contact-me-social {
+  padding: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: -150px 0 0 -170px;
+}
+
+.contact-me-social h1 {
+  color: white;
+  margin-bottom: 30px;
+}
+
+.contact-me-social span {
+  color: white;
+  margin-left: 30px;
 }
 
 #mainNav {

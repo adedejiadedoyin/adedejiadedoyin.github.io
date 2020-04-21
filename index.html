@@ -152,12 +152,13 @@
       <h1 style="text-align: center; margin: 50px 0; color: #343535 ;font-size: 3rem;">Projects.</h2>
       <ul class="list-unstyled projects">
         <li>
-          <a>
+          <a style="background-image: url(img/showcase-shopalist.png);">
+            <div class="showcase-overlay"></div>
             <div class="project-heading">
               <h1>Shopalist</h1>
               <div class="project-heading-tip">
                 <p style="font-style: italic;">A mobile app for lorem ipsum blah blah blah</p>
-                <button class="explore">
+                <button class="explore" onclick="window.location.href = '/proj_shopalist.html';">
                   View Project<span class="icon-right"></span
                   ><span class="icon-right after"></span>
                 </button>
@@ -167,10 +168,10 @@
         </li>
 
         <li>
-          <a>
+          <a style="background-image: url(img/showcase-givtty.png);">
+            <div class="showcase-overlay"></div>
             <div class="project-heading">
               <h1>Shopalist</h1>
-              <hr class="underline" />
               <div class="project-heading-tip">
                 <p>A mobile app for lorem ipsum blah blah blah</p>
                 <button class="explore">
@@ -185,7 +186,13 @@
     </div>
 
     <!-- CONTACT ME OVERLAY -->
-    <div id="contact-overlay" class="overlay">
+    <div id="contact-overlay">
+
+        <div class="left-layer"></div>
+        <div class="left-layer left-layer--2"></div>
+        <div class="left-layer left-layer--3"></div>
+        <div class="left-layer left-layer--4"></div>
+
       <a
         href="javascript:void(0)"
         class="closebtn"
@@ -428,18 +435,23 @@
     </script>
     <script>
       function openContactOverlay() {
+        document.getElementById("contact-overlay").style.visibility = "visible";
+        document.getElementById("contact-overlay").style.opacity = "1";
         document.getElementById("contact-overlay").style.width = "100%";
         bodyScrollLock.disableBodyScroll(targetElement);
+         $(".left-layer").toggleClass("active");
+      }
+
+      function closeContactOverlay() {
+          document.getElementById("contact-overlay").style.visibility = "hidden";
+          document.getElementById("contact-overlay").style.opacity = "0";
+          bodyScrollLock.enableBodyScroll(targetElement);
+          $(".left-layer").toggleClass("active");
       }
 
       function openAboutOverlay() {
         document.getElementById("about-overlay").style.width = "100%";
         bodyScrollLock.disableBodyScroll(targetElement);
-      }
-
-      function closeContactOverlay() {
-        document.getElementById("contact-overlay").style.width = "0%";
-        bodyScrollLock.enableBodyScroll(targetElement);
       }
 
       function closeAboutOverlay() {

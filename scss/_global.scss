@@ -208,7 +208,7 @@ p {
   margin: 0 auto;
   display: block;
   width: 100%;
-  height: 350px;
+  height: 300px;
   background-color: #2a2f36; // #1c1d25;
   box-shadow: 0 20px 80px 0 rgba(0, 0, 0, 0.45);
 }
@@ -217,21 +217,22 @@ p {
   position: absolute;
   top: 0;
   left: 0;
-  width: 100%;
-  height: 0;
+  width: 0;
+  height: 100%;
+  opacity: 0.9;
   background: linear-gradient(270deg, #235aa6, #101b3b);
   // transition: width 0.45s;
-  transition: height 0.25s;
+  transition: width 0.25s;
 }
 
 .projects > li > a:hover::after {
-  //width: 100%;
-  height: 100%;
+  width: 100%;
+  //height: 100%;
 }
 
 .project-heading {
   position: absolute;
-  bottom: 10%;
+  bottom: 15%;
   left: 10%;
   color: white;
   // padding-bottom: 15px;
@@ -478,7 +479,7 @@ button.explore {
 }
 
 // -------------- CONTACT ME OVERLAY ---------------------
-.overlay {
+#contact-overlay {
   height: 100%;
   width: 0;
   position: fixed;
@@ -489,18 +490,10 @@ button.explore {
   background: linear-gradient(270deg, #2e2e2f, #000000);
   //background-color: rgba(0, 0, 0, 0.9);
   overflow-x: hidden;
-  transition: 0.5s;
+  transition: opacity 2s;
 }
 
-.overlay-content {
-  position: relative;
-  top: 25%;
-  width: 100%;
-  text-align: center;
-  margin-top: 30px;
-}
-
-.overlay a {
+#contact-overlay a {
   padding: 8px;
   text-decoration: none;
   font-size: 36px;
@@ -509,12 +502,12 @@ button.explore {
   transition: 0.3s;
 }
 
-.overlay a:hover,
-.overlay a:focus {
+#contact-overlay a:hover,
+#contact-overlay a:focus {
   color: #f1f1f1;
 }
 
-.overlay .closebtn {
+#contact-overlay .closebtn {
   position: absolute;
   top: 20px;
   right: 45px;
@@ -522,10 +515,10 @@ button.explore {
 }
 
 @media screen and (max-height: 450px) {
-  .overlay a {
+  #contact-overlay a {
     font-size: 20px;
   }
-  .overlay .closebtn {
+  #contact-overlay .closebtn {
     font-size: 40px;
     top: 15px;
     right: 35px;
@@ -550,4 +543,204 @@ button.explore {
 .contact-me-social span {
   color: white;
   margin-left: 30px;
+}
+
+// -------- SHOWCASE OVERLAY ----------
+
+.showcase-overlay {
+  height: 100%;
+  width: 100%;
+  position: relative;
+  //z-index: 9999;
+  z-index: 9;
+  top: 0;
+  left: 0;
+  background-color: #000;
+  background: linear-gradient(270deg, #2e2e2f, #000);
+  overflow-x: hidden;
+  //transition: opacity 0.5s;
+  opacity: 0.8;
+}
+
+.showcase-overlay:hover {
+  //opacity: 0.3;
+}
+
+// ---------- TILES PAGE TRANSITION ------
+
+.loader {
+  position: fixed;
+  z-index: 999;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100vh;
+  transition: width 0s 1.4s ease;
+}
+.loader .loader__icon {
+  position: absolute;
+  z-index: 1;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+.loader .loader__icon svg {
+  transform-origin: 0 0;
+}
+.loader .loader__tile {
+  position: absolute;
+  left: 0;
+  width: 0;
+  height: 20%;
+  background-color: #007ae5;
+  transition: width 0.7s ease;
+}
+.loader .loader__tile:nth-child(0) {
+  top: calc(-1 * 20%);
+  transition-delay: -0.2s;
+}
+.loader .loader__tile:nth-child(1) {
+  top: calc(0 * 20%);
+  transition-delay: 0s;
+}
+.loader .loader__tile:nth-child(2) {
+  top: calc(1 * 20%);
+  transition-delay: 0.2s;
+}
+.loader .loader__tile:nth-child(3) {
+  top: calc(2 * 20%);
+  transition-delay: 0.4s;
+}
+.loader .loader__tile:nth-child(4) {
+  top: calc(3 * 20%);
+  transition-delay: 0.6s;
+}
+.loader .loader__tile:nth-child(5) {
+  top: calc(4 * 20%);
+  transition-delay: 0.8s;
+}
+.loader--active {
+  width: 100%;
+  transition-delay: 0s;
+}
+.loader--active .loader__icon {
+  opacity: 1;
+  transition: opacity 0.5s 1.4s ease;
+}
+.loader--active .loader__tile {
+  width: 100%;
+}
+.loader--active .loader__tile:nth-child(0) {
+  transition-delay: -0.2s;
+}
+.loader--active .loader__tile:nth-child(1) {
+  transition-delay: 0s;
+}
+.loader--active .loader__tile:nth-child(2) {
+  transition-delay: 0.2s;
+}
+.loader--active .loader__tile:nth-child(3) {
+  transition-delay: 0.4s;
+}
+.loader--active .loader__tile:nth-child(4) {
+  transition-delay: 0.6s;
+}
+.loader--active .loader__tile:nth-child(5) {
+  transition-delay: 0.8s;
+}
+
+// ------------ MULTI LAYER PAGE REVEAL EFFECT -------
+.top-layer {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: -100%;
+  left: 0;
+  bottom: auto;
+  right: auto;
+  background: #6c567b;
+  -webkit-transition: all 0.9s cubic-bezier(0.6, 0.05, 0.4, 1);
+  transition: all 0.9s cubic-bezier(0.6, 0.05, 0.4, 1);
+}
+.top-layer.active {
+  top: 100%;
+}
+.top-layer--2 {
+  background: #393e46;
+  -webkit-transition-delay: 0.6s;
+  transition-delay: 0.6s;
+}
+.top-layer--3 {
+  background: #6c5b7b;
+  -webkit-transition-delay: 0.4s;
+  transition-delay: 0.4s;
+}
+.top-layer--4 {
+  background: #c06c84;
+  -webkit-transition-delay: 0.2s;
+  transition-delay: 0.2s;
+}
+.top-layer--5 {
+  background: #f67280;
+  -webkit-transition-delay: 0.1s;
+  transition-delay: 0.1s;
+}
+
+.left-layer {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: auto;
+  left: -100%;
+  bottom: auto;
+  right: auto;
+  background: #4d606e;
+  -webkit-transition: all 0.7s cubic-bezier(0.645, 0.045, 0.355, 1);
+  transition: all 0.7s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+.left-layer.active {
+  left: 100%;
+}
+.left-layer--2 {
+  background: #d3d4d8;
+  -webkit-transition-delay: 0.3s;
+  transition-delay: 0.3s;
+}
+.left-layer--3 {
+  background: #d3d4d8;
+  -webkit-transition-delay: 0.12s;
+  transition-delay: 0.12s;
+}
+.left-layer--4 {
+  background: #c06c84;
+  -webkit-transition-delay: 0.08s;
+  transition-delay: 0.08s;
+}
+
+.right-layer {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: auto;
+  left: 100%;
+  bottom: auto;
+  right: auto;
+  background: #7f4a88;
+  -webkit-transition: all 0.9s cubic-bezier(0.645, 0.045, 0.355, 1);
+  transition: all 0.9s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+.right-layer.active {
+  left: -100%;
+}
+.right-layer--2 {
+  background: #c79ecf;
+  -webkit-transition-delay: 0.3s;
+  transition-delay: 0.3s;
+}
+.right-layer--3 {
+  background: #fe9191;
+  -webkit-transition-delay: 0.2s;
+  transition-delay: 0.2s;
 }

@@ -3,7 +3,9 @@ header.masthead {
   // TIP: Background images are set within the HTML using inline CSS!
   //margin-bottom: 25px;
   background: no-repeat center center;
-  background-color: #2a2f36; // #1c1d22; //$gray-600 //#2f2f2f
+  background-color: #232323;
+  padding-bottom: 20px;
+  padding-top: 120px;
   background-attachment: scroll;
   position: relative;
   @include background-cover;

@@ -1416,7 +1416,7 @@ header.proj-masthead .overlay {
 header.proj-masthead .page-heading,
 header.proj-masthead .post-heading,
 header.proj-masthead .site-heading {
-  padding: 200px 0 150px;
+  padding: 120px 0;
   color: white;
 }
 
@@ -1424,7 +1424,7 @@ header.proj-masthead .site-heading {
   header.proj-masthead .page-heading,
   header.proj-masthead .post-heading,
   header.proj-masthead .site-heading {
-    padding: 200px 0;
+    padding: 150px 0;
   }
 }
 
@@ -1495,10 +1495,13 @@ header.proj-masthead .post-heading .meta a {
 
 .proj-description {
   background-color: black;
-  padding: 85px 0;
+  padding: 40px 0;
 }
 
 @media only screen and (min-width: 768px) {
+  .proj-description {
+    padding: 85px 0;
+  }
   .proj-description div {
     width: 45%;
   }

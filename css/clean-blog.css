@@ -889,7 +889,7 @@ button.explore:hover .icon-right.after:before {
 }
 
 .collapsed > span.icon-bar {
-  background-color: white;
+  background-color: #d0d0d0;
 }
 
 .navbar-toggler .top-bar {

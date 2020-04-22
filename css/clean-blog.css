@@ -1396,7 +1396,6 @@ header.masthead .overlay {
 }
 
 header.proj-masthead {
-  margin-bottom: 50px;
   background: no-repeat center center;
   background-color: #868e96;
   background-attachment: scroll;
@@ -1492,6 +1491,29 @@ header.proj-masthead .post-heading .meta a {
   header.proj-masthead .post-heading .subheading {
     font-size: 30px;
   }
+}
+
+.proj-description {
+  background-color: black;
+  padding: 85px 0;
+}
+
+.proj-description div {
+  width: 45%;
+}
+
+.proj-description div h1 {
+  color: white;
+  text-align: center;
+}
+
+.proj-description div p {
+  color: white;
+  font-family: "Bitter", serif;
+  line-height: 1.4;
+  font-size: 1.2em;
+  word-spacing: 3px;
+  text-align: justify;
 }
 
 #about .container p {

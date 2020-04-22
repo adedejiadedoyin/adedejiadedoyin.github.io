@@ -1,6 +1,6 @@
 header.proj-masthead {
   // TIP: Background images are set within the HTML using inline CSS!
-  margin-bottom: 50px;
+  // margin-bottom: 50px;
   background: no-repeat center center;
   background-color: $gray-600;
   background-attachment: scroll;
@@ -76,6 +76,30 @@ header.proj-masthead {
       .subheading {
         font-size: 30px;
       }
+    }
+  }
+}
+
+.proj-description {
+  background-color: black;
+  padding: 85px 0;
+
+  div {
+    width: 45%;
+    h1 {
+      color: white;
+      text-align: center;
+    }
+
+    p {
+      color: white;
+      font-family: "Bitter", serif;
+      line-height: 1.4;
+      font-size: 1.2em;
+      word-spacing: 3px;
+      text-align: justify;
+      // max-width: 45rem;
+      //text-shadow: 0px 1px 0px rgba(255, 255, 255, 1);
     }
   }
 }

@@ -42,7 +42,10 @@
     <nav class="navbar navbar-expand-lg fixed-top" id="mainNav">
       <div class="container">
         <a class="navbar-brand caps" href="index.html">Deji Adedoyin</a>
-        <button class="navbar-toggler navbar-toggler-right collapsed" type="button">
+        <button
+          class="navbar-toggler navbar-toggler-right collapsed"
+          type="button"
+        >
           <span class="icon-bar top-bar"></span>
           <span class="icon-bar middle-bar"></span>
           <span class="icon-bar bottom-bar"></span>
@@ -50,17 +53,27 @@
         <div class="navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav ml-auto" style="z-index: 99;">
             <li class="nav-item">
-              <a class="hvr-underline-from-left nav-link caps" href="index.html">Home</a>
+              <a class="hvr-underline-from-left nav-link caps" href="index.html"
+                >Home</a
+              >
             </li>
             <li class="nav-item">
-              <a class="hvr-underline-from-left nav-link caps" href="#projects">Projects</a>
+              <a class="hvr-underline-from-left nav-link caps" href="#projects"
+                >Projects</a
+              >
             </li>
             <li class="nav-item">
-              <a class="hvr-underline-from-left nav-link caps" href="#about">About</a>
+              <a class="hvr-underline-from-left nav-link caps" href="#about"
+                >About</a
+              >
             </li>
             <li class="nav-item">
-              <a class="hvr-underline-from-left nav-link caps" href="contact.html"
-                onclick="openContactOverlay(); return false;">Contact</a>
+              <a
+                class="hvr-underline-from-left nav-link caps"
+                href="contact.html"
+                onclick="openContactOverlay(); return false;"
+                >Contact</a
+              >
               <!--
                   <a
                     class="hvr-underline-from-left nav-link caps"
@@ -77,19 +90,33 @@
     </nav>
 
     <!-- Page Header -->
-    <header class="proj-masthead" style="background-image: url('img/post-bg.jpg')">
+    <header
+      class="proj-masthead"
+      style="background-image: url('img/post-bg.jpg');"
+    >
       <div class="overlay"></div>
-          <div class="container">
-            <div class="row">
-              <div class="col-lg-8 col-md-10 mx-auto">
-                <div class="page-heading">
-                  <h1>Shopalist</h1>
-                  <span class="subheading">Lorem ipsum blah blah</span>
-                </div>
-              </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 col-md-10 mx-auto">
+            <div class="page-heading">
+              <h1>Shopalist</h1>
+              <span class="subheading">Lorem ipsum blah blah</span>
             </div>
           </div>
+        </div>
+      </div>
     </header>
+    <div class="proj-description">
+      <div class="container">
+        <p>
+          Shopalist is a mobile app that makes it very easy to create multiple
+          shopping lists. You can create a list for each store that you shop at.
+          Use it for grocery shopping or any other shopping needs that you may
+          have. It is easy to use and improves on the cons (weaknesses) of other
+          shopping list apps.
+        </p>
+      </div>
+    </div>
 
     <!-- Post Content -->
     <article>
@@ -99,75 +126,53 @@
             <img class="img-fluid" src="img/showcase-shopalist.png" />
           </div>
         </div>
-        <div class="row">
-            <div class="col-lg-8 col-md-10 mx-auto">
-                <p class="post-subtitle">
-                      Shopalist is a mobile app that makes it very easy to create
-                      multiple shopping lists. You can create a list for each store that
-                      you shop at. Use it for grocery shopping or any other shopping
-                      needs that you may have.
-                      <br /> <br />
-                      It is easy to use and improves on the cons (weaknesses) of other
-                      shopping list apps.
-                      <br /> <br />
-                      Other notable benefits of Shopalist include:
-                      <ul class="post-subtitle">
-                        <li>Works offline without internet.</li>
-                        <li>Item suggestions for quick addition of items.</li>
-                        <li>Arrange items in order by drag and drop.</li>
-                        <li>Easily Navigate through your shopping lists.</li>
-                      </ul>
-
-
-
-                </p>
-
-                <h2 class="section-heading">Technologies used</h2>
-                <ul class="post-subtitle">
-                  <li>Ionic 4 </li>
-                  <li>Angular8 & Typescript </li>
-                  <li>Capacitor</li>
-                  <li>SQLite Database</li>
-                  <li>Git(GitHub)</li>
-                </ul>
-            </div>
-        </div>
-        <div class="row mt-5 mb-5">
-          <div class="col-lg-8 col-md-10 mx-auto text-center" >
-             <a class="btn btn-primary" target="_blank" href="https://play.google.com/store/apps/details?id=com.liupid.shopalist&gl=IE">View App</a>
-          </div>
-        </div>
-
       </div>
     </article>
 
     <hr />
 
-
     <!-- TILES PAGE TRANSITION (Thanks to Milan Ricoul)  -->
-<div class="loader loader--active">
-  <div class="loader__icon">
-    <svg version="1.1" id="loader-1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-      x="0px" y="0px" width="40px" height="40px" viewBox="0 0 40 40" enable-background="new 0 0 40 40"
-      xml:space="preserve">
-      <path opacity="0.2" fill="#000"
-        d="M20.201,5.169c-8.254,0-14.946,6.692-14.946,14.946c0,8.255,6.692,14.946,14.946,14.946s14.946-6.691,14.946-14.946C35.146,11.861,28.455,5.169,20.201,5.169z M20.201,31.749c-6.425,0-11.634-5.208-11.634-11.634c0-6.425,5.209-11.634,11.634-11.634c6.425,0,11.633,5.209,11.633,11.634C31.834,26.541,26.626,31.749,20.201,31.749z">
-      </path>
-      <path fill="#000"
-        d="M26.013,10.047l1.654-2.866c-2.198-1.272-4.743-2.012-7.466-2.012h0v3.312h0C22.32,8.481,24.301,9.057,26.013,10.047z">
-      </path>
-      <animateTransform attributeType="xml" attributeName="transform" type="rotate" from="0 20 20" to="360 20 20"
-        dur="0.5s" repeatCount="indefinite"></animateTransform>
-    </svg>
-  </div>
-  <div class="loader__tile"></div>
-  <div class="loader__tile"></div>
-  <div class="loader__tile"></div>
-  <div class="loader__tile"></div>
-  <div class="loader__tile"></div>
-</div>
-
-
+    <div class="loader loader--active">
+      <div class="loader__icon">
+        <svg
+          version="1.1"
+          id="loader-1"
+          xmlns="http://www.w3.org/2000/svg"
+          xmlns:xlink="http://www.w3.org/1999/xlink"
+          x="0px"
+          y="0px"
+          width="40px"
+          height="40px"
+          viewBox="0 0 40 40"
+          enable-background="new 0 0 40 40"
+          xml:space="preserve"
+        >
+          <path
+            opacity="0.2"
+            fill="#000"
+            d="M20.201,5.169c-8.254,0-14.946,6.692-14.946,14.946c0,8.255,6.692,14.946,14.946,14.946s14.946-6.691,14.946-14.946C35.146,11.861,28.455,5.169,20.201,5.169z M20.201,31.749c-6.425,0-11.634-5.208-11.634-11.634c0-6.425,5.209-11.634,11.634-11.634c6.425,0,11.633,5.209,11.633,11.634C31.834,26.541,26.626,31.749,20.201,31.749z"
+          ></path>
+          <path
+            fill="#000"
+            d="M26.013,10.047l1.654-2.866c-2.198-1.272-4.743-2.012-7.466-2.012h0v3.312h0C22.32,8.481,24.301,9.057,26.013,10.047z"
+          ></path>
+          <animateTransform
+            attributeType="xml"
+            attributeName="transform"
+            type="rotate"
+            from="0 20 20"
+            to="360 20 20"
+            dur="0.5s"
+            repeatCount="indefinite"
+          ></animateTransform>
+        </svg>
+      </div>
+      <div class="loader__tile"></div>
+      <div class="loader__tile"></div>
+      <div class="loader__tile"></div>
+      <div class="loader__tile"></div>
+      <div class="loader__tile"></div>
+    </div>
 
     <!-- Footer -->
     <footer>
@@ -218,11 +223,11 @@
     <!-- Custom scripts for this template -->
     <script src="js/clean-blog.min.js"></script>
     <script>
-      var $loader = document.querySelector('.loader')
+      var $loader = document.querySelector(".loader");
 
-        window.onload = function () {
-          $loader.classList.remove('loader--active')
-        };
+      window.onload = function () {
+        $loader.classList.remove("loader--active");
+      };
     </script>
   </body>
 </html>

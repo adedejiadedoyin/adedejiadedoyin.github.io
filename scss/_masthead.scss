@@ -25,6 +25,7 @@
     }
   }
 }
+
 header.masthead {
   // TIP: Background images are set within the HTML using inline CSS!
   //margin-bottom: 25px;
@@ -34,6 +35,16 @@ header.masthead {
   position: relative;
   height: 300px;
   @include background-cover;
+
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: $gray-900;
+    opacity: 0.7;
+  }
 }
 
 .masthead > div > div {
@@ -74,7 +85,7 @@ header.masthead {
       .block {
         width: 0%;
         height: inherit;
-        background: #ffb510;
+        background: #efefef; // #ffb510;
         position: absolute;
         animation: mainBlock 2s cubic-bezier(0.74, 0.06, 0.4, 0.92) forwards;
         display: flex;

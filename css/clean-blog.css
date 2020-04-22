@@ -959,6 +959,16 @@ header.masthead {
   background-size: cover;
 }
 
+header.masthead .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #212529;
+  opacity: 0.7;
+}
+
 .masthead > div > div {
   position: absolute;
   top: 50%;
@@ -991,7 +1001,7 @@ header.masthead {
 .text-container .box .title .block {
   width: 0%;
   height: inherit;
-  background: #ffb510;
+  background: #efefef;
   position: absolute;
   -webkit-animation: mainBlock 2s cubic-bezier(0.74, 0.06, 0.4, 0.92) forwards;
   animation: mainBlock 2s cubic-bezier(0.74, 0.06, 0.4, 0.92) forwards;
@@ -1385,31 +1395,11 @@ header.masthead {
   }
 }
 
-section.resume-section .resume-item .resume-date {
-  min-width: none;
-}
-
-@media (min-width: 768px) {
-  section.resume-section .resume-item .resume-date {
-    min-width: 18rem;
-  }
-}
-
-@media (min-width: 992px) {
-  section.resume-section {
-    padding-top: 3rem !important;
-    padding-bottom: 3rem !important;
-  }
-}
-
-.dev-icons {
-  font-size: 3rem;
-}
-
-@media only screen and (max-width: 768px) {
-  .resume-content h3 {
-    font-size: 1em;
-  }
+#about .container p {
+  font-family: "Bitter", serif;
+  font-size: 1.5em;
+  word-spacing: 3px;
+  text-shadow: 0px 1px 0px white;
 }
 
 .floating-label-form-group {

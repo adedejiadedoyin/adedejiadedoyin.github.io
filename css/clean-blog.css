@@ -1327,6 +1327,8 @@ header.masthead {
   font-family: Arial, sans-serif;
   color: white !important;
   letter-spacing: 3px;
+  text-decoration: none !important;
+  outline: 0;
   padding: 12px 20px;
   background-color: #f06449;
   background: linear-gradient(270deg, #f06449, #ef3636);

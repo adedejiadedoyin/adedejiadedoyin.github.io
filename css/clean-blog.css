@@ -1334,10 +1334,9 @@ button.explore:hover .icon-right.after:before {
 header.masthead {
   background: no-repeat center center;
   background-color: #232323;
-  padding-bottom: 20px;
-  padding-top: 120px;
   background-attachment: scroll;
   position: relative;
+  height: 100vh;
   background-size: cover;
 }
 

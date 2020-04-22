@@ -490,7 +490,7 @@ button.explore {
   background: linear-gradient(270deg, #2e2e2f, #000000);
   //background-color: rgba(0, 0, 0, 0.9);
   overflow-x: hidden;
-  transition: opacity 2s;
+  transition: opacity 0.3s;
 }
 
 #contact-overlay a {
@@ -800,6 +800,8 @@ button.explore {
         span {
           width: 0px;
           height: 0px;
+          //width: 10px;
+          //height: 10px;
           -webkit-border-radius: 50%;
           -moz-border-radius: 50%;
           border-radius: 50%;
@@ -1060,4 +1062,14 @@ button.explore {
     -webkit-transform: scaleX(0);
     transform: scaleX(0);
   }
+}
+
+// ------- CIRCLE/DOT -------
+.dot {
+  height: 10px;
+  width: 10px;
+  background-color: #ffb510;
+  border-radius: 50%;
+  display: inline-block;
+  //margin-left: -10px;
 }

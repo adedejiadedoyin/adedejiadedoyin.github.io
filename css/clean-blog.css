@@ -931,6 +931,25 @@ button.explore:hover .icon-right.after:before {
   transform: rotate(0);
 }
 
+@media only screen and (min-width: 768px) {
+  header.masthead {
+    height: 500px !important;
+    height: 500px !important;
+  }
+  .text-container .box .title {
+    height: 70px !important;
+  }
+  .text-container .box .title h1 {
+    font-size: 4.2em !important;
+  }
+  .text-container .box .role {
+    margin-top: 10px;
+  }
+  .text-container .box .role p {
+    font-size: 1.3em !important;
+  }
+}
+
 header.masthead {
   background: no-repeat center center;
   background-color: #232323;
@@ -938,12 +957,6 @@ header.masthead {
   position: relative;
   height: 300px;
   background-size: cover;
-}
-
-@media only screen and (min-width: 768px) {
-  header.masthead h1 {
-    font-size: 50px;
-  }
 }
 
 .masthead > div > div {
@@ -1041,7 +1054,7 @@ header.masthead {
   animation-delay: 3.2s;
   opacity: 0;
   font-weight: 400;
-  font-size: 0.6em !important;
+  font-size: 0.6em;
   font-family: "Lato";
   color: #ffffff;
   font-size: 12px;

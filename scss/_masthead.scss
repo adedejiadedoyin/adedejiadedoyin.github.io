@@ -1,23 +1,39 @@
 // Styling for the masthead
+// for 768px devices and above
+@media only screen and (min-width: 768px) {
+  header.masthead {
+    height: 500px !important;
+    height: 500px !important;
+  }
+  .text-container {
+    .box {
+      .title {
+        height: 70px !important;
+
+        h1 {
+          font-size: 4.2em !important;
+        }
+      }
+
+      .role {
+        margin-top: 10px;
+
+        p {
+          font-size: 1.3em !important;
+        }
+      }
+    }
+  }
+}
 header.masthead {
   // TIP: Background images are set within the HTML using inline CSS!
   //margin-bottom: 25px;
   background: no-repeat center center;
   background-color: #232323;
-  //padding-bottom: 20px;
-  //padding-top: 120px;
   background-attachment: scroll;
   position: relative;
-  //height: 500px;
   height: 300px;
   @include background-cover;
-
-  // for 768px devices and above
-  @media only screen and (min-width: 768px) {
-    h1 {
-      font-size: 50px;
-    }
-  }
 }
 
 .masthead > div > div {
@@ -129,7 +145,7 @@ header.masthead {
         animation-delay: 3.2s;
         opacity: 0;
         font-weight: 400;
-        font-size: 0.6em !important;
+        font-size: 0.6em;
         font-family: "Lato";
         color: #ffffff;
         font-size: 12px;

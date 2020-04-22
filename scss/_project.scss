@@ -89,7 +89,8 @@ header.proj-masthead {
     div {
       width: 45%;
       p {
-        text-align: justify;
+        text-align: justify !important;
+        font-size: 1.3em !important;
       }
     }
   }

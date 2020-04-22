@@ -1503,7 +1503,8 @@ header.proj-masthead .post-heading .meta a {
     width: 45%;
   }
   .proj-description div p {
-    text-align: justify;
+    text-align: justify !important;
+    font-size: 1.3em !important;
   }
 }
 

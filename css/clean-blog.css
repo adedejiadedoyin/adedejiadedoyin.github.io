@@ -1498,8 +1498,10 @@ header.proj-masthead .post-heading .meta a {
   padding: 85px 0;
 }
 
-.proj-description div {
-  width: 45%;
+@media only screen and (min-width: 768px) {
+  .proj-description div {
+    width: 45%;
+  }
 }
 
 .proj-description div h1 {

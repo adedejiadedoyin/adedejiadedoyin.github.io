@@ -84,8 +84,13 @@ header.proj-masthead {
   background-color: black;
   padding: 85px 0;
 
+  @media only screen and (min-width: 768px) {
+    div {
+      width: 45%;
+    }
+  }
+
   div {
-    width: 45%;
     h1 {
       color: white;
       text-align: center;

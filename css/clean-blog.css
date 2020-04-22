@@ -1502,6 +1502,9 @@ header.proj-masthead .post-heading .meta a {
   .proj-description div {
     width: 45%;
   }
+  .proj-description div p {
+    text-align: justify;
+  }
 }
 
 .proj-description div h1 {
@@ -1513,9 +1516,9 @@ header.proj-masthead .post-heading .meta a {
   color: white;
   font-family: "Bitter", serif;
   line-height: 1.4;
-  font-size: 1.2em;
+  font-size: 1.1em;
   word-spacing: 3px;
-  text-align: justify;
+  text-align: inherit;
 }
 
 #about .container p {

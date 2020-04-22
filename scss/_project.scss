@@ -84,9 +84,13 @@ header.proj-masthead {
   background-color: black;
   padding: 85px 0;
 
+  // for 768px devices and above
   @media only screen and (min-width: 768px) {
     div {
       width: 45%;
+      p {
+        text-align: justify;
+      }
     }
   }
 
@@ -100,9 +104,9 @@ header.proj-masthead {
       color: white;
       font-family: "Bitter", serif;
       line-height: 1.4;
-      font-size: 1.2em;
+      font-size: 1.1em;
       word-spacing: 3px;
-      text-align: justify;
+      text-align: inherit;
       // max-width: 45rem;
       //text-shadow: 0px 1px 0px rgba(255, 255, 255, 1);
     }

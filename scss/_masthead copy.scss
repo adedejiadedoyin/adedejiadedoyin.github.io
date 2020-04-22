@@ -8,23 +8,14 @@ header.masthead {
   //padding-top: 120px;
   background-attachment: scroll;
   position: relative;
-  //height: 500px;
-  height: 300px;
+  height: 100vh;
   @include background-cover;
 
-  // for 768px devices and above
   @media only screen and (min-width: 768px) {
     h1 {
       font-size: 50px;
     }
   }
-}
-
-.masthead > div > div {
-  position: absolute;
-  top: 50%;
-  margin-top: -50px;
-  padding: 0 30px;
 }
 
 //------------- HEADER TEXT -----------------
@@ -38,9 +29,9 @@ header.masthead {
   align-items: center;
 
   .box {
-    //height: 250px;
-    //width: 550px;
-    //width: 300px;
+    // width: 250px;
+    height: 250px;
+    width: 550px;
     position: relative;
     display: flex;
     justify-content: center;
@@ -52,8 +43,7 @@ header.masthead {
       display: flex;
       align-items: center;
       //height: 70px;
-      //height: 30px;
-      height: 40px;
+      height: 70px;
 
       .block {
         width: 0%;
@@ -68,7 +58,7 @@ header.masthead {
         font-family: "Poppins";
         color: #fff;
         //font-size: 32px;
-        font-size: 2.2em;
+        font-size: 4em;
         -webkit-animation: mainFadeIn 2s forwards;
         -o-animation: mainFadeIn 2s forwards;
         animation: mainFadeIn 2s forwards;
@@ -79,7 +69,6 @@ header.masthead {
         position: relative;
         font-style: italic;
         font-weight: 800;
-        margin-bottom: 0;
 
         span {
           width: 0px;
@@ -110,14 +99,14 @@ header.masthead {
       position: relative;
       display: flex;
       align-items: center;
-      //margin-top: 5px;
+      margin-top: 5px;
       // margin-top: -10px;
       // margin-top: 10px;
 
       .block {
         width: 0%;
         height: inherit;
-        background: #d8d7d7; //#e91e63;
+        background: #e91e63;
         position: absolute;
         animation: secBlock 2s cubic-bezier(0.74, 0.06, 0.4, 0.92) forwards;
         animation-delay: 2s;
@@ -129,7 +118,7 @@ header.masthead {
         animation-delay: 3.2s;
         opacity: 0;
         font-weight: 400;
-        font-size: 0.6em !important;
+        font-size: 1.2em !important;
         font-family: "Lato";
         color: #ffffff;
         font-size: 12px;
@@ -345,39 +334,5 @@ header.masthead {
   100% {
     -webkit-transform: scaleX(0);
     transform: scaleX(0);
-  }
-}
-
-//--------
-.proj-button {
-  position: absolute;
-  font-family: Arial, sans-serif;
-  color: white !important;
-  letter-spacing: 3px;
-  padding: 12px 20px;
-  background-color: #f06449;
-  background: linear-gradient(270deg, #f06449, #ef3636);
-  display: block;
-  width: fit-content;
-  font-weight: 600;
-  margin-top: 10px;
-  font-size: 0.875em;
-
-  .button-icon {
-    position: absolute;
-    top: 3px;
-    right: -25px;
-    width: 35px;
-    height: 35px;
-    -webkit-transform: translateX(0);
-    transform: translateX(0);
-    transition: -webkit-transform 0.3s cubic-bezier(0.694, 0.048, 0.335, 1);
-    transition: transform 0.3s cubic-bezier(0.694, 0.048, 0.335, 1);
-    transition: transform 0.3s cubic-bezier(0.694, 0.048, 0.335, 1),
-      -webkit-transform 0.3s cubic-bezier(0.694, 0.048, 0.335, 1);
-
-    svg path {
-      fill: #fff;
-    }
   }
 }

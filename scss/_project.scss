@@ -143,6 +143,10 @@ header.proj-masthead::after {
 
     ul {
       padding: 10px 15px;
+
+      li:last-child {
+        margin-bottom: 0;
+      }
     }
   }
 
@@ -163,6 +167,7 @@ header.proj-masthead::after {
 .projects > li {
   margin-bottom: 130px;
 }
+
 .projects > li > a {
   position: relative;
   margin: 0 auto;

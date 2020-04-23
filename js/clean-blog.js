@@ -1,41 +1,45 @@
-(function($) {
-  "use strict"; // Start of use strict
+// smooth scrolling
+$('a[href*="#"]').on("click", function (e) {
+  e.preventDefault();
 
-  // Floating label headings for the contact form
-  $("body").on("input propertychange", ".floating-label-form-group", function(e) {
-    $(this).toggleClass("floating-label-form-group-with-value", !!$(e.target).val());
-  }).on("focus", ".floating-label-form-group", function() {
-    $(this).addClass("floating-label-form-group-with-focus");
-  }).on("blur", ".floating-label-form-group", function() {
-    $(this).removeClass("floating-label-form-group-with-focus");
-  });
+  $("html, body").animate(
+    {
+      scrollTop: $($(this).attr("href")).offset().top,
+    },
+    500,
+    "linear"
+  );
+});
 
-  // Show the navbar when the page is scrolled up
-  var MQL = 992;
+// for locking of body when scrolling modals
+const targetElement = document.querySelector("body");
 
-  //primary navigation slide-in effect
-  if ($(window).width() > MQL) {
-    var headerHeight = $('#mainNav').height();
-    $(window).on('scroll', {
-        previousTop: 0
-      },
-      function() {
-        var currentTop = $(window).scrollTop();
-        //check if user is scrolling up
-        if (currentTop < this.previousTop) {
-          //if scrolling up...
-          if (currentTop > 0 && $('#mainNav').hasClass('is-fixed')) {
-            $('#mainNav').addClass('is-visible');
-          } else {
-            $('#mainNav').removeClass('is-visible is-fixed');
-          }
-        } else if (currentTop > this.previousTop) {
-          //if scrolling down...
-          $('#mainNav').removeClass('is-visible');
-          if (currentTop > headerHeight && !$('#mainNav').hasClass('is-fixed')) $('#mainNav').addClass('is-fixed');
-        }
-        this.previousTop = currentTop;
-      });
+// for showing mobile menu and showing or hiding social icons
+$("button.navbar-toggler").click(function () {
+  $("#navbarResponsive").toggleClass("show");
+  $("button.navbar-toggler").toggleClass("collapsed");
+  $("div.social-medias").toggleClass("hide-in-mobile");
+  const targetElement = document.querySelector("body");
+  if ($("#navbarResponsive").hasClass("show")) {
+    bodyScrollLock.disableBodyScroll(targetElement);
+  } else {
+    bodyScrollLock.enableBodyScroll(targetElement);
   }
+});
 
-})(jQuery); // End of use strict
+function openContactOverlay() {
+  document.getElementById("contact-overlay").style.visibility = "visible";
+  document.getElementById("contact-overlay").style.opacity = "1";
+  document.getElementById("contact-overlay").style.width = "100%";
+  bodyScrollLock.disableBodyScroll(targetElement);
+  $(".left-layer").toggleClass("active");
+}
+
+function closeContactOverlay() {
+  document.getElementById("contact-overlay").style.visibility = "hidden";
+  document.getElementById("contact-overlay").style.opacity = "0";
+  bodyScrollLock.enableBodyScroll(targetElement);
+  $(".left-layer").toggleClass("active");
+}
+
+// for Line Maker

@@ -1506,11 +1506,9 @@ header.proj-masthead::after {
 }
 
 #about .container p {
+  text-align: center;
   padding: 10px 15px;
-  /* font-family: Bitter,serif; */
-  /* line-height: 1.4; */
   font-size: 14px;
-  /* word-spacing: 3px; */
   text-shadow: 0 1px 0 #fff;
   font-family: monospace;
 }
@@ -1592,6 +1590,49 @@ header.proj-masthead::after {
 .contact-me-social span {
   color: white;
   margin-left: 30px;
+}
+
+#contact {
+  padding: 30px 0;
+  background-color: #e8e8e8;
+}
+
+#contact .container h1 {
+  text-align: center;
+  margin: 10px 0;
+  color: #343535;
+  font-size: 2.2rem;
+}
+
+#contact .container p {
+  padding: 10px 15px;
+  /* font-family: Bitter,serif; */
+  /* line-height: 1.4; */
+  font-size: 14px;
+  /* word-spacing: 3px; */
+  text-shadow: 0 1px 0 #fff;
+  font-family: monospace;
+  text-align: center;
+}
+
+#contact .container div {
+  text-align: center;
+}
+
+@media only screen and (min-width: 768px) {
+  #contact {
+    padding: 50px 0;
+  }
+  #contact .container h1 {
+    margin: 50px 0;
+    font-size: 3rem;
+  }
+  #contact .container p {
+    font-size: 1.5em !important;
+    font-family: "Bitter", serif;
+    word-spacing: 3px;
+    text-shadow: 0px 1px 0px white;
+  }
 }
 
 footer {

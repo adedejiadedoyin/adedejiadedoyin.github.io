@@ -1,23 +1,20 @@
 // Styling for the navbar
 #mainNav {
   position: absolute;
-  //border-bottom: 1px solid $gray-200;
-  //background-color: white;
+
   @include sans-serif-font;
   .navbar-brand {
     font-family: Montserrat, helvetica neue, Helvetica, Arial, sans-serif;
     font-weight: 800;
-    color: white; //$gray-800;
+    color: white;
     font-size: 16px;
   }
   .navbar-toggler {
     font-size: 30px;
     position: fixed;
     right: 5px;
-    // font-weight: 800;
-    //padding: 5px;
     text-transform: uppercase;
-    color: white; //$gray-800;
+    color: white;
     border: none;
     outline: none;
   }
@@ -182,10 +179,6 @@
     text-align: center;
     overflow-x: hidden; /* Disable horizontal scroll */
     transition: width 0.25s;
-    //transition: width 0.25s;
-    // -webkit-transition: width 0.25s;
-    // -moz-transition: width 0.25s;
-    //margin: 0 auto;
   }
 
   div.navbar-collapse > ul {

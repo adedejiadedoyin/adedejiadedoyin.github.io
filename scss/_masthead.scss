@@ -8,6 +8,7 @@
   .text-container {
     .box {
       .title {
+        width: 75% !important;
         height: 70px !important;
 
         h1 {
@@ -72,6 +73,7 @@ header.masthead {
 
     .title {
       width: 100%;
+      width: 60%;
       position: relative;
       display: flex;
       align-items: center;
@@ -382,8 +384,13 @@ header.masthead {
   display: block;
   width: fit-content;
   font-weight: 600;
-  margin-top: 10px;
+  margin-top: 15px; //gggg
   font-size: 0.875em;
+
+  // for 768px devices and above
+  @media only screen and (min-width: 768px) {
+    margin-top: 30px;
+  }
 
   .button-icon {
     position: absolute;

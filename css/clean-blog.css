@@ -874,16 +874,17 @@ button.explore:hover .icon-right.after:before {
 }
 
 .icon-bar {
-  height: 2px;
+  height: 3px;
   background-color: white;
   display: block;
   transition: all 0.2s;
   margin-top: 4px;
+  margin-top: 6px;
 }
 
 .navbar-toggler {
   z-index: 999;
-  width: 52px;
+  width: 67px;
   border: none;
   background: transparent !important;
 }
@@ -937,6 +938,7 @@ button.explore:hover .icon-right.after:before {
     height: 500px !important;
   }
   .text-container .box .title {
+    width: 75% !important;
     height: 70px !important;
   }
   .text-container .box .title h1 {
@@ -992,6 +994,7 @@ header.masthead .overlay {
 
 .text-container .box .title {
   width: 100%;
+  width: 60%;
   position: relative;
   display: flex;
   align-items: center;
@@ -1359,8 +1362,14 @@ header.masthead .overlay {
   width: -moz-fit-content;
   width: fit-content;
   font-weight: 600;
-  margin-top: 10px;
+  margin-top: 15px;
   font-size: 0.875em;
+}
+
+@media only screen and (min-width: 768px) {
+  .proj-button {
+    margin-top: 30px;
+  }
 }
 
 .proj-button .button-icon {

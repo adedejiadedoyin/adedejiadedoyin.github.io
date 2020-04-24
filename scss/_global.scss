@@ -106,13 +106,6 @@ p {
   color: $primary !important;
 }
 
-// for 990px devices and above
-@media only screen and (min-width: 990px) {
-  .social-medias {
-    margin-right: 18px;
-  }
-}
-
 .sm-link {
   margin-top: 15px;
   text-align: end;
@@ -243,13 +236,6 @@ p {
     display: inline !important;
     margin: 15px;
   }
-}
-
-// social media icons in home page
-.social-medias {
-  position: absolute;
-  bottom: 100px;
-  right: 0px;
 }
 
 .social-medias a {

@@ -20,6 +20,20 @@ header.masthead {
     opacity: 0.7;
   }
 
+  .container {
+    height: inherit;
+  }
+
+  .button-wrapper {
+    margin-top: 20px;
+  }
+
+  @media only screen and (min-width: 768px) {
+    .button-wrapper {
+      margin-top: 30px;
+    }
+  }
+
   // for height
   @media only screen and (max-height: 40.5625em) {
     height: 580px !important;
@@ -35,10 +49,10 @@ header.masthead {
 }
 
 .masthead > div > div {
-  position: absolute;
-  top: 50%;
-  margin-top: -50px;
-  padding: 0 30px;
+  //position: absolute;
+  //top: 50%;
+  //margin-top: -50px;
+  //padding: 0 30px;
 }
 
 //------------- HEADER TEXT -----------------
@@ -47,15 +61,11 @@ header.masthead {
   //height: 100vh;
   background: #232323;
 
-  //display: flex;
-  justify-content: center;
-  align-items: center;
-
   .box {
-    position: relative;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
+    //position: relative;
+    //display: flex;
+    //justify-content: center;
+    // flex-direction: column;
 
     .title {
       width: 100%;
@@ -154,7 +164,8 @@ header.masthead {
   .text-container {
     .box {
       .title {
-        width: 75% !important;
+        width: 50% !important;
+        width: 50% !important;
         height: 70px !important;
 
         h1 {

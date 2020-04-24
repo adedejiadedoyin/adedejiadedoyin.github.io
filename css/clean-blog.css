@@ -115,12 +115,6 @@ p {
   color: #0085a1 !important;
 }
 
-@media only screen and (min-width: 990px) {
-  .social-medias {
-    margin-right: 18px;
-  }
-}
-
 .sm-link {
   margin-top: 15px;
   text-align: end;
@@ -232,12 +226,6 @@ p {
     display: inline !important;
     margin: 15px;
   }
-}
-
-.social-medias {
-  position: absolute;
-  bottom: 100px;
-  right: 0px;
 }
 
 .social-medias a {
@@ -841,6 +829,20 @@ header.masthead .overlay {
   opacity: 0.7;
 }
 
+header.masthead .container {
+  height: inherit;
+}
+
+header.masthead .button-wrapper {
+  margin-top: 20px;
+}
+
+@media only screen and (min-width: 768px) {
+  header.masthead .button-wrapper {
+    margin-top: 30px;
+  }
+}
+
 @media only screen and (max-height: 40.5625em) {
   header.masthead {
     height: 580px !important;
@@ -859,25 +861,9 @@ header.masthead .overlay {
   }
 }
 
-.masthead > div > div {
-  position: absolute;
-  top: 50%;
-  margin-top: -50px;
-  padding: 0 30px;
-}
-
 .text-container {
   width: 100%;
   background: #232323;
-  justify-content: center;
-  align-items: center;
-}
-
-.text-container .box {
-  position: relative;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
 }
 
 .text-container .box .title {
@@ -965,7 +951,8 @@ header.masthead .overlay {
 
 @media only screen and (min-width: 768px) {
   .text-container .box .title {
-    width: 75% !important;
+    width: 50% !important;
+    width: 50% !important;
     height: 70px !important;
   }
   .text-container .box .title h1 {

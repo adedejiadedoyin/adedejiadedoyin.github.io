@@ -578,6 +578,23 @@ button.explore:hover .icon-right.after:before {
   width: 105%;
 }
 
+.my-button {
+  font-family: Arial, sans-serif;
+  color: white !important;
+  letter-spacing: 3px;
+  text-decoration: none !important;
+  outline: 0;
+  padding: 12px 20px;
+  background-color: #f06449;
+  background: linear-gradient(270deg, #f06449, #ef3636);
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: 50px;
+  font-weight: 600;
+  font-size: 0.875em;
+}
+
 #mainNav {
   position: absolute;
   font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
@@ -1220,45 +1237,6 @@ header.masthead .overlay {
   }
 }
 
-.proj-button {
-  position: absolute;
-  font-family: Arial, sans-serif;
-  color: white !important;
-  letter-spacing: 3px;
-  text-decoration: none !important;
-  outline: 0;
-  padding: 12px 20px;
-  background-color: #f06449;
-  background: linear-gradient(270deg, #f06449, #ef3636);
-  display: block;
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
-  font-weight: 600;
-  margin-top: 15px;
-  font-size: 0.875em;
-}
-
-@media only screen and (min-width: 768px) {
-  .proj-button {
-    margin-top: 30px;
-  }
-}
-
-.proj-button .button-icon {
-  position: absolute;
-  top: 3px;
-  right: -25px;
-  width: 35px;
-  height: 35px;
-  transform: translateX(0);
-  transition: transform 0.3s cubic-bezier(0.694, 0.048, 0.335, 1);
-}
-
-.proj-button .button-icon svg path {
-  fill: #fff;
-}
-
 .post-subtitle {
   font-family: 'Lora', 'Times New Roman', serif;
   margin-top: 0;
@@ -1294,35 +1272,19 @@ header.proj-masthead .overlay {
   opacity: 0.8;
 }
 
-header.proj-masthead .page-heading,
-header.proj-masthead .post-heading,
-header.proj-masthead .site-heading {
+header.proj-masthead .page-heading {
   padding: 120px 0;
   color: white;
-}
-
-@media only screen and (min-width: 768px) {
-  header.proj-masthead .page-heading,
-  header.proj-masthead .post-heading,
-  header.proj-masthead .site-heading {
-    padding: 150px 0;
-  }
-}
-
-header.proj-masthead .page-heading,
-header.proj-masthead .site-heading {
   text-align: center;
 }
 
-header.proj-masthead .page-heading h1,
-header.proj-masthead .site-heading h1 {
-  font-size: 50px;
+header.proj-masthead .page-heading h1 {
+  font-size: 2rem;
   margin-top: 0;
 }
 
-header.proj-masthead .page-heading .subheading,
-header.proj-masthead .site-heading .subheading {
-  font-size: 24px;
+header.proj-masthead .page-heading .subheading {
+  font-size: 1.2rem;
   font-weight: 300;
   line-height: 1.1;
   display: block;
@@ -1331,79 +1293,54 @@ header.proj-masthead .site-heading .subheading {
 }
 
 @media only screen and (min-width: 768px) {
-  header.proj-masthead .page-heading h1,
-  header.proj-masthead .site-heading h1 {
-    font-size: 80px;
+  header.proj-masthead .page-heading {
+    padding: 150px 0;
   }
-}
-
-header.proj-masthead .post-heading h1 {
-  font-size: 35px;
-}
-
-header.proj-masthead .post-heading .meta,
-header.proj-masthead .post-heading .subheading {
-  line-height: 1.1;
-  display: block;
-}
-
-header.proj-masthead .post-heading .subheading {
-  font-size: 24px;
-  font-weight: 600;
-  margin: 10px 0 30px;
-  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-}
-
-header.proj-masthead .post-heading .meta {
-  font-size: 20px;
-  font-weight: 300;
-  font-style: italic;
-  font-family: 'Lora', 'Times New Roman', serif;
-}
-
-header.proj-masthead .post-heading .meta a {
-  color: #fff;
-}
-
-@media only screen and (min-width: 768px) {
-  header.proj-masthead .post-heading h1 {
-    font-size: 55px;
+  header.proj-masthead .page-heading h1 {
+    font-size: 3.5rem;
   }
-  header.proj-masthead .post-heading .subheading {
-    font-size: 30px;
+  header.proj-masthead .page-heading .subheading {
+    font-size: 1.5rem;
   }
 }
 
 .proj-description {
   background-color: black;
-  padding: 40px 0;
+  padding: 40px 10px;
+}
+
+.proj-description div.container h1 {
+  color: white;
+  text-align: center;
+}
+
+.proj-description div.container p {
+  color: white;
+  line-height: 1.4;
+  font-size: 0.8em;
+  text-align: center;
+}
+
+.proj-description div.container div {
+  text-align: center;
+  margin: 50px 0;
 }
 
 @media only screen and (min-width: 768px) {
   .proj-description {
     padding: 85px 0;
   }
-  .proj-description div {
+  .proj-description div.container {
     width: 45%;
   }
-  .proj-description div p {
-    text-align: justify !important;
-    font-size: 1.3em !important;
+  .proj-description div.container p {
+    text-align: justify;
+    font-size: 1.2em !important;
   }
 }
 
-.proj-description div h1 {
-  color: white;
-  text-align: center;
-}
-
-.proj-description div p {
-  color: white;
-  font-family: "Bitter", serif;
-  line-height: 1.4;
-  font-size: 1.1em;
-  word-spacing: 3px;
-  text-align: inherit;
+article {
+  padding-top: 50px;
 }
 
 header.proj-masthead::after {

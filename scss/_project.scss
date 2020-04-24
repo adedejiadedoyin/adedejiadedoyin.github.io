@@ -16,67 +16,32 @@ header.proj-masthead {
     opacity: 0.8;
   }
 
-  .page-heading,
-  .post-heading,
-  .site-heading {
+  .page-heading {
     //padding: 200px 0 150px;
     padding: 120px 0;
     color: white;
-    @media only screen and (min-width: 768px) {
-      padding: 150px 0;
-    }
-  }
-  .page-heading,
-  .site-heading {
     text-align: center;
+
     h1 {
-      font-size: 50px;
+      font-size: 2rem;
       margin-top: 0;
     }
     .subheading {
-      font-size: 24px;
+      font-size: 1.2rem;
       font-weight: 300;
       line-height: 1.1;
       display: block;
       margin: 10px 0 0;
       @include sans-serif-font;
     }
+
     @media only screen and (min-width: 768px) {
+      padding: 150px 0;
       h1 {
-        font-size: 80px;
-      }
-    }
-  }
-  .post-heading {
-    h1 {
-      font-size: 35px;
-    }
-    .meta,
-    .subheading {
-      line-height: 1.1;
-      display: block;
-    }
-    .subheading {
-      font-size: 24px;
-      font-weight: 600;
-      margin: 10px 0 30px;
-      @include sans-serif-font;
-    }
-    .meta {
-      font-size: 20px;
-      font-weight: 300;
-      font-style: italic;
-      @include serif-font;
-      a {
-        color: $white;
-      }
-    }
-    @media only screen and (min-width: 768px) {
-      h1 {
-        font-size: 55px;
+        font-size: 3.5rem;
       }
       .subheading {
-        font-size: 30px;
+        font-size: 1.5rem;
       }
     }
   }
@@ -84,22 +49,9 @@ header.proj-masthead {
 
 .proj-description {
   background-color: black;
-  padding: 40px 0;
+  padding: 40px 10px;
 
-  // for 768px devices and above
-  @media only screen and (min-width: 768px) {
-    padding: 85px 0;
-
-    div {
-      width: 45%;
-      p {
-        text-align: justify !important;
-        font-size: 1.3em !important;
-      }
-    }
-  }
-
-  div {
+  div.container {
     h1 {
       color: white;
       text-align: center;
@@ -107,15 +59,38 @@ header.proj-masthead {
 
     p {
       color: white;
-      font-family: "Bitter", serif;
       line-height: 1.4;
-      font-size: 1.1em;
-      word-spacing: 3px;
-      text-align: inherit;
+      font-size: 0.8em;
+      text-align: center;
       // max-width: 45rem;
       //text-shadow: 0px 1px 0px rgba(255, 255, 255, 1);
     }
+
+    div {
+      text-align: center;
+      margin: 50px 0;
+    }
   }
+
+  // for 768px devices and above
+  @media only screen and (min-width: 768px) {
+    padding: 85px 0;
+
+    div.container {
+      width: 45%;
+      p {
+        text-align: justify;
+        font-size: 1.2em !important;
+      }
+
+      div {
+      }
+    }
+  }
+}
+
+article {
+  padding-top: 50px;
 }
 
 header.proj-masthead::after {

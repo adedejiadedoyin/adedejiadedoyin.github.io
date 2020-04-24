@@ -842,19 +842,19 @@ header.masthead .overlay {
 }
 
 @media only screen and (max-height: 29.9375em) {
-  header.masthead header.masthead {
+  header.masthead {
     height: 380px !important;
   }
 }
 
 @media only screen and (max-height: 36.1875em) {
-  header.masthead header.masthead {
+  header.masthead {
     height: 480px !important;
   }
 }
 
 @media only screen and (max-height: 40.5625em) {
-  header.masthead header.masthead {
+  header.masthead {
     height: 580px !important;
   }
 }

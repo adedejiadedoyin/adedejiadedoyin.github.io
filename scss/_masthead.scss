@@ -1,10 +1,6 @@
 // Styling for the masthead
 // for 768px devices and above
 @media only screen and (min-width: 768px) {
-  header.masthead {
-    height: 500px !important;
-    height: 500px !important;
-  }
   .text-container {
     .box {
       .title {
@@ -27,6 +23,25 @@
   }
 }
 
+// for height
+@media only screen and (max-height: 29.9375em) {
+  header.masthead {
+    height: 380px !important;
+  }
+}
+
+@media only screen and (max-height: 36.1875em) {
+  header.masthead {
+    height: 480px !important;
+  }
+}
+
+@media only screen and (max-height: 40.5625em) {
+  header.masthead {
+    height: 580px !important;
+  }
+}
+
 header.masthead {
   // TIP: Background images are set within the HTML using inline CSS!
   //margin-bottom: 25px;
@@ -34,7 +49,7 @@ header.masthead {
   background-color: #232323;
   background-attachment: scroll;
   position: relative;
-  height: 500px;
+  height: 100vh;
   @include background-cover;
 
   .overlay {

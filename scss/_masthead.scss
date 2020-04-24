@@ -1,5 +1,4 @@
 // Styling for the masthead
-// for 768px devices and above
 
 header.masthead {
   // TIP: Background images are set within the HTML using inline CSS!
@@ -22,16 +21,16 @@ header.masthead {
   }
 
   // for height
-  @media only screen and (max-height: 29.9375em) {
-    height: 380px !important;
+  @media only screen and (max-height: 40.5625em) {
+    height: 580px !important;
   }
 
   @media only screen and (max-height: 36.1875em) {
     height: 480px !important;
   }
 
-  @media only screen and (max-height: 40.5625em) {
-    height: 580px !important;
+  @media only screen and (max-height: 29.9375em) {
+    height: 380px !important;
   }
 }
 
@@ -150,6 +149,7 @@ header.masthead {
   }
 }
 
+// for 768px devices and above
 @media only screen and (min-width: 768px) {
   .text-container {
     .box {

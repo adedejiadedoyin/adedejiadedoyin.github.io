@@ -841,9 +841,9 @@ header.masthead .overlay {
   opacity: 0.7;
 }
 
-@media only screen and (max-height: 29.9375em) {
+@media only screen and (max-height: 40.5625em) {
   header.masthead {
-    height: 380px !important;
+    height: 580px !important;
   }
 }
 
@@ -853,9 +853,9 @@ header.masthead .overlay {
   }
 }
 
-@media only screen and (max-height: 40.5625em) {
+@media only screen and (max-height: 29.9375em) {
   header.masthead {
-    height: 580px !important;
+    height: 380px !important;
   }
 }
 

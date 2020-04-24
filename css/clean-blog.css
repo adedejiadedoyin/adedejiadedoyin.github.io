@@ -822,40 +822,6 @@ button.explore:hover .icon-right.after:before {
   transform: rotate(0);
 }
 
-@media only screen and (min-width: 768px) {
-  .text-container .box .title {
-    width: 75% !important;
-    height: 70px !important;
-  }
-  .text-container .box .title h1 {
-    font-size: 4.2em !important;
-  }
-  .text-container .box .role {
-    margin-top: 10px;
-  }
-  .text-container .box .role p {
-    font-size: 1.3em !important;
-  }
-}
-
-@media only screen and (max-height: 29.9375em) {
-  header.masthead {
-    height: 380px !important;
-  }
-}
-
-@media only screen and (max-height: 36.1875em) {
-  header.masthead {
-    height: 480px !important;
-  }
-}
-
-@media only screen and (max-height: 40.5625em) {
-  header.masthead {
-    height: 580px !important;
-  }
-}
-
 header.masthead {
   background: no-repeat center center;
   background-color: #232323;
@@ -873,6 +839,24 @@ header.masthead .overlay {
   width: 100%;
   background-color: #212529;
   opacity: 0.7;
+}
+
+@media only screen and (max-height: 29.9375em) {
+  header.masthead header.masthead {
+    height: 380px !important;
+  }
+}
+
+@media only screen and (max-height: 36.1875em) {
+  header.masthead header.masthead {
+    height: 480px !important;
+  }
+}
+
+@media only screen and (max-height: 40.5625em) {
+  header.masthead header.masthead {
+    height: 580px !important;
+  }
 }
 
 .masthead > div > div {
@@ -977,6 +961,22 @@ header.masthead .overlay {
   text-transform: uppercase;
   letter-spacing: 5px;
   margin-bottom: 0;
+}
+
+@media only screen and (min-width: 768px) {
+  .text-container .box .title {
+    width: 75% !important;
+    height: 70px !important;
+  }
+  .text-container .box .title h1 {
+    font-size: 4.2em !important;
+  }
+  .text-container .box .role {
+    margin-top: 10px;
+  }
+  .text-container .box .role p {
+    font-size: 1.3em !important;
+  }
 }
 
 @-webkit-keyframes mainBlock {

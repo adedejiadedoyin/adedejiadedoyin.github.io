@@ -607,6 +607,8 @@ a.cta {
   font-size: 0.9em; //40px;
   text-decoration: none;
   font-family: "Poppins", sans-serif;
+  width: fit-content;
+  display: block;
 
   color: white;
   background-color: #f06449;
@@ -614,6 +616,7 @@ a.cta {
   transition: 1s;
   //box-shadow: 6px 6px 0 #fda79a; //black;
   transform: skewX(-15deg);
+  // -webkit-transform: skewX(-15deg);
 }
 
 .cta:focus {
@@ -637,6 +640,7 @@ a.cta {
 
 span {
   transform: skewX(15deg);
+  // -webkit-transform: skewX(15deg);
 }
 
 span:nth-child(2) {

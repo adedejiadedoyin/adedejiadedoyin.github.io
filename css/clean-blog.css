@@ -592,6 +592,10 @@ a.cta {
   font-size: 0.9em;
   text-decoration: none;
   font-family: "Poppins", sans-serif;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  display: block;
   color: white;
   background-color: #f06449;
   background: linear-gradient(270deg, #f06449, #ef3636);

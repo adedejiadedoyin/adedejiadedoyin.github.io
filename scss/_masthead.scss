@@ -24,8 +24,15 @@ header.masthead {
     height: inherit;
   }
 
+  .social-container {
+    position: absolute;
+    top: 0px;
+    right: 0;
+    width: 50px;
+  }
+
   .button-wrapper {
-    margin-top: 20px;
+    margin-top: 25px;
   }
 
   @media only screen and (min-width: 768px) {
@@ -46,13 +53,6 @@ header.masthead {
   @media only screen and (max-height: 29.9375em) {
     height: 380px !important;
   }
-}
-
-.masthead > div > div {
-  //position: absolute;
-  //top: 50%;
-  //margin-top: -50px;
-  //padding: 0 30px;
 }
 
 //------------- HEADER TEXT -----------------
@@ -85,12 +85,6 @@ header.masthead {
   }
 
   .role {
-    width: 100%;
-    height: 30px;
-    position: relative;
-    display: flex;
-    align-items: center;
-
     .block {
       width: 0%;
       height: inherit;

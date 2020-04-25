@@ -617,6 +617,7 @@ button.explore:hover .icon-right.after:before {
 
 @media only screen and (min-width: 992px) {
   #mainNav {
+    margin-top: 30px;
     border-bottom: 1px solid transparent;
     background: transparent;
   }
@@ -637,54 +638,16 @@ button.explore:hover .icon-right.after:before {
   #mainNav .navbar-nav > li.nav-item > a:focus, #mainNav .navbar-nav > li.nav-item > a:hover {
     color: rgba(255, 255, 255, 0.3);
   }
-}
-
-@media only screen and (min-width: 992px) {
-  #mainNav {
-    transition: background-color 0.2s;
-    /* Force Hardware Acceleration in WebKit */
-    transform: translate3d(0, 0, 0);
-    -webkit-backface-visibility: hidden;
-    margin-top: 30px;
-  }
-  #mainNav.is-fixed {
-    /* when the user scrolls down, we hide the header right above the viewport */
-    position: fixed;
-    top: -67px;
-    transition: transform 0.2s;
-    border-bottom: 1px solid white;
-    background-color: rgba(255, 255, 255, 0.9);
-    margin-top: 0px;
-  }
-  #mainNav.is-fixed .navbar-brand {
-    color: #212529;
-  }
-  #mainNav.is-fixed .navbar-brand:focus, #mainNav.is-fixed .navbar-brand:hover {
-    color: #0085a1;
-  }
-  #mainNav.is-fixed .navbar-nav > li.nav-item > a {
-    color: #212529;
-  }
-  #mainNav.is-fixed .navbar-nav > li.nav-item > a:focus, #mainNav.is-fixed .navbar-nav > li.nav-item > a:hover {
-    color: #0085a1;
-  }
-  #mainNav.is-visible {
-    /* if the user changes the scrolling direction, we show the header */
-    transform: translate3d(0, 100%, 0);
-  }
-}
-
-@media only screen and (min-width: 992px) {
-  #navbarResponsive {
+  #mainNav #navbarResponsive {
     background: none !important;
   }
-  #navbarResponsive::before {
+  #mainNav #navbarResponsive::before {
     background: none !important;
   }
-  #navbarResponsive::after {
+  #mainNav #navbarResponsive::after {
     background: none !important;
   }
-  .nav-item a {
+  #mainNav .nav-item a {
     opacity: 1 !important;
   }
 }
@@ -833,8 +796,15 @@ header.masthead .container {
   height: inherit;
 }
 
+header.masthead .social-container {
+  position: absolute;
+  top: 0px;
+  right: 0;
+  width: 50px;
+}
+
 header.masthead .button-wrapper {
-  margin-top: 20px;
+  margin-top: 25px;
 }
 
 @media only screen and (min-width: 768px) {
@@ -885,14 +855,6 @@ header.masthead .button-wrapper {
   animation-delay: 1.6s;
   opacity: 0;
   font-weight: 800;
-}
-
-.text-container .role {
-  width: 100%;
-  height: 30px;
-  position: relative;
-  display: flex;
-  align-items: center;
 }
 
 .text-container .role .block {

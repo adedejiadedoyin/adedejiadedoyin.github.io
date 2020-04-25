@@ -866,16 +866,7 @@ header.masthead .button-wrapper {
   background: #232323;
 }
 
-.text-container .box .title {
-  width: 100%;
-  width: 60%;
-  position: relative;
-  display: flex;
-  align-items: center;
-  height: 40px;
-}
-
-.text-container .box .title .block {
+.text-container .title .block {
   width: 0%;
   height: inherit;
   background: #efefef;
@@ -885,35 +876,18 @@ header.masthead .button-wrapper {
   display: flex;
 }
 
-.text-container .box .title h1 {
+.text-container .title h1 {
   color: #fff;
-  font-size: 2.2em;
+  font-size: 1.9em;
   -webkit-animation: mainFadeIn 2s forwards;
   animation: mainFadeIn 2s forwards;
   -webkit-animation-delay: 1.6s;
   animation-delay: 1.6s;
   opacity: 0;
-  display: flex;
-  align-items: baseline;
-  position: relative;
-  font-style: italic;
   font-weight: 800;
 }
 
-.text-container .box .title h1 span {
-  width: 0px;
-  height: 0px;
-  border-radius: 50%;
-  background: #ffb510;
-  -webkit-animation: load 0.6s cubic-bezier(0.74, 0.06, 0.4, 0.92) forwards;
-  animation: popIn 0.8s cubic-bezier(0.74, 0.06, 0.4, 0.92) forwards;
-  -webkit-animation-delay: 2s;
-  animation-delay: 2s;
-  margin-left: 5px;
-  margin-top: -10px;
-}
-
-.text-container .box .role {
+.text-container .role {
   width: 100%;
   height: 30px;
   position: relative;
@@ -921,7 +895,7 @@ header.masthead .button-wrapper {
   align-items: center;
 }
 
-.text-container .box .role .block {
+.text-container .role .block {
   width: 0%;
   height: inherit;
   background: #d8d7d7;
@@ -933,7 +907,7 @@ header.masthead .button-wrapper {
   display: flex;
 }
 
-.text-container .box .role p {
+.text-container .role p {
   -webkit-animation: secFadeIn 2s forwards;
   animation: secFadeIn 2s forwards;
   -webkit-animation-delay: 3.2s;
@@ -950,18 +924,13 @@ header.masthead .button-wrapper {
 }
 
 @media only screen and (min-width: 768px) {
-  .text-container .box .title {
-    width: 50% !important;
-    width: 50% !important;
-    height: 70px !important;
+  .text-container .title h1 {
+    font-size: 3.2em !important;
   }
-  .text-container .box .title h1 {
-    font-size: 4.2em !important;
-  }
-  .text-container .box .role {
+  .text-container .role {
     margin-top: 10px;
   }
-  .text-container .box .role p {
+  .text-container .role p {
     font-size: 1.3em !important;
   }
 }

@@ -154,16 +154,6 @@ p {
     text-transform: lowercase;
     -webkit-font-smoothing: antialiased;
   }
-  .projects > li > a {
-    width: 80% !important;
-    height: 400px !important;
-  }
-  .project-heading h1 {
-    font-size: 2.5em !important;
-  }
-  .project-heading hr {
-    width: 100% !important;
-  }
 }
 
 .underlay {
@@ -1336,6 +1326,18 @@ header.proj-masthead .page-heading .subheading {
   }
 }
 
+header.proj-masthead::after {
+  content: "";
+  position: absolute;
+  z-index: 1;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 30%;
+  background-size: 100%;
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.7), transparent);
+}
+
 .proj-description {
   background-color: black;
   padding: 40px 10px;
@@ -1371,82 +1373,34 @@ header.proj-masthead .page-heading .subheading {
   }
 }
 
-article {
-  padding-top: 50px;
-}
-
-header.proj-masthead::after {
-  content: "";
-  position: absolute;
-  z-index: 1;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  height: 30%;
-  background-size: 100%;
-  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.7), transparent);
-}
-
-#projects {
+#showcase {
   padding: 30px 0;
 }
 
-#projects .container h1 {
+#showcase .showcase-container h1 {
   text-align: center;
   margin: 10px 0;
   color: #343535;
   font-size: 2.2rem;
 }
 
-#projects .container ul {
-  padding: 10px 15px;
-}
-
-#projects .container ul li:last-child {
-  margin-bottom: 0;
-}
-
-@media only screen and (min-width: 768px) {
-  #projects {
-    padding: 50px 0;
-  }
-  #projects .container h1 {
-    margin: 50px 0;
-    font-size: 3rem;
-  }
-}
-
-.projects > li {
+#showcase .showcase-container .showcase-list li {
   margin-bottom: 130px;
+  transform: skewY(-2deg);
 }
 
-.projects > li > a {
-  position: relative;
-  margin: 0 auto;
+#showcase .showcase-container .showcase-list li a {
   display: block;
-  width: 100%;
-  height: 300px;
+  height: 100%;
   background-color: #2a2f36;
   box-shadow: 0 20px 80px 0 rgba(0, 0, 0, 0.45);
 }
 
-.projects > li > a:after {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 0;
-  height: 100%;
-  opacity: 0.9;
-  background: linear-gradient(270deg, #235aa6, #101b3b);
-  transition: width 0.25s;
+#showcase .showcase-container .showcase-list li:last-child {
+  margin-bottom: 0;
 }
 
-.projects > li > a:hover::after {
-  width: 100%;
-}
-
-.project-heading {
+#showcase .showcase-container .showcase-list .project-heading {
   position: absolute;
   bottom: 15%;
   left: 10%;
@@ -1454,11 +1408,11 @@ header.proj-masthead::after {
   z-index: 9;
 }
 
-.project-heading h1 {
+#showcase .showcase-container .showcase-list .project-heading h1 {
   font-size: 1.5em;
 }
 
-.project-heading hr {
+#showcase .showcase-container .showcase-list .project-heading hr {
   margin: 0;
   margin-top: 15px;
   margin-bottom: 10px;
@@ -1467,9 +1421,33 @@ header.proj-masthead::after {
   width: 200px;
 }
 
-.project-heading-tip {
-  color: white;
-  z-index: 9;
+@media only screen and (min-width: 992px) {
+  #showcase {
+    padding: 50px 0;
+  }
+  #showcase .showcase-list li {
+    height: 500px !important;
+  }
+  #showcase .showcase-list li a:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    opacity: 0.9;
+    background: linear-gradient(270deg, #235aa6, #101b3b);
+    transition: width 0.25s;
+  }
+  #showcase .showcase-list li a:hover::after {
+    width: 100%;
+  }
+  #showcase .project-heading h1 {
+    font-size: 2.5em !important;
+  }
+  #showcase .project-heading hr {
+    width: 100% !important;
+  }
 }
 
 #about {

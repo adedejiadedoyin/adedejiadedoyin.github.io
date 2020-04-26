@@ -1279,13 +1279,23 @@ header.proj-masthead::after {
 }
 
 #showcase .showcase-container h1 {
-  margin: 10px 0;
+  margin: 20px 0;
   font-size: 2.2rem;
 }
 
 #showcase .showcase-container li {
   height: 300px;
   margin-bottom: 130px;
+  transform: skewY(-2deg);
+  /* W3C */
+  -webkit-transform: skewY(-2deg);
+  /* Safari & Chrome */
+  -moz-transform: skewY(-2deg);
+  /* Firefox */
+  -ms-transform: skewY(-2deg);
+  /* Internet Explorer */
+  -o-transform: skewY(-2deg);
+  /* Opera */
 }
 
 #showcase .showcase-container li a {
@@ -1323,6 +1333,13 @@ header.proj-masthead::after {
 
 #showcase .showcase-container > h1 {
   text-align: center;
+}
+
+@media only screen and (min-width: 992px) {
+  #showcase .showcase-container > h1 {
+    margin: 60px 0;
+    font-size: 3em;
+  }
 }
 
 @media only screen and (min-width: 992px) {

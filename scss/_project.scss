@@ -108,7 +108,7 @@ header.proj-masthead::after {
   .showcase-container {
     h1 {
       //text-align: center;
-      margin: 10px 0;
+      margin: 20px 0;
       font-size: 2.2rem;
     }
 
@@ -117,7 +117,11 @@ header.proj-masthead::after {
     li {
       height: 300px;
       margin-bottom: 130px;
-      //transform: skewY(-2deg); //****************
+      transform: skewY(-2deg); /* W3C */
+      -webkit-transform: skewY(-2deg); /* Safari & Chrome */
+      -moz-transform: skewY(-2deg); /* Firefox */
+      -ms-transform: skewY(-2deg); /* Internet Explorer */
+      -o-transform: skewY(-2deg); /* Opera */
 
       a {
         position: relative;
@@ -156,6 +160,11 @@ header.proj-masthead::after {
 
   .showcase-container > h1 {
     text-align: center;
+
+    @media only screen and (min-width: 992px) {
+      margin: 60px 0;
+      font-size: 3em;
+    }
   }
 
   // for 992px devices and above

@@ -107,80 +107,80 @@ header.proj-masthead::after {
 
   .showcase-container {
     h1 {
-      text-align: center;
+      //text-align: center;
       margin: 10px 0;
-      color: #343535;
       font-size: 2.2rem;
     }
 
-    .showcase-list {
-      //padding: 10px 15px;
+    //padding: 10px 15px;
 
-      li {
-        margin-bottom: 130px;
-        transform: skewY(-2deg);
+    li {
+      height: 300px;
+      margin-bottom: 130px;
+      transform: skewY(-2deg);
 
-        a {
-          display: block;
-          height: 100%;
-          background-color: #2a2f36; // #1c1d25;
-          box-shadow: 0 20px 80px 0 rgba(0, 0, 0, 0.45);
-        }
-      }
-
-      li:last-child {
-        margin-bottom: 0;
-      }
-
-      .project-heading {
-        position: absolute;
-        bottom: 15%;
-        left: 10%;
-        color: white;
-        z-index: 9;
-
-        h1 {
-          font-size: 1.5em;
-        }
-
-        hr {
-          margin: 0;
-          margin-top: 15px;
-          margin-bottom: 10px;
-          background-color: white;
-          height: 2px;
-          width: 200px;
-        }
+      a {
+        display: block;
+        height: 100%;
+        background-color: #2a2f36; // #1c1d25;
+        box-shadow: 0 20px 80px 0 rgba(0, 0, 0, 0.45);
       }
     }
+
+    li:last-child {
+      margin-bottom: 0;
+    }
+
+    .project-heading {
+      position: absolute;
+      bottom: 15%;
+      left: 10%;
+      color: white;
+      z-index: 9;
+
+      h1 {
+        font-size: 1.5em;
+      }
+
+      hr {
+        margin: 0;
+        margin-top: 15px;
+        margin-bottom: 10px;
+        background-color: white;
+        height: 2px;
+        width: 200px;
+      }
+    }
+  }
+
+  .showcase-container > h1 {
+    text-align: center;
   }
 
   // for 992px devices and above
   @media only screen and (min-width: 992px) {
     padding: 50px 0;
 
-    .showcase-list {
-      li {
-        //width: 100% !important;
-        height: 500px !important;
+    li {
+      height: 500px !important;
 
-        a:after {
-          content: "";
-          position: absolute;
-          top: 0;
-          left: 0;
-          width: 0;
-          height: 100%;
-          opacity: 0.9;
-          background: linear-gradient(270deg, #235aa6, #101b3b);
-          transition: width 0.25s;
-        }
+      a:after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 0;
+        height: 100%;
+        opacity: 0.9;
+        background: linear-gradient(270deg, #235aa6, #101b3b);
+        transition: width 0.25s;
+      }
 
-        a:hover::after {
-          width: 100%;
-        }
+      a:hover::after {
+        width: 100%;
       }
     }
+
     .project-heading {
       //left: -10% !important;
       h1 {

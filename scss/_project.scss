@@ -117,9 +117,10 @@ header.proj-masthead::after {
     li {
       height: 300px;
       margin-bottom: 130px;
-      //transform: skewY(-2deg);
+      transform: skewY(-2deg); //****************
 
       a {
+        position: relative;
         display: block;
         height: 100%;
         background-color: #2a2f36; // #1c1d25;

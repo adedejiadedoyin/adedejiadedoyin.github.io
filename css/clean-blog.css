@@ -1286,9 +1286,11 @@ header.proj-masthead::after {
 #showcase .showcase-container li {
   height: 300px;
   margin-bottom: 130px;
+  transform: skewY(-2deg);
 }
 
 #showcase .showcase-container li a {
+  position: relative;
   display: block;
   height: 100%;
   background-color: #2a2f36;

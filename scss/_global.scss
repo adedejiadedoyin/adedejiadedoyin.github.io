@@ -227,8 +227,8 @@ p {
   }
 
   .social-medias.hide-in-mobile {
-    //visibility: hidden;
     opacity: 0;
+    visibility: hidden;
     transform: translateY(-60%);
   }
 

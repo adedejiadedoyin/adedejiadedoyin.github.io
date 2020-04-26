@@ -220,6 +220,7 @@ p {
   }
   .social-medias.hide-in-mobile {
     opacity: 0;
+    visibility: hidden;
     transform: translateY(-60%);
   }
   .social-medias a {

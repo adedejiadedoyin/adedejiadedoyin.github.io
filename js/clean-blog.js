@@ -42,6 +42,20 @@ function closeContactOverlay() {
   $(".left-layer").toggleClass("active");
 }
 
+//Check Mobile Devices
+var checkMobile = function () {
+  //Check Device
+  var isTouch = "ontouchstart" in document.documentElement;
+
+  //Check Device //All Touch Devices
+  if (!isTouch) {
+    $(".cta").addClass("no-touch");
+  }
+};
+
+//Execute Check
+checkMobile();
+
 // for Line Maker
 (function () {
   var lineMaker = new LineMaker({

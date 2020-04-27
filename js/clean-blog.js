@@ -50,6 +50,7 @@ var checkMobile = function () {
   //Check Device //All Touch Devices
   if (!isTouch) {
     $(".cta").addClass("no-touch");
+    $("#showcase").addClass("no-touch");
   }
 };
 

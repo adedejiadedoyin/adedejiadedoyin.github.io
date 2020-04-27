@@ -117,11 +117,13 @@ header.proj-masthead::after {
     li {
       height: 300px;
       margin-bottom: 130px;
-      transform: skewY(-2deg); /* W3C */
-      -webkit-transform: skewY(-2deg); /* Safari & Chrome */
-      -moz-transform: skewY(-2deg); /* Firefox */
-      -ms-transform: skewY(-2deg); /* Internet Explorer */
-      -o-transform: skewY(-2deg); /* Opera */
+      /*
+      transform: skewY(-2deg); // W3C
+      -webkit-transform: skewY(-2deg); // Safari & Chrome
+      -moz-transform: skewY(-2deg); // Firefox
+      -ms-transform: skewY(-2deg); // Internet Explorer
+      -o-transform: skewY(-2deg); // Opera
+      */
 
       a {
         position: relative;
@@ -129,6 +131,31 @@ header.proj-masthead::after {
         height: 100%;
         background-color: #2a2f36; // #1c1d25;
         box-shadow: 0 20px 80px 0 rgba(0, 0, 0, 0.45);
+
+        .number {
+          position: absolute;
+
+          top: -160px;
+          right: 10px;
+          z-index: 9;
+          font-size: 1.1em;
+          transition: 0.9s;
+          opacity: 1;
+          transform: translateY(6rem);
+
+          h1 {
+            font-size: 4em;
+            color: white;
+          }
+        }
+
+        .number.left {
+          left: 10px !important;
+        }
+
+        .number.right {
+          right: 10px !important;
+        }
       }
     }
 
@@ -174,6 +201,14 @@ header.proj-masthead::after {
     li {
       height: 500px !important;
 
+      a {
+        .number {
+          top: -120px;
+          opacity: 0 !important;
+          font-size: 3em !important;
+        }
+      }
+
       a:after {
         content: "";
         position: absolute;
@@ -184,10 +219,6 @@ header.proj-masthead::after {
         opacity: 0.9;
         background: linear-gradient(270deg, #235aa6, #101b3b);
         transition: width 0.25s;
-      }
-
-      a:hover::after {
-        width: 100%;
       }
     }
 
@@ -201,5 +232,21 @@ header.proj-masthead::after {
         width: 100% !important;
       }
     }
+  }
+}
+
+// --- FOR NON-TOUCH DEVICES LIKE LAPTOPS
+#showcase.no-touch {
+  // when <a> is clicked , .number class will change its position
+  a:hover .number {
+    transform: translateY(0);
+    opacity: 1 !important;
+  }
+  a:hover .number > h1 {
+    color: #d0cece;
+  }
+
+  a:hover::after {
+    width: 100%;
   }
 }

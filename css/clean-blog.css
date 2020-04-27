@@ -492,8 +492,6 @@ button.cta {
   background-color: #f06449;
   background: linear-gradient(270deg, #f06449, #ef3636);
   transition: 1s;
-  box-shadow: 6px 6px 0 #313131;
-  transform: skewX(-15deg);
 }
 
 .cta:focus {
@@ -1286,16 +1284,13 @@ header.proj-masthead::after {
 #showcase .showcase-container li {
   height: 300px;
   margin-bottom: 130px;
-  transform: skewY(-2deg);
-  /* W3C */
-  -webkit-transform: skewY(-2deg);
-  /* Safari & Chrome */
-  -moz-transform: skewY(-2deg);
-  /* Firefox */
-  -ms-transform: skewY(-2deg);
-  /* Internet Explorer */
-  -o-transform: skewY(-2deg);
-  /* Opera */
+  /*
+      transform: skewY(-2deg); // W3C
+      -webkit-transform: skewY(-2deg); // Safari & Chrome
+      -moz-transform: skewY(-2deg); // Firefox
+      -ms-transform: skewY(-2deg); // Internet Explorer
+      -o-transform: skewY(-2deg); // Opera
+      */
 }
 
 #showcase .showcase-container li a {
@@ -1304,6 +1299,30 @@ header.proj-masthead::after {
   height: 100%;
   background-color: #2a2f36;
   box-shadow: 0 20px 80px 0 rgba(0, 0, 0, 0.45);
+}
+
+#showcase .showcase-container li a .number {
+  position: absolute;
+  top: -160px;
+  right: 10px;
+  z-index: 9;
+  font-size: 1.1em;
+  transition: 0.9s;
+  opacity: 1;
+  transform: translateY(6rem);
+}
+
+#showcase .showcase-container li a .number h1 {
+  font-size: 4em;
+  color: white;
+}
+
+#showcase .showcase-container li a .number.left {
+  left: 10px !important;
+}
+
+#showcase .showcase-container li a .number.right {
+  right: 10px !important;
 }
 
 #showcase .showcase-container li:last-child {
@@ -1349,6 +1368,11 @@ header.proj-masthead::after {
   #showcase li {
     height: 500px !important;
   }
+  #showcase li a .number {
+    top: -120px;
+    opacity: 0 !important;
+    font-size: 3em !important;
+  }
   #showcase li a:after {
     content: "";
     position: absolute;
@@ -1360,15 +1384,25 @@ header.proj-masthead::after {
     background: linear-gradient(270deg, #235aa6, #101b3b);
     transition: width 0.25s;
   }
-  #showcase li a:hover::after {
-    width: 100%;
-  }
   #showcase .project-heading h1 {
     font-size: 2.5em !important;
   }
   #showcase .project-heading hr {
     width: 100% !important;
   }
+}
+
+#showcase.no-touch a:hover .number {
+  transform: translateY(0);
+  opacity: 1 !important;
+}
+
+#showcase.no-touch a:hover .number > h1 {
+  color: #d0cece;
+}
+
+#showcase.no-touch a:hover::after {
+  width: 100%;
 }
 
 #about {

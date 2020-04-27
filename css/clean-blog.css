@@ -1367,6 +1367,7 @@ header.proj-masthead::after {
   }
   #showcase li {
     height: 500px !important;
+    margin-bottom: 250px !important;
   }
   #showcase li a .number {
     top: -120px;

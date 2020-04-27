@@ -672,7 +672,7 @@ path.two {
   left: 0;
   width: 0;
   height: 100%;
-  background: linear-gradient(270deg, #f06449, #ee2828);
+  background: linear-gradient(270deg, #733be6, #5918df);
   transition: width 0.5s;
 }
 
@@ -687,9 +687,7 @@ path.two {
   left: 0;
   width: 0;
   height: 100%;
-  background: linear-gradient(270deg, #5918df, #0a021b);
   background-image: linear-gradient(-180deg, #1a1527, #0e0c16 88%, #0e0c16 99%);
-  background-color: #0f0d15;
   background-position: top;
   background-repeat: repeat-x;
   transition: width 1.25s;
@@ -704,7 +702,7 @@ path.two {
     height: 100%;
     width: 0;
     position: fixed;
-    background-color: #272626;
+    background-color: #a072f1;
     top: 0;
     left: 0;
     text-align: center;

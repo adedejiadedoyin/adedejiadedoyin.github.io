@@ -101,6 +101,10 @@ header.proj-masthead::after {
   }
 }
 
+.proj-body {
+  padding: 100px 40px;
+}
+
 // FOR SHOWCASE IN HOME PAGE
 #showcase {
   padding: 30px 0;
@@ -200,7 +204,7 @@ header.proj-masthead::after {
 
     li {
       height: 500px !important;
-      margin-bottom: 250px !important;
+      margin-bottom: 300px !important;
 
       a {
         .number {

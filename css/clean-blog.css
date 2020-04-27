@@ -1244,6 +1244,8 @@ header.proj-masthead::after {
 .proj-description div.container h1 {
   color: white;
   text-align: center;
+  padding: 10px 0;
+  font-size: 1.5em;
 }
 
 .proj-description div.container p {
@@ -1264,6 +1266,10 @@ header.proj-masthead::after {
   }
   .proj-description div.container {
     width: 45%;
+  }
+  .proj-description div.container h1 {
+    font-size: 2.2em;
+    padding: 20px 0;
   }
   .proj-description div.container p {
     text-align: justify;

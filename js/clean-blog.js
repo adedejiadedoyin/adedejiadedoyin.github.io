@@ -131,13 +131,13 @@ checkMobile();
 window.sr = ScrollReveal({ reset: true });
 
 var slideUp = {
-  delay: 0,
+  delay: 200,
   //easing: "ease-out",
-  distance: "110px",
+  distance: "50px",
   origin: "bottom",
   opacity: 0,
   duration: 1000,
-  //mobile: false,
+  mobile: false,
 };
 
 ScrollReveal().reveal(".slideUp", slideUp);

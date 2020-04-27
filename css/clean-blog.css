@@ -499,7 +499,7 @@ button.cta {
 
 .cta.no-touch:hover {
   transition: 0.5s;
-  box-shadow: 5px 5px 0 #fbc638;
+  box-shadow: 3px 3px 0 #fbc638;
 }
 
 .cta span:nth-child(2) {

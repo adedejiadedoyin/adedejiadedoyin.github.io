@@ -765,6 +765,10 @@ header.masthead {
   background: no-repeat center center;
   background-color: #232323;
   background-attachment: scroll;
+  background-image: url(/img/bg.webp);
+  background-position: 50%;
+  background-size: cover;
+  background-repeat: no-repeat;
   position: relative;
   height: 100vh;
   background-size: cover;
@@ -821,7 +825,6 @@ header.masthead .button-wrapper {
 
 .text-container {
   width: 100%;
-  background: #232323;
 }
 
 .text-container .title .block {
@@ -1380,7 +1383,6 @@ header.proj-masthead::after {
   }
   #showcase li a .number {
     top: -120px;
-    opacity: 0 !important;
     font-size: 3em !important;
   }
   #showcase li a:after {
@@ -1404,7 +1406,6 @@ header.proj-masthead::after {
 
 #showcase.no-touch a:hover .number {
   transform: translateY(0);
-  opacity: 1 !important;
 }
 
 #showcase.no-touch a:hover .number > h1 {

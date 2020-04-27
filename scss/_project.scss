@@ -214,7 +214,7 @@ header.proj-masthead::after {
       a {
         .number {
           top: -120px;
-          opacity: 0 !important;
+          // opacity: 0 !important;
           font-size: 3em !important;
         }
       }
@@ -250,7 +250,7 @@ header.proj-masthead::after {
   // when <a> is clicked , .number class will change its position
   a:hover .number {
     transform: translateY(0);
-    opacity: 1 !important;
+    //opacity: 1 !important;
   }
   a:hover .number > h1 {
     color: #d0cece;

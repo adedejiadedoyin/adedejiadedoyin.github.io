@@ -125,3 +125,19 @@ checkMobile();
     lineMaker.animateLinesIn();
   }, 500);
 })();
+
+// SCROLL REVEAL
+// Changing the defaults
+window.sr = ScrollReveal({ reset: true });
+
+var slideUp = {
+  delay: 0,
+  easing: "ease-in-out",
+  distance: "100px",
+  origin: "left",
+  opacity: 0.4,
+  duration: 800,
+  scale: 1.2,
+};
+
+ScrollReveal().reveal(".slideUp", slideUp);

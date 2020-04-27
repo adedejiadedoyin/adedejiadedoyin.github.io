@@ -413,7 +413,7 @@ p {
 .dot {
   height: 10px;
   width: 10px;
-  background-color: #ffb510;
+  background-color: #5918df;
   border-radius: 50%;
   display: inline-block;
 }
@@ -488,8 +488,8 @@ button.cta {
   width: fit-content;
   border: none;
   color: white;
-  background-color: #f06449;
-  background: linear-gradient(270deg, #f06449, #ef3636);
+  background: #5627df;
+  background: linear-gradient(270deg, #5627df, #2d2544);
   transition: 1s;
 }
 
@@ -569,6 +569,27 @@ path.two {
   100% {
     fill: white;
   }
+}
+
+.theme-color {
+  color: #5918df;
+}
+
+.lt-arrow {
+  color: #5918df;
+  font-size: 1em;
+}
+
+.gt-arrow {
+  content: " \003E";
+  color: #5918df;
+  font-size: 1em;
+}
+
+.slash {
+  content: " \002F";
+  color: #5918df;
+  font-size: 1em;
 }
 
 #mainNav {
@@ -666,7 +687,11 @@ path.two {
   left: 0;
   width: 0;
   height: 100%;
-  background: linear-gradient(270deg, #235aa6, #101b3b);
+  background: linear-gradient(270deg, #5918df, #0a021b);
+  background-image: linear-gradient(-180deg, #1a1527, #0e0c16 88%, #0e0c16 99%);
+  background-color: #0f0d15;
+  background-position: top;
+  background-repeat: repeat-x;
   transition: width 1.25s;
 }
 

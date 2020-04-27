@@ -413,7 +413,7 @@ p {
 .dot {
   height: 10px;
   width: 10px;
-  background-color: #ffb510;
+  background-color: #5918df;
   border-radius: 50%;
   display: inline-block;
   //margin-left: -10px;
@@ -497,8 +497,10 @@ button.cta {
   //display: block;
   border: none;
   color: white;
-  background-color: #f06449;
-  background: linear-gradient(270deg, #f06449, #ef3636);
+  //background-color: #f06449;
+  //background: linear-gradient(270deg, #f06449, #ef3636);
+  background: #5627df;
+  background: linear-gradient(270deg, #5627df, #2d2544);
   transition: 1s;
   // box-shadow: 6px 6px 0 #313131; //black;
   //transform: skewX(-15deg);
@@ -569,4 +571,31 @@ path.two {
   100% {
     fill: white;
   }
+}
+
+// --- theme color
+.theme-color {
+  color: #5918df;
+}
+
+// css example
+.lt-arrow {
+  //content: " \003C";
+  color: #5918df;
+  font-size: 1em;
+}
+
+.gt-arrow {
+  content: " \003E";
+  color: #5918df;
+  font-size: 1em;
+}
+
+.slash {
+  content: " \002F";
+  color: #5918df;
+  font-size: 1em;
+}
+
+.brand-name {
 }

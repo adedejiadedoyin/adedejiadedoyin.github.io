@@ -486,7 +486,6 @@ button.cta {
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
-  display: block;
   border: none;
   color: white;
   background-color: #f06449;
@@ -1190,7 +1189,7 @@ header.proj-masthead .overlay {
   height: 100%;
   width: 100%;
   background-color: #212529;
-  opacity: 0.8;
+  opacity: 0.7;
 }
 
 header.proj-masthead .page-heading {
@@ -1238,7 +1237,7 @@ header.proj-masthead::after {
 }
 
 .proj-description {
-  background-color: black;
+  background-color: #060c10;
   padding: 40px 10px;
 }
 

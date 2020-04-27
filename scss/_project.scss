@@ -15,7 +15,7 @@ header.proj-masthead {
     height: 100%;
     width: 100%;
     background-color: $gray-900;
-    opacity: 0.8;
+    opacity: 0.7;
   }
 
   .page-heading {
@@ -62,7 +62,7 @@ header.proj-masthead::after {
 }
 
 .proj-description {
-  background-color: black;
+  background-color: #060c10;
   padding: 40px 10px;
 
   div.container {

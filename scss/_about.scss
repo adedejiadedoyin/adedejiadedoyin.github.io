@@ -14,7 +14,7 @@
       padding: 10px 15px;
       font-size: 14px;
       text-shadow: 0 1px 0 #fff;
-      font-family: monospace;
+      @include serif-font;
     }
   }
 }
@@ -31,8 +31,6 @@
       }
       p {
         font-size: 1.5em !important;
-
-        //font-family: "Bitter", serif;
         word-spacing: 3px;
         text-shadow: 0px 1px 0px rgba(255, 255, 255, 1);
       }

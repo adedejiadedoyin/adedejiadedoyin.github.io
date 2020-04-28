@@ -1234,23 +1234,6 @@ header.masthead.shadow::after {
   }
 }
 
-.post-subtitle {
-  font-family: "LibreBaskerville-Regular", "Times New Roman", serif;
-  margin-top: 0;
-  font-family: "Montserrat", sans-serif;
-  font-size: 13px;
-  -webkit-font-smoothing: antialiased;
-  text-align: justify;
-  padding: 10px;
-  color: #a8abb6;
-}
-
-@media only screen and (min-width: 992px) {
-  .post-subtitle {
-    font-size: 100%;
-  }
-}
-
 .proj-description {
   background-color: #060c10;
   padding: 40px 10px;
@@ -1444,7 +1427,7 @@ header.masthead.shadow::after {
   padding: 10px 15px;
   font-size: 14px;
   text-shadow: 0 1px 0 #fff;
-  font-family: monospace;
+  font-family: "LibreBaskerville-Regular", "Times New Roman", serif;
 }
 
 @media only screen and (min-width: 768px) {
@@ -1461,24 +1444,6 @@ header.masthead.shadow::after {
     word-spacing: 3px;
     text-shadow: 0px 1px 0px white;
   }
-}
-
-.contact-me-social {
-  padding: 20px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  margin: -150px 0 0 -170px;
-}
-
-.contact-me-social h1 {
-  color: white;
-  margin-bottom: 30px;
-}
-
-.contact-me-social span {
-  color: white;
-  margin-left: 30px;
 }
 
 #contact {
@@ -1508,7 +1473,7 @@ header.masthead.shadow::after {
   text-align: center;
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 992px) {
   #contact {
     padding: 50px 0;
   }
@@ -1552,7 +1517,6 @@ footer .fa-stack {
   position: fixed;
   width: 100vw;
   height: 100vh;
-  z-index: -1;
 }
 
 .decoline {

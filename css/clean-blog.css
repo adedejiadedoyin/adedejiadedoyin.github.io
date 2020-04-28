@@ -1238,6 +1238,7 @@ header.proj-masthead {
   background-color: #868e96;
   background-attachment: scroll;
   position: relative;
+  height: 100vh;
   background-size: cover;
 }
 
@@ -1271,7 +1272,7 @@ header.proj-masthead .page-heading .subheading {
   font-family: Helvetica, Arial, sans-serif;
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 992px) {
   header.proj-masthead .page-heading {
     padding: 150px 0;
   }
@@ -1280,6 +1281,24 @@ header.proj-masthead .page-heading .subheading {
   }
   header.proj-masthead .page-heading .subheading {
     font-size: 1.5rem;
+  }
+}
+
+@media only screen and (max-height: 40.5625em) {
+  header.proj-masthead {
+    height: 580px !important;
+  }
+}
+
+@media only screen and (max-height: 36.1875em) {
+  header.proj-masthead {
+    height: 480px !important;
+  }
+}
+
+@media only screen and (max-height: 29.9375em) {
+  header.proj-masthead {
+    height: 380px !important;
   }
 }
 

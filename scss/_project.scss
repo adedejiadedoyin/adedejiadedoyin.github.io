@@ -6,6 +6,7 @@ header.proj-masthead {
   background-color: $gray-600;
   background-attachment: scroll;
   position: relative;
+  height: 100vh;
   @include background-cover;
 
   .overlay {
@@ -37,7 +38,7 @@ header.proj-masthead {
       @include sans-serif-font;
     }
 
-    @media only screen and (min-width: 768px) {
+    @media only screen and (min-width: 992px) {
       padding: 150px 0;
       h1 {
         font-size: 3.5rem;
@@ -46,6 +47,19 @@ header.proj-masthead {
         font-size: 1.5rem;
       }
     }
+  }
+
+  // for height
+  @media only screen and (max-height: 40.5625em) {
+    height: 580px !important;
+  }
+
+  @media only screen and (max-height: 36.1875em) {
+    height: 480px !important;
+  }
+
+  @media only screen and (max-height: 29.9375em) {
+    height: 380px !important;
   }
 }
 

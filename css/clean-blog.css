@@ -73,7 +73,7 @@ a {
 }
 
 a:focus, a:hover {
-  color: #0085a1;
+  color: #5918df;
 }
 
 blockquote {
@@ -101,13 +101,13 @@ blockquote {
 
 ::-moz-selection {
   color: #fff;
-  background: #0085a1;
+  background: #5918df;
   text-shadow: none;
 }
 
 ::selection {
   color: #fff;
-  background: #0085a1;
+  background: #5918df;
   text-shadow: none;
 }
 
@@ -127,7 +127,7 @@ img::-moz-selection {
 }
 
 .primary {
-  color: #0085a1;
+  color: #5918df;
 }
 
 p {
@@ -145,7 +145,7 @@ p {
 }
 
 .text-primary {
-  color: #0085a1 !important;
+  color: #5918df !important;
 }
 
 .sm-link {
@@ -444,8 +444,8 @@ p {
 }
 
 .dot {
-  height: 10px;
-  width: 10px;
+  height: 7px;
+  width: 7px;
   background-color: #5918df;
   border-radius: 50%;
   display: inline-block;
@@ -1607,14 +1607,14 @@ footer .fa-stack {
 }
 
 .btn-primary {
-  background-color: #0085a1;
-  border-color: #0085a1;
+  background-color: #5918df;
+  border-color: #5918df;
 }
 
 .btn-primary:hover, .btn-primary:focus, .btn-primary:active {
   color: #fff;
-  background-color: #00657b !important;
-  border-color: #00657b !important;
+  background-color: #4b14bc !important;
+  border-color: #4b14bc !important;
 }
 
 .btn-lg {

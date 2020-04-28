@@ -34,9 +34,10 @@
 
   // for 992px devices and above ONLY
   @media only screen and (min-width: 992px) {
-    margin-top: 30px;
+    //margin-top: 30px;
     border-bottom: 1px solid transparent;
-    background: transparent;
+    //background: transparent;
+    background: rgba(28, 29, 37, 0.9);
     .navbar-brand {
       padding: 10px 20px;
       color: $white;

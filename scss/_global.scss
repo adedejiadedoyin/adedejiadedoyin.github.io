@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&display=swap");
+//@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@800&display=swap");
 @font-face {
   font-family: "League Spartan";
   src: url("/font/league_spartan_bold_700-webfont.woff2") format("woff2"),
@@ -35,7 +36,7 @@ h6 {
 
 h1 {
   font-size: 1.9em;
-  line-height: 1;
+  line-height: 1.2;
   @media only screen and (min-width: 992px) {
     font-size: 3.5em;
     line-height: 1.1;
@@ -515,14 +516,14 @@ p {
 
 a.cta,
 button.cta {
-  font-size: 0.9em;
+  font-size: 0.8em;
   letter-spacing: 3px;
   padding-top: 12px;
   padding-right: 0px;
   padding-bottom: 12px;
   padding-left: 20px;
   text-decoration: none;
-  font-family: "Poppins", sans-serif;
+  @include sans-serif-font;
   width: fit-content;
   //display: block;
   border: none;

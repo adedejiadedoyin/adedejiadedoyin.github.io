@@ -40,7 +40,7 @@ h6 {
 
 h1 {
   font-size: 1.9em;
-  line-height: 1;
+  line-height: 1.2;
 }
 
 @media only screen and (min-width: 992px) {
@@ -515,14 +515,14 @@ p {
 
 a.cta,
 button.cta {
-  font-size: 0.9em;
+  font-size: 0.8em;
   letter-spacing: 3px;
   padding-top: 12px;
   padding-right: 0px;
   padding-bottom: 12px;
   padding-left: 20px;
   text-decoration: none;
-  font-family: "Poppins", sans-serif;
+  font-family: League Spartan, Helvetica, Arial, sans-serif;
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
@@ -644,7 +644,7 @@ path.two {
 }
 
 #mainNav .navbar-brand {
-  font-family: Montserrat, helvetica neue, Helvetica, Arial, sans-serif;
+  font-family: League Spartan, Helvetica, Arial, sans-serif;
   font-weight: 800;
   color: white;
   font-size: 16px;
@@ -666,7 +666,7 @@ path.two {
   font-weight: 800;
   letter-spacing: 1px;
   color: white;
-  font-family: Montserrat, helvetica neue, Helvetica, Arial, sans-serif;
+  font-family: League Spartan, Helvetica, Arial, sans-serif;
 }
 
 @media only screen and (min-width: 992px) {

@@ -1452,12 +1452,9 @@ header.masthead.shadow::after {
 
 #contact .container p {
   padding: 10px 15px;
-  /* font-family: Bitter,serif; */
-  /* line-height: 1.4; */
-  font-size: 14px;
-  /* word-spacing: 3px; */
+  font-size: 0.9em;
   text-shadow: 0 1px 0 #fff;
-  font-family: monospace;
+  font-family: "LibreBaskerville-Regular", "Times New Roman", serif;
   text-align: center;
 }
 

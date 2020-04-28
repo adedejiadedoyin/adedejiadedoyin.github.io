@@ -884,6 +884,18 @@ header.masthead .button-wrapper {
   }
 }
 
+header.masthead.shadow::after {
+  content: "";
+  position: absolute;
+  z-index: 1;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 70%;
+  background-size: 100%;
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.7), transparent);
+}
+
 .text-container {
   width: 100%;
 }
@@ -1231,87 +1243,6 @@ header.masthead .button-wrapper {
   .post-subtitle {
     font-size: 100%;
   }
-}
-
-header.proj-masthead {
-  background: no-repeat center center;
-  background-color: #868e96;
-  background-attachment: scroll;
-  position: relative;
-  height: 100vh;
-  background-size: cover;
-}
-
-header.proj-masthead .overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
-  background-color: #212529;
-  opacity: 0.8;
-}
-
-header.proj-masthead .page-heading {
-  padding: 120px 0;
-  color: white;
-  text-align: center;
-}
-
-header.proj-masthead .page-heading h1 {
-  font-size: 2rem;
-  margin-top: 0;
-}
-
-header.proj-masthead .page-heading .subheading {
-  font-size: 1.2rem;
-  font-weight: 300;
-  line-height: 1.1;
-  display: block;
-  margin: 10px 0 0;
-  font-family: Helvetica, Arial, sans-serif;
-}
-
-@media only screen and (min-width: 992px) {
-  header.proj-masthead .page-heading {
-    padding: 150px 0;
-  }
-  header.proj-masthead .page-heading h1 {
-    font-size: 3.5rem;
-  }
-  header.proj-masthead .page-heading .subheading {
-    font-size: 1.5rem;
-  }
-}
-
-@media only screen and (max-height: 40.5625em) {
-  header.proj-masthead {
-    height: 580px !important;
-  }
-}
-
-@media only screen and (max-height: 36.1875em) {
-  header.proj-masthead {
-    height: 480px !important;
-  }
-}
-
-@media only screen and (max-height: 29.9375em) {
-  header.proj-masthead {
-    height: 380px !important;
-  }
-}
-
-header.proj-masthead::after {
-  content: "";
-  position: absolute;
-  z-index: 1;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  height: 70%;
-  background-size: 100%;
-  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.7), transparent);
 }
 
 .proj-description {

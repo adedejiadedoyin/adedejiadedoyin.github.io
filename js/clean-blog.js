@@ -133,7 +133,7 @@ window.sr = ScrollReveal({ reset: true });
 var slideUp = {
   delay: 200,
   //easing: "ease-out",
-  distance: "50px",
+  distance: "200px",
   origin: "bottom",
   opacity: 0,
   duration: 1000,

@@ -5,16 +5,12 @@
  */
 
 @charset "UTF-8";
-@import url("https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic");
-@import url("https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800");
-@import url("https://fonts.googleapis.com/css?family=Montserrat:300,400,800&display=swap");
-@import url("https://fonts.googleapis.com/css?family=Lato:300,400|Poppins:300,400,800&display=swap");
-@import url("https://fonts.googleapis.com/css?family=Bitter:700");
+@import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&display=swap");
 body {
   font-size: 18px;
   color: #212529;
   background-color: #f1f1f1;
-  font-family: 'Lora', 'Times New Roman', serif;
+  font-family: "LibreBaskerville-Regular", "Times New Roman", serif;
 }
 
 p {
@@ -32,7 +28,31 @@ h4,
 h5,
 h6 {
   font-weight: 800;
-  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+h1 {
+  font-size: 1.9em;
+  line-height: 1;
+}
+
+@media only screen and (min-width: 992px) {
+  h1 {
+    font-size: 3.5em;
+    line-height: 1.1;
+  }
+}
+
+h3 {
+  font-size: 1.4em;
+  line-height: 1.3;
+}
+
+@media only screen and (min-width: 992px) {
+  h3 {
+    font-size: 1.9em;
+    line-height: 1.1;
+  }
 }
 
 a {
@@ -50,9 +70,10 @@ blockquote {
 }
 
 .section-heading {
-  font-size: 36px;
-  font-weight: 700;
-  margin-top: 60px;
+  text-align: center;
+  margin-bottom: 70px;
+  color: #4a4a4a;
+  transition-delay: 0.18s;
 }
 
 .caption {
@@ -98,7 +119,7 @@ img::-moz-selection {
 }
 
 p {
-  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: Helvetica, Arial, sans-serif;
 }
 
 .caps {
@@ -475,12 +496,12 @@ p {
 
 a.cta,
 button.cta {
+  font-size: 0.9em;
   letter-spacing: 3px;
   padding-top: 12px;
   padding-right: 0px;
   padding-bottom: 12px;
   padding-left: 20px;
-  font-size: 0.9em;
   text-decoration: none;
   font-family: "Poppins", sans-serif;
   width: -webkit-fit-content;
@@ -592,9 +613,15 @@ path.two {
   font-size: 1em;
 }
 
+@media only screen and (min-width: 992px) {
+  .shift {
+    transform: translateX(-35px);
+  }
+}
+
 #mainNav {
   position: absolute;
-  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: Helvetica, Arial, sans-serif;
 }
 
 #mainNav .navbar-brand {
@@ -619,7 +646,6 @@ path.two {
   font-size: 1.2em;
   font-weight: 800;
   letter-spacing: 1px;
-  text-transform: uppercase;
   color: white;
   font-family: Montserrat, helvetica neue, Helvetica, Arial, sans-serif;
 }
@@ -638,8 +664,8 @@ path.two {
     color: rgba(255, 255, 255, 0.8);
   }
   #mainNav .navbar-nav > li.nav-item > a {
-    font-size: 12px;
-    margin: 10px 20px;
+    font-size: 0.9em;
+    margin: 10px 15px;
     padding: 0;
     padding-bottom: 5px;
     color: #fff;
@@ -822,7 +848,7 @@ header.masthead .button-wrapper {
   margin-top: 25px;
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 992px) {
   header.masthead .button-wrapper {
     margin-top: 30px;
   }
@@ -862,13 +888,11 @@ header.masthead .button-wrapper {
 
 .text-container .title h1 {
   color: #fff;
-  font-size: 1.9em;
   -webkit-animation: mainFadeIn 2s forwards;
   animation: mainFadeIn 2s forwards;
   -webkit-animation-delay: 1.6s;
   animation-delay: 1.6s;
   opacity: 0;
-  font-weight: 800;
 }
 
 .text-container .role .block {
@@ -899,10 +923,7 @@ header.masthead .button-wrapper {
   margin-bottom: 0;
 }
 
-@media only screen and (min-width: 768px) {
-  .text-container .title h1 {
-    font-size: 3.2em !important;
-  }
+@media only screen and (min-width: 992px) {
   .text-container .role {
     margin-top: 10px;
   }
@@ -1184,7 +1205,7 @@ header.masthead .button-wrapper {
 }
 
 .post-subtitle {
-  font-family: 'Lora', 'Times New Roman', serif;
+  font-family: "LibreBaskerville-Regular", "Times New Roman", serif;
   margin-top: 0;
   font-family: "Montserrat", sans-serif;
   font-size: 13px;
@@ -1235,7 +1256,7 @@ header.proj-masthead .page-heading .subheading {
   line-height: 1.1;
   display: block;
   margin: 10px 0 0;
-  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: Helvetica, Arial, sans-serif;
 }
 
 @media only screen and (min-width: 768px) {
@@ -1308,17 +1329,15 @@ header.proj-masthead::after {
 }
 
 #showcase {
-  padding: 30px 0;
-}
-
-#showcase .showcase-container h1 {
-  margin: 20px 0;
-  font-size: 2.2rem;
+  padding: 70px 0;
+  padding: 80px 0;
 }
 
 #showcase .showcase-container li {
   height: 300px;
+  margin: 0 auto;
   margin-bottom: 130px;
+  width: 90%;
   /*
       transform: skewY(-2deg); // W3C
       -webkit-transform: skewY(-2deg); // Safari & Chrome
@@ -1338,17 +1357,18 @@ header.proj-masthead::after {
 
 #showcase .showcase-container li a .number {
   position: absolute;
-  top: -160px;
+  top: -120px;
   right: 10px;
   z-index: 9;
   font-size: 1.1em;
   transition: 0.9s;
   opacity: 1;
-  transform: translateY(6rem);
+  transform: translateY(4rem);
 }
 
 #showcase .showcase-container li a .number h1 {
-  font-size: 4em;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 3.5em;
   color: white;
 }
 
@@ -1361,19 +1381,14 @@ header.proj-masthead::after {
 }
 
 #showcase .showcase-container li:last-child {
-  margin-bottom: 0;
+  margin-bottom: 0 !important;
 }
 
 #showcase .showcase-container .project-heading {
   position: absolute;
   bottom: 15%;
-  left: 10%;
   color: white;
   z-index: 9;
-}
-
-#showcase .showcase-container .project-heading h1 {
-  font-size: 1.5em;
 }
 
 #showcase .showcase-container .project-heading hr {
@@ -1385,24 +1400,23 @@ header.proj-masthead::after {
   width: 200px;
 }
 
-#showcase .showcase-container > h1 {
-  text-align: center;
+#showcase .showcase-container .project-heading.right {
+  right: 10%;
 }
 
-@media only screen and (min-width: 992px) {
-  #showcase .showcase-container > h1 {
-    margin: 60px 0;
-    font-size: 3em;
-  }
+#showcase .showcase-container .project-heading.left {
+  left: 10%;
 }
 
 @media only screen and (min-width: 992px) {
   #showcase {
-    padding: 50px 0;
+    padding: 150px 0;
   }
   #showcase li {
     height: 500px !important;
-    margin-bottom: 300px !important;
+    margin-bottom: 170px !important;
+    width: 65% !important;
+    margin: 0 auto;
   }
   #showcase li a .number {
     top: -120px;
@@ -1416,19 +1430,21 @@ header.proj-masthead::after {
     width: 0;
     height: 100%;
     opacity: 0.9;
-    background: linear-gradient(270deg, #235aa6, #101b3b);
+    background-image: linear-gradient(-180deg, #1a1527, #0e0c16 88%, #0e0c16 99%);
     transition: width 0.25s;
-  }
-  #showcase .project-heading h1 {
-    font-size: 2.5em !important;
   }
   #showcase .project-heading hr {
     width: 100% !important;
   }
 }
 
+#showcase.no-touch a .number {
+  opacity: 0 !important;
+}
+
 #showcase.no-touch a:hover .number {
   transform: translateY(0);
+  opacity: 1 !important;
 }
 
 #showcase.no-touch a:hover .number > h1 {
@@ -1446,8 +1462,8 @@ header.proj-masthead::after {
 #about .container h1 {
   text-align: center;
   margin: 10px 0;
-  color: #343535;
-  font-size: 2.2rem;
+  color: #4a4a4a;
+  font-size: 1.8rem;
 }
 
 #about .container p {
@@ -1460,6 +1476,7 @@ header.proj-masthead::after {
 @media only screen and (min-width: 768px) {
   #about {
     padding: 50px 0;
+    padding-bottom: 200px;
   }
   #about .container h1 {
     margin: 50px 0;
@@ -1470,51 +1487,6 @@ header.proj-masthead::after {
     font-family: "Bitter", serif;
     word-spacing: 3px;
     text-shadow: 0px 1px 0px white;
-  }
-}
-
-#contact-overlay {
-  height: 100%;
-  width: 0;
-  position: fixed;
-  z-index: 9999;
-  top: 0;
-  left: 0;
-  background-color: black;
-  background: linear-gradient(270deg, #2e2e2f, #000000);
-  overflow-x: hidden;
-  transition: opacity 0.3s;
-}
-
-#contact-overlay a {
-  padding: 8px;
-  text-decoration: none;
-  font-size: 36px;
-  color: #818181;
-  display: block;
-  transition: 0.3s;
-}
-
-#contact-overlay a:hover,
-#contact-overlay a:focus {
-  color: #f1f1f1;
-}
-
-#contact-overlay .closebtn {
-  position: absolute;
-  top: 20px;
-  right: 45px;
-  font-size: 60px;
-}
-
-@media screen and (max-height: 450px) {
-  #contact-overlay a {
-    font-size: 20px;
-  }
-  #contact-overlay .closebtn {
-    font-size: 40px;
-    top: 15px;
-    right: 35px;
   }
 }
 
@@ -1544,8 +1516,8 @@ header.proj-masthead::after {
 #contact .container h1 {
   text-align: center;
   margin: 10px 0;
-  color: #343535;
-  font-size: 2.2rem;
+  color: #4a4a4a;
+  font-size: 1.8rem;
 }
 
 #contact .container p {
@@ -1621,7 +1593,7 @@ footer .fa-stack {
   letter-spacing: 1px;
   text-transform: uppercase;
   border-radius: 0;
-  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: Helvetica, Arial, sans-serif;
 }
 
 .btn-primary {

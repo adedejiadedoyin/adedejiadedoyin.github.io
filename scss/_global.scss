@@ -1,15 +1,10 @@
-@import url("https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic");
-@import url("https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800");
-@import url("https://fonts.googleapis.com/css?family=Montserrat:300,400,800&display=swap");
-@import url("https://fonts.googleapis.com/css?family=Lato:300,400|Poppins:300,400,800&display=swap");
-@import url("https://fonts.googleapis.com/css?family=Bitter:700");
+@import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&display=swap");
 
 // Global styling for this template
 body {
   font-size: 18px;
   color: $gray-900;
   background-color: #f1f1f1;
-  //font-family: merriweather, serif !important;
   @include serif-font;
 }
 
@@ -31,6 +26,24 @@ h6 {
   @include sans-serif-font;
 }
 
+h1 {
+  font-size: 1.9em;
+  line-height: 1;
+  @media only screen and (min-width: 992px) {
+    font-size: 3.5em;
+    line-height: 1.1;
+  }
+}
+
+h3 {
+  font-size: 1.4em;
+  line-height: 1.3;
+  @media only screen and (min-width: 992px) {
+    font-size: 1.9em;
+    line-height: 1.1;
+  }
+}
+
 a {
   color: $gray-900;
   @include transition-all;
@@ -46,9 +59,10 @@ blockquote {
 }
 
 .section-heading {
-  font-size: 36px;
-  font-weight: 700;
-  margin-top: 60px;
+  text-align: center;
+  margin-bottom: 70px;
+  color: #4a4a4a;
+  transition-delay: 0.18s;
 }
 
 .caption {
@@ -485,26 +499,21 @@ p {
 
 a.cta,
 button.cta {
+  font-size: 0.9em;
   letter-spacing: 3px;
   padding-top: 12px;
   padding-right: 0px;
   padding-bottom: 12px;
   padding-left: 20px;
-  font-size: 0.9em; //40px;
   text-decoration: none;
   font-family: "Poppins", sans-serif;
   width: fit-content;
   //display: block;
   border: none;
   color: white;
-  //background-color: #f06449;
-  //background: linear-gradient(270deg, #f06449, #ef3636);
   background: #5627df;
   background: linear-gradient(270deg, #5627df, #2d2544);
   transition: 1s;
-  // box-shadow: 6px 6px 0 #313131; //black;
-  //transform: skewX(-15deg);
-  // -webkit-transform: skewX(-15deg);
 }
 
 .cta:focus {
@@ -578,7 +587,7 @@ path.two {
   color: #5918df;
 }
 
-// css example
+// css utilities
 .lt-arrow {
   //content: " \003C";
   color: #5918df;
@@ -598,4 +607,11 @@ path.two {
 }
 
 .brand-name {
+}
+
+.shift {
+  // for 992px devices and above
+  @media only screen and (min-width: 992px) {
+    transform: translateX(-35px);
+  }
 }

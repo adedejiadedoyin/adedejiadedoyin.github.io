@@ -39,7 +39,7 @@ header.masthead {
     margin-top: 25px;
   }
 
-  @media only screen and (min-width: 768px) {
+  @media only screen and (min-width: 992px) {
     .button-wrapper {
       margin-top: 30px;
     }
@@ -76,15 +76,12 @@ header.masthead {
     }
 
     h1 {
-      //font-family: "Poppins";
       color: #fff;
-      font-size: 1.9em; // *********
       -webkit-animation: mainFadeIn 2s forwards;
       -o-animation: mainFadeIn 2s forwards;
       animation: mainFadeIn 2s forwards;
       animation-delay: 1.6s;
       opacity: 0;
-      font-weight: 800;
     }
   }
 
@@ -115,12 +112,12 @@ header.masthead {
   }
 }
 
-// for 768px devices and above
-@media only screen and (min-width: 768px) {
+// for 992px devices and above
+@media only screen and (min-width: 992px) {
   .text-container {
     .title {
       h1 {
-        font-size: 3.2em !important;
+        // font-size: 3.5em !important;
       }
     }
 

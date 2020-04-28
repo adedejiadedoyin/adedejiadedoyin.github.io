@@ -139,7 +139,7 @@ header.proj-masthead::after {
         .number {
           position: absolute;
 
-          top: -120px;
+          top: -100px;
           right: 10px;
           z-index: 9;
           font-size: 1.1em;
@@ -168,28 +168,26 @@ header.proj-masthead::after {
       margin-bottom: 0 !important;
     }
 
-    .project-heading {
+    .showcase-description {
       position: absolute;
       bottom: 15%;
       //left: 10%;
       color: white;
       z-index: 9;
 
-      hr {
-        margin: 0;
-        margin-top: 15px;
-        margin-bottom: 10px;
-        background-color: white;
-        height: 2px;
-        width: 200px;
+      .showcase-subtitle {
+        @include serif-font;
+        font-weight: 400;
+        font-style: italic;
+        margin-bottom: 20px;
       }
     }
 
-    .project-heading.right {
+    .showcase-description.right {
       right: 10%;
     }
 
-    .project-heading.left {
+    .showcase-description.left {
       left: 10%;
     }
   }
@@ -206,8 +204,6 @@ header.proj-masthead::after {
 
       a {
         .number {
-          top: -120px;
-          // opacity: 0 !important;
           font-size: 3em !important;
         }
       }
@@ -242,6 +238,7 @@ header.proj-masthead::after {
 #showcase.no-touch {
   a .number {
     opacity: 0 !important;
+    top: -100px !important;
   }
   // when <a> is clicked , .number class will change its position
   a:hover .number {

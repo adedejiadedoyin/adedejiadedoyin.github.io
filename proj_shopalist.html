@@ -35,7 +35,8 @@
       rel="stylesheet"
       type="text/css"
     />
-    <meta name="theme-color" content="#232323" />
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <meta name="theme-color" content="#5918df" />
     <meta property="og:url" content="http://dejiadedoyin.com" />
     <meta property="og:type" content="website" />
     <meta
@@ -70,7 +71,10 @@
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg fixed-top" id="mainNav">
       <div class="container">
-        <a class="navbar-brand caps" href="index.html">Deji</a>
+        <a class="navbar-brand caps" href="index.html" style="font-size: 1.5em;"
+          ><span class="lt-arrow">&lt;</span>Deji<span class="slash">&sol;</span
+          ><span class="gt-arrow">&gt;</span></a
+        >
         <button
           class="navbar-toggler navbar-toggler-right collapsed"
           type="button"
@@ -82,36 +86,24 @@
         <div class="navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav ml-auto" style="z-index: 99;">
             <li class="nav-item">
-              <a class="hvr-underline-from-left nav-link caps" href="index.html"
-                >Home</a
+              <a class="nav-link" href="index.html"
+                ><span>&lt;</span>Home<span>&sol;</span><span>&gt;</span></a
               >
             </li>
             <li class="nav-item">
-              <a class="hvr-underline-from-left nav-link caps" href="#projects"
-                >Projects</a
+              <a class="nav-link" href="#showcase"
+                ><span>&lt;</span>Projects<span>&sol;</span><span>&gt;</span></a
               >
             </li>
             <li class="nav-item">
-              <a class="hvr-underline-from-left nav-link caps" href="#about"
-                >About</a
+              <a class="nav-link" href="#about"
+                ><span>&lt;</span>About<span>&sol;</span><span>&gt;</span></a
               >
             </li>
             <li class="nav-item">
-              <a
-                class="hvr-underline-from-left nav-link caps"
-                href="contact.html"
-                onclick="openContactOverlay(); return false;"
-                >Contact</a
+              <a class="nav-link" href="#contact"
+                ><span>&lt;</span>Contact<span>&sol;</span><span>&gt;</span></a
               >
-              <!--
-                  <a
-                    class="hvr-underline-from-left nav-link caps"
-                    href="contact.html"
-                    data-toggle="modal"
-                    data-target="#fsModal"
-                    >Contact</a
-                  >
-                  -->
             </li>
           </ul>
         </div>
@@ -137,7 +129,7 @@
     </header>
     <div class="proj-description">
       <div class="container">
-        <h1>Project</h1>
+        <h2>Project</h2>
         <p>
           Shopalist is a mobile app that makes it very easy to create multiple
           shopping lists. You can create a list for each store that you shop at.
@@ -153,8 +145,8 @@
             <span>Visit</span>
             <span>
               <svg
-                width="46px"
-                height="23px"
+                width="36px"
+                height="20px"
                 viewBox="0 0 66 43"
                 version="1.1"
                 xmlns="http://www.w3.org/2000/svg"

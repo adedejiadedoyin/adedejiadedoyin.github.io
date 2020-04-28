@@ -1300,14 +1300,14 @@ header.proj-masthead::after {
   padding: 40px 10px;
 }
 
-.proj-description div.container h1 {
+.proj-description div.container h2 {
   color: white;
   text-align: center;
-  padding: 10px 0;
-  font-size: 1.5em;
+  margin-bottom: 20px;
 }
 
 .proj-description div.container p {
+  font-family: "LibreBaskerville-Regular", "Times New Roman", serif;
   color: white;
   line-height: 1.4;
   font-size: 0.8em;
@@ -1319,16 +1319,12 @@ header.proj-masthead::after {
   margin: 50px 0;
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 992px) {
   .proj-description {
     padding: 85px 0;
   }
   .proj-description div.container {
     width: 45%;
-  }
-  .proj-description div.container h1 {
-    font-size: 2.2em;
-    padding: 20px 0;
   }
   .proj-description div.container p {
     text-align: justify;

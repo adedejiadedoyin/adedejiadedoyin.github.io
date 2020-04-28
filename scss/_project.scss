@@ -66,14 +66,14 @@ header.proj-masthead::after {
   padding: 40px 10px;
 
   div.container {
-    h1 {
+    h2 {
       color: white;
       text-align: center;
-      padding: 10px 0;
-      font-size: 1.5em;
+      margin-bottom: 20px;
     }
 
     p {
+      @include serif-font;
       color: white;
       line-height: 1.4;
       font-size: 0.8em;
@@ -86,17 +86,12 @@ header.proj-masthead::after {
     }
   }
 
-  // for 768px devices and above
-  @media only screen and (min-width: 768px) {
+  // for 992px devices and above
+  @media only screen and (min-width: 992px) {
     padding: 85px 0;
 
     div.container {
       width: 45%;
-
-      h1 {
-        font-size: 2.2em;
-        padding: 20px 0;
-      }
 
       p {
         text-align: justify;

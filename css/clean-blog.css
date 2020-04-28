@@ -1414,6 +1414,7 @@ header.masthead.shadow::after {
 
 #about {
   padding: 30px 0;
+  z-index: 99999;
 }
 
 #about .container {

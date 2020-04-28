@@ -1421,6 +1421,7 @@ header.masthead.shadow::after {
   text-shadow: 0 1px 0 #fff;
   font-family: "LibreBaskerville-Regular", "Times New Roman", serif;
   background-color: #f1f1f1;
+  text-align: justify;
 }
 
 @media only screen and (min-width: 768px) {

@@ -6,6 +6,13 @@
 
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&display=swap");
+@font-face {
+  font-family: "League Spartan";
+  src: url("/font/league_spartan_bold_700-webfont.woff2") format("woff2"), url("/font/league_spartan_bold_700-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
 body {
   font-size: 18px;
   color: #212529;
@@ -28,7 +35,7 @@ h4,
 h5,
 h6 {
   font-weight: 800;
-  font-family: Helvetica, Arial, sans-serif;
+  font-family: League Spartan, Helvetica, Arial, sans-serif;
 }
 
 h1 {
@@ -131,7 +138,7 @@ img::-moz-selection {
 }
 
 p {
-  font-family: Helvetica, Arial, sans-serif;
+  font-family: League Spartan, Helvetica, Arial, sans-serif;
 }
 
 .caps {
@@ -633,7 +640,7 @@ path.two {
 
 #mainNav {
   position: absolute;
-  font-family: Helvetica, Arial, sans-serif;
+  font-family: League Spartan, Helvetica, Arial, sans-serif;
 }
 
 #mainNav .navbar-brand {
@@ -1336,7 +1343,7 @@ header.masthead.shadow::after {
 }
 
 #showcase .showcase-container li a .number h1 {
-  font-family: Helvetica, Arial, sans-serif;
+  font-family: League Spartan, Helvetica, Arial, sans-serif;
   font-size: 3.5em;
   color: white;
 }
@@ -1559,7 +1566,7 @@ footer .fa-stack {
   letter-spacing: 1px;
   text-transform: uppercase;
   border-radius: 0;
-  font-family: Helvetica, Arial, sans-serif;
+  font-family: League Spartan, Helvetica, Arial, sans-serif;
 }
 
 .btn-primary {

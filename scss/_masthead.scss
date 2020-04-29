@@ -72,13 +72,37 @@ header.masthead.shadow::after {
 }
 
 //------------- HEADER TEXT -----------------
-/* title styles */
-.text-container .title,
-.text-container .role {
-  position: relative;
-  overflow: hidden;
-  display: block;
-  line-height: 1.2;
+.text-container {
+  width: fit-content;
+
+  .title,
+  .role {
+    position: relative;
+    overflow: hidden;
+    display: block;
+    line-height: 1.2;
+  }
+
+  .title {
+    color: #fff;
+    padding-right: 10px;
+  }
+
+  .role {
+    font-weight: 400;
+    font-size: 0.6em; //************
+    font-family: "Lato";
+    color: #ffffff;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    margin-bottom: 0;
+    padding-right: 10px;
+
+    @media only screen and (min-width: 992px) {
+      font-size: 1.3em !important;
+    }
+  }
 }
 
 .text-container .title::after,
@@ -132,39 +156,5 @@ header.masthead.shadow::after {
   }
   100% {
     transform: translateX(200%);
-  }
-}
-
-.text-container {
-  width: fit-content;
-
-  .title {
-    color: #fff;
-    padding-right: 10px;
-  }
-
-  .role {
-    font-weight: 400;
-    font-size: 0.6em; //************
-    font-family: "Lato";
-    color: #ffffff;
-    font-size: 12px;
-    text-transform: uppercase;
-    letter-spacing: 5px;
-    margin-bottom: 0;
-    padding-right: 10px;
-  }
-}
-
-// for 992px devices and above
-@media only screen and (min-width: 992px) {
-  .text-container {
-    .title {
-      // font-size: 3.5em !important;
-    }
-
-    .role {
-      font-size: 1.3em !important;
-    }
   }
 }

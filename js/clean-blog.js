@@ -27,19 +27,18 @@ $("button.navbar-toggler").click(function () {
   }
 });
 
-function openContactOverlay() {
-  document.getElementById("contact-overlay").style.visibility = "visible";
-  document.getElementById("contact-overlay").style.opacity = "1";
-  document.getElementById("contact-overlay").style.width = "100%";
-  bodyScrollLock.disableBodyScroll(targetElement);
-  $(".left-layer").toggleClass("active");
+function openLayer() {
+  //alert("testing");
+  //bodyScrollLock.disableBodyScroll(targetElement);
+  // $(".right-layer").toggleClass("active");
+  $(".right-layer").addClass("active");
 }
 
-function closeContactOverlay() {
-  document.getElementById("contact-overlay").style.visibility = "hidden";
-  document.getElementById("contact-overlay").style.opacity = "0";
+//openLayer();
+
+function closeLayer() {
   bodyScrollLock.enableBodyScroll(targetElement);
-  $(".left-layer").toggleClass("active");
+  $(".right-layer").toggleClass("active");
 }
 
 //Check Mobile Devices

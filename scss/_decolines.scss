@@ -20,6 +20,22 @@
 }
 
 // ------------ MULTI LAYER PAGE REVEAL EFFECT -------
+.over-layer {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: auto;
+  left: 0%;
+  bottom: auto;
+  right: auto;
+  z-index: 9999;
+  background: #0f0d16;
+  -webkit-transition: all 0.9s cubic-bezier(0.6, 0.05, 0.4, 1);
+  transition: all 0.9s cubic-bezier(0.6, 0.05, 0.4, 1);
+}
+.over-layer.active {
+  left: 100%;
+}
 .left-layer {
   position: absolute;
   width: 100%;

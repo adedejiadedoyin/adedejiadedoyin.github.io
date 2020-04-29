@@ -898,14 +898,16 @@ header.masthead.shadow::after {
 }
 
 /* title styles */
-.text-container span {
+.text-container .title,
+.text-container .role {
   position: relative;
   overflow: hidden;
   display: block;
   line-height: 1.2;
 }
 
-.text-container span::after {
+.text-container .title::after,
+.text-container .role::after {
   content: "";
   position: absolute;
   top: 0;
@@ -918,7 +920,8 @@ header.masthead.shadow::after {
   transform: translateX(-101%);
 }
 
-.text-container span::before {
+.text-container .title::before,
+.text-container .role::before {
   content: "";
   position: absolute;
   top: 0;
@@ -931,14 +934,14 @@ header.masthead.shadow::after {
   transform: translateX(0);
 }
 
-.text-container span:nth-of-type(1)::before,
-.text-container span:nth-of-type(1)::after {
+.text-container .title::before,
+.text-container .title::after {
   -webkit-animation-delay: 1s;
   animation-delay: 1s;
 }
 
-.text-container span:nth-of-type(2)::before,
-.text-container span:nth-of-type(2)::after {
+.text-container .role::before,
+.text-container .role::after {
   -webkit-animation-delay: 1.5s;
   animation-delay: 1.5s;
 }

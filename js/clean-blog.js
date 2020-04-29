@@ -27,14 +27,11 @@ $("button.navbar-toggler").click(function () {
   }
 });
 
-function openLayer() {
-  //alert("testing");
-  //bodyScrollLock.disableBodyScroll(targetElement);
-  // $(".right-layer").toggleClass("active");
-  $(".right-layer").addClass("active");
-}
-
-//openLayer();
+// For Page Transition animation
+$(function () {
+  $(".left-layer").addClass("active");
+  $(".over-layer").addClass("active");
+});
 
 function closeLayer() {
   bodyScrollLock.enableBodyScroll(targetElement);

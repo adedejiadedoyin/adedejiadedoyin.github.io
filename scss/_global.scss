@@ -16,6 +16,10 @@ body {
   @include serif-font;
 }
 
+a {
+  outline: 0;
+}
+
 p {
   line-height: 1.5;
   //margin: 30px 0;

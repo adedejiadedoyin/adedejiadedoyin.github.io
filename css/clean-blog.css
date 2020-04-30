@@ -19,7 +19,8 @@ body {
   font-family: "LibreBaskerville-Regular", "Times New Roman", serif;
 }
 
-a {
+a,
+button {
   outline: 0;
 }
 

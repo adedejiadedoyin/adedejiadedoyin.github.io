@@ -16,7 +16,8 @@ body {
   @include serif-font;
 }
 
-a {
+a,
+button {
   outline: 0;
 }
 

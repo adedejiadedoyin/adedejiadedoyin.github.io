@@ -1,0 +1,215 @@
+// Styling for the navbar
+#mainNav {
+  position: absolute;
+
+  @include sans-serif-font;
+  .navbar-brand {
+    @include sans-serif-font;
+    font-weight: 800;
+    color: white;
+    font-size: 16px;
+  }
+  .navbar-toggler {
+    font-size: 30px;
+    position: fixed;
+    right: 5px;
+    text-transform: uppercase;
+    color: white;
+    border: none;
+    outline: none;
+  }
+  .navbar-nav {
+    > li.nav-item {
+      > a {
+        padding: 10px 10px;
+        font-size: 1.2em;
+        font-weight: 800;
+        letter-spacing: 1px;
+        //text-transform: uppercase;
+        color: white;
+        @include sans-serif-font;
+      }
+    }
+  }
+
+  // for 992px devices and above ONLY
+  @media only screen and (min-width: 992px) {
+    //margin-top: 30px;
+    border-bottom: 1px solid transparent;
+    //background: transparent;
+    background: rgba(28, 29, 37, 0.9);
+    .navbar-brand {
+      padding: 10px 20px;
+      color: $white;
+      &:focus,
+      &:hover {
+        color: fade-out($white, 0.2);
+      }
+    }
+    .navbar-nav {
+      > li.nav-item {
+        > a {
+          font-size: 0.9em;
+          margin: 10px 15px;
+          padding: 0;
+          padding-bottom: 5px;
+          color: $white;
+          &:focus,
+          &:hover {
+            color: fade-out($white, 0.7);
+          }
+        }
+      }
+    }
+
+    #navbarResponsive {
+      background: none !important;
+    }
+    #navbarResponsive::before {
+      background: none !important;
+    }
+    #navbarResponsive::after {
+      background: none !important;
+    }
+    .nav-item a {
+      opacity: 1 !important;
+    }
+  }
+}
+
+.show {
+  width: 100% !important;
+}
+
+#navbarResponsive::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background: linear-gradient(270deg, #733be6, #5918df);
+  transition: width 0.5s;
+  //z-index: 24;
+}
+
+#navbarResponsive.show::before {
+  width: 100%;
+  //transition: width 0.5s;
+}
+
+#navbarResponsive::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background-image: linear-gradient(-180deg, #1a1527, #0e0c16 88%, #0e0c16 99%);
+  background-position: top;
+  background-repeat: repeat-x;
+  transition: width 1.25s;
+  //z-index: 24;
+}
+
+#navbarResponsive.show::after {
+  width: 100%;
+  //transition: width 1.25s;
+}
+
+// for 992px devices and below ONLY
+@media only screen and (max-width: 992px) {
+  div.navbar-collapse {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    background-color: #a072f1;
+    //padding-top: 80px;
+    top: 0;
+    left: 0;
+    text-align: center;
+    overflow-x: hidden; /* Disable horizontal scroll */
+    transition: width 0.25s;
+  }
+
+  div.navbar-collapse > ul {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: transform 1.25s;
+    width: 100%;
+  }
+
+  div.navbar-collapse.show > ul {
+    transform: translateY(-60%);
+  }
+
+  div.navbar-collapse > ul > li > a {
+    font-size: 20px !important;
+  }
+}
+
+// Hamburger Menu Bars
+.icon-bar {
+  //width: 42px;
+  height: 3px; //2px
+  background-color: white;
+  display: block;
+  transition: all 0.2s;
+  margin-top: 4px;
+  margin-top: 6px;
+}
+
+.navbar-toggler {
+  z-index: 999;
+  width: 67px;
+  border: none;
+  background: transparent !important;
+}
+
+.collapsed > span.icon-bar {
+  background-color: #d0d0d0;
+}
+
+// Hamburger Menu Animation
+.navbar-toggler .top-bar {
+  width: 100%;
+  transform: rotate(45deg);
+  transform-origin: 50% 600%;
+  //transform-origin: 10% 10%;
+}
+
+.collapsed .top-bar {
+  width: 100%;
+}
+
+.navbar-toggler .middle-bar {
+  width: 85%;
+  margin-left: 15%;
+  opacity: 0;
+}
+
+.collapsed > .bottom-bar {
+  width: 60% !important;
+  //width: 100% !important;
+}
+
+.navbar-toggler .bottom-bar {
+  width: 100%;
+  margin-left: 40%;
+  //margin-left: 0;
+  transform: rotate(-45deg);
+  transform-origin: 10% 90%;
+}
+
+.navbar-toggler.collapsed .top-bar {
+  transform: rotate(0);
+}
+
+.navbar-toggler.collapsed .middle-bar {
+  opacity: 1;
+}
+
+.navbar-toggler.collapsed .bottom-bar {
+  transform: rotate(0);
+}

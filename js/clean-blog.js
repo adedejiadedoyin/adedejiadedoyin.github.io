@@ -1,5 +1,5 @@
 // smooth scrolling
-/*
+
 $('a[href*="#"]').on("click", function (e) {
   e.preventDefault();
 
@@ -11,11 +11,12 @@ $('a[href*="#"]').on("click", function (e) {
     "linear"
   );
 });
-*/
+
 // for locking of body when scrolling modals
 const targetElement = document.querySelector("body");
 
 // for showing mobile menu and showing or hiding social icons
+/*
 $("button.navbar-toggler").click(function () {
   $("#navbarResponsive").toggleClass("show");
   $("button.navbar-toggler").toggleClass("collapsed");
@@ -27,6 +28,7 @@ $("button.navbar-toggler").click(function () {
     bodyScrollLock.enableBodyScroll(targetElement);
   }
 });
+*/
 
 // For Page Transition animation
 $(function () {

@@ -990,20 +990,20 @@ header.masthead.shadow::after {
 
 .text-container .title::before,
 .text-container .title::after {
-  -webkit-animation-delay: 1s;
-  animation-delay: 1s;
-}
-
-.text-container .role::before,
-.text-container .role::after {
   -webkit-animation-delay: 1.5s;
   animation-delay: 1.5s;
 }
 
-.button-wrapper .cta::before,
-.button-wrapper .cta::after {
+.text-container .role::before,
+.text-container .role::after {
   -webkit-animation-delay: 2s;
   animation-delay: 2s;
+}
+
+.button-wrapper .cta::before,
+.button-wrapper .cta::after {
+  -webkit-animation-delay: 2.5s;
+  animation-delay: 2.5s;
 }
 
 @-webkit-keyframes a-ltr-after {

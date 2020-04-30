@@ -785,10 +785,13 @@ path.two {
   div.navbar-collapse > ul {
     position: absolute;
     top: 50%;
-    transform: translateY(-50%);
+    transform: translateY(-60%);
     transition: transform 1.25s;
     width: 100%;
     z-index: 99;
+  }
+  div.navbar-collapse.show > ul {
+    transform: translateY(-50%);
   }
   div.navbar-collapse > ul > li > a {
     font-size: 20px !important;

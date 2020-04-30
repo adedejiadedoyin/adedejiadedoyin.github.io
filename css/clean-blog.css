@@ -690,9 +690,6 @@ path.two {
 }
 
 #mainNav .navbar-toggler {
-  font-size: 30px;
-  position: fixed;
-  right: 5px;
   text-transform: uppercase;
   color: white;
   border: none;

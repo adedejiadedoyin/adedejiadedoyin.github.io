@@ -30,6 +30,10 @@ $("button.navbar-toggler").click(function () {
 });
 */
 
+if ($(".navbar-toggler").is(".collapsed")) {
+  bodyScrollLock.enableBodyScroll(targetElement);
+}
+
 // For Page Transition animation
 $(function () {
   $(".left-layer").addClass("active");

@@ -229,6 +229,7 @@ p {
 }
 
 // 992px and below
+/*
 @media only screen and (max-width: 992px) {
   .social-medias {
     z-index: 9999;
@@ -242,7 +243,7 @@ p {
     transition: transform 1.25s;
   }
 
-  .social-medias.hide-in-mobile {
+  .social-medias.collapse {
     opacity: 0;
     visibility: hidden;
     transform: translateY(-60%);
@@ -253,9 +254,27 @@ p {
     margin: 15px;
   }
 }
+*/
 
-.social-medias a {
-  display: block;
+.vertical-social-medias {
+  visibility: hidden;
+
+  // 992px and above
+  @media only screen and (min-width: 992px) {
+    visibility: visible;
+  }
+
+  a {
+    display: block;
+  }
+}
+
+.horizontal-social-medias {
+  margin-top: 30px;
+  li {
+    display: inline;
+    margin-right: 30px;
+  }
 }
 
 .my-pic {

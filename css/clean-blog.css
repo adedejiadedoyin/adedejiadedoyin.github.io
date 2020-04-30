@@ -235,6 +235,7 @@ p {
   font-weight: 800;
 }
 
+/*
 @media only screen and (max-width: 992px) {
   .social-medias {
     z-index: 9999;
@@ -247,19 +248,40 @@ p {
     left: 0;
     transition: transform 1.25s;
   }
-  .social-medias.hide-in-mobile {
+
+  .social-medias.collapse {
     opacity: 0;
     visibility: hidden;
     transform: translateY(-60%);
   }
+
   .social-medias a {
     display: inline !important;
     margin: 15px;
   }
 }
+*/
+.vertical-social-medias {
+  visibility: hidden;
+}
 
-.social-medias a {
+@media only screen and (min-width: 992px) {
+  .vertical-social-medias {
+    visibility: visible;
+  }
+}
+
+.vertical-social-medias a {
   display: block;
+}
+
+.horizontal-social-medias {
+  margin-top: 30px;
+}
+
+.horizontal-social-medias li {
+  display: inline;
+  margin-right: 30px;
 }
 
 .my-pic {
@@ -766,9 +788,7 @@ path.two {
     transform: translateY(-50%);
     transition: transform 1.25s;
     width: 100%;
-  }
-  div.navbar-collapse.show > ul {
-    transform: translateY(-60%);
+    z-index: 99;
   }
   div.navbar-collapse > ul > li > a {
     font-size: 20px !important;

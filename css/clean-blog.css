@@ -886,6 +886,7 @@ header.masthead .social-container {
   top: 0px;
   right: 0;
   width: 50px;
+  padding-right: 50px;
 }
 
 header.masthead .button-wrapper {

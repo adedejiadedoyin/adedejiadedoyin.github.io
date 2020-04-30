@@ -632,6 +632,18 @@ path.two {
   transition-delay: 0.1s;
 }
 
+.align-to-right {
+  width: 100%;
+  text-align: right;
+  padding-right: 10%;
+}
+
+.align-to-left {
+  width: 100%;
+  text-align: left;
+  padding-left: 10%;
+}
+
 #mainNav {
   position: absolute;
   font-family: League Spartan, Helvetica, Arial, sans-serif;
@@ -1151,14 +1163,6 @@ header.masthead.shadow::after {
   font-weight: 400;
   font-style: italic;
   margin-bottom: 20px;
-}
-
-#showcase .showcase-container .showcase-description.right {
-  right: 10%;
-}
-
-#showcase .showcase-container .showcase-description.left {
-  left: 10%;
 }
 
 @media only screen and (min-width: 992px) {

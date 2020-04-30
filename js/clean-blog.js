@@ -1,4 +1,5 @@
 // smooth scrolling
+/*
 $('a[href*="#"]').on("click", function (e) {
   e.preventDefault();
 
@@ -10,7 +11,7 @@ $('a[href*="#"]').on("click", function (e) {
     "linear"
   );
 });
-
+*/
 // for locking of body when scrolling modals
 const targetElement = document.querySelector("body");
 

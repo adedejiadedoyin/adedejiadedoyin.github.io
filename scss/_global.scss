@@ -271,6 +271,11 @@ p {
 
 .horizontal-social-medias {
   margin-top: 30px;
+
+  @media only screen and (min-width: 992px) {
+    display: none;
+  }
+
   li {
     display: inline;
     margin-right: 30px;
@@ -659,3 +664,5 @@ path.two {
   text-align: left;
   padding-left: 10%;
 }
+
+// --- Cancle Toggller---

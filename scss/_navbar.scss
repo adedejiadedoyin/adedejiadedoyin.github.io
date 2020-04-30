@@ -175,42 +175,55 @@
 // Hamburger Menu Animation
 .navbar-toggler .top-bar {
   width: 100%;
-  transform: rotate(45deg);
+  //transform: rotate(45deg);
   transform-origin: 50% 600%;
   //transform-origin: 10% 10%;
-}
-
-.collapsed .top-bar {
-  width: 100%;
 }
 
 .navbar-toggler .middle-bar {
   width: 85%;
   margin-left: 15%;
-  opacity: 0;
-}
-
-.collapsed > .bottom-bar {
-  width: 60% !important;
-  //width: 100% !important;
+  //opacity: 0;
 }
 
 .navbar-toggler .bottom-bar {
+  width: 60%;
+  margin-left: 40%;
+  //margin-left: 0;
+  //transform: rotate(-45deg);
+  transform-origin: 10% 90%;
+}
+
+//-------- Cancle button
+.closebtn {
+  position: absolute;
+  top: 22px;
+  right: 15px;
+  z-index: 1;
+  width: 60px;
+
+  @media only screen and (min-width: 992px) {
+    visibility: hidden;
+  }
+}
+
+.closebtn .top-bar {
+  width: 100%;
+  transform: rotate(45deg);
+  transform-origin: 50% 600%;
+  //transform-origin: 10% 10%;
+}
+
+.closebtn .middle-bar {
+  width: 85%;
+  margin-left: 15%;
+  opacity: 0;
+}
+
+.closebtn .bottom-bar {
   width: 100%;
   margin-left: 40%;
   //margin-left: 0;
   transform: rotate(-45deg);
   transform-origin: 10% 90%;
-}
-
-.navbar-toggler.collapsed .top-bar {
-  transform: rotate(0);
-}
-
-.navbar-toggler.collapsed .middle-bar {
-  opacity: 1;
-}
-
-.navbar-toggler.collapsed .bottom-bar {
-  transform: rotate(0);
 }

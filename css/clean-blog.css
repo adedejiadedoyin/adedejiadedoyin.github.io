@@ -1224,6 +1224,7 @@ header.masthead.shadow::after {
   #about {
     padding: 50px 0;
     padding-bottom: 200px;
+    padding-top: 200px;
   }
   #about .container p {
     font-size: 1.5em !important;

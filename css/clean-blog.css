@@ -846,6 +846,8 @@ path.two {
   right: 15px;
   z-index: 1;
   width: 60px;
+  background: transparent;
+  border: none;
 }
 
 @media only screen and (min-width: 992px) {

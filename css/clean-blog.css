@@ -761,17 +761,17 @@ path.two {
 
 @media only screen and (max-width: 992px) {
   .navbar-collapse {
-    height: 100%;
-    width: 100%;
     position: fixed;
-    background-color: #a072f1;
     top: 0;
     left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(270deg, #733be6, #5918df);
     text-align: center;
     overflow-x: hidden;
     /* Disable horizontal scroll */
-    transition: all 0.9s cubic-bezier(0.645, 0.045, 0.355, 1);
-    transition-delay: 0.3s;
+    transition: all 0.2s cubic-bezier(0.645, 0.045, 0.355, 1);
+    transition-delay: 0.2s;
   }
   .navbar-collapse.collapse {
     display: block;
@@ -790,16 +790,6 @@ path.two {
   .navbar-collapse > ul > li > a {
     font-size: 20px !important;
   }
-  .navbar-collapse::before {
-    content: "";
-    position: fixed;
-    top: 0;
-    left: -100%;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(270deg, #733be6, #5918df);
-    transition: all 0.9s cubic-bezier(0.645, 0.045, 0.355, 1);
-  }
   .navbar-collapse::after {
     content: "";
     position: fixed;
@@ -807,9 +797,9 @@ path.two {
     left: -100%;
     width: 100%;
     height: 100%;
-    background: linear-gradient(-180deg, #1a1527, #0e0c16 88%, #0e0c16 99%);
-    transition: all 0.9s cubic-bezier(0.645, 0.045, 0.355, 1);
-    transition-delay: 0.2s;
+    background-color: black;
+    transition: all 0.2s cubic-bezier(0.645, 0.045, 0.355, 1);
+    transition-delay: 0.5s;
   }
   .navbar-collapse.active {
     left: 0;
@@ -819,12 +809,10 @@ path.two {
     opacity: 1;
   }
   .navbar-collapse.active .closebtn {
+    transform: scale(1);
     opacity: 1;
   }
-  .navbar-collapse.active::before {
-    left: 0;
-  }
-  .navbar-collapse.active:after {
+  .navbar-collapse.active::after {
     left: 0;
   }
   .navbar-collapse.active .navbar-nav {
@@ -878,6 +866,9 @@ path.two {
   border: none;
   opacity: 0;
   transition: opacity 0.2s;
+  transform: scale(0);
+  transition: transform 0.2s;
+  transition-delay: 0.52s;
 }
 
 .closebtn:focus {

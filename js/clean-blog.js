@@ -30,19 +30,20 @@ $("button.navbar-toggler").click(function () {
 });
 */
 
-if ($(".navbar-toggler").is(".collapsed")) {
-  bodyScrollLock.enableBodyScroll(targetElement);
-}
-
 // For Page Transition animation
 $(function () {
   $(".left-layer").addClass("active");
   $(".over-layer").addClass("active");
 });
 
-function closeLayer() {
+function unlockPage() {
+  $(".navbar-collapse").toggleClass("active");
   bodyScrollLock.enableBodyScroll(targetElement);
-  $(".right-layer").toggleClass("active");
+}
+
+function lockPage() {
+  $(".navbar-collapse").toggleClass("active");
+  bodyScrollLock.disableBodyScroll(targetElement);
 }
 
 //Check Mobile Devices

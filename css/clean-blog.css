@@ -25,8 +25,7 @@ body {
   font-family: "LibreBaskerville-Regular", "Times New Roman", serif;
 }
 
-a,
-button {
+a {
   outline: 0;
 }
 
@@ -712,6 +711,12 @@ path.two {
   color: white;
   border: none;
   outline: none;
+  z-index: 0;
+}
+
+#mainNav .navbar-nav {
+  transition: all 1s;
+  transition-delay: 0.5s;
 }
 
 #mainNav .navbar-nav > li.nav-item > a {
@@ -745,13 +750,13 @@ path.two {
   #mainNav .navbar-nav > li.nav-item > a:focus, #mainNav .navbar-nav > li.nav-item > a:hover {
     color: rgba(255, 255, 255, 0.3);
   }
-  #mainNav #navbarResponsive {
+  #mainNav .navbar-collapse {
     background: none !important;
   }
-  #mainNav #navbarResponsive::before {
+  #mainNav .navbar-collapse::before {
     background: none !important;
   }
-  #mainNav #navbarResponsive::after {
+  #mainNav .navbar-collapse::after {
     background: none !important;
   }
   #mainNav .nav-item a {
@@ -759,68 +764,75 @@ path.two {
   }
 }
 
-.show {
-  width: 100% !important;
-}
-
-#navbarResponsive::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 0;
-  height: 100%;
-  background: linear-gradient(270deg, #733be6, #5918df);
-  transition: width 0.5s;
-}
-
-#navbarResponsive.show::before {
-  width: 100%;
-}
-
-#navbarResponsive::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 0;
-  height: 100%;
-  background-image: linear-gradient(-180deg, #1a1527, #0e0c16 88%, #0e0c16 99%);
-  background-position: top;
-  background-repeat: repeat-x;
-  transition: width 1.25s;
-}
-
-#navbarResponsive.show::after {
-  width: 100%;
-}
-
 @media only screen and (max-width: 992px) {
-  div.navbar-collapse {
+  .navbar-collapse {
     height: 100%;
-    width: 0;
+    width: 100%;
     position: fixed;
     background-color: #a072f1;
     top: 0;
-    left: 0;
+    left: -100%;
     text-align: center;
     overflow-x: hidden;
     /* Disable horizontal scroll */
-    transition: width 0.25s;
+    transition: all 0.7s cubic-bezier(0.645, 0.045, 0.355, 1);
+    transition-delay: 0.3s;
   }
-  div.navbar-collapse > ul {
+  .navbar-collapse.collapse {
+    display: block;
+  }
+  .navbar-collapse > ul {
     position: absolute;
     top: 50%;
     transform: translateY(-60%);
     transition: transform 1.25s;
     width: 100%;
     z-index: 99;
+    opacity: 0;
+    transition: opacity 0.25s;
   }
-  div.navbar-collapse.show > ul {
-    transform: translateY(-50%);
-  }
-  div.navbar-collapse > ul > li > a {
+  .navbar-collapse > ul > li > a {
     font-size: 20px !important;
+  }
+  .navbar-collapse::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(270deg, #733be6, #5918df);
+    transition: all 0.7s cubic-bezier(0.645, 0.045, 0.355, 1);
+  }
+  .navbar-collapse::after {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(-180deg, #1a1527, #0e0c16 88%, #0e0c16 99%);
+    transition: all 0.7s cubic-bezier(0.645, 0.045, 0.355, 1);
+    transition-delay: 0.2s;
+  }
+  .navbar-collapse.active {
+    left: 0;
+  }
+  .navbar-collapse.active > ul {
+    transform: translateY(-50%);
+    opacity: 1;
+  }
+  .navbar-collapse.active .closebtn {
+    opacity: 1;
+  }
+  .navbar-collapse.active::before {
+    left: 0;
+  }
+  .navbar-collapse.active:after {
+    left: 0;
+  }
+  .navbar-collapse.active .navbar-nav {
+    opacity: 1 !important;
   }
 }
 
@@ -868,6 +880,13 @@ path.two {
   width: 60px;
   background: transparent;
   border: none;
+  opacity: 0;
+  transition: opacity 1s;
+}
+
+.closebtn:focus {
+  border-color: transparent !important;
+  outline: none;
 }
 
 @media only screen and (min-width: 992px) {
@@ -1223,6 +1242,7 @@ header.masthead.shadow::after {
 #showcase .showcase-container .showcase-description .showcase-subtitle {
   font-family: "LibreBaskerville-Regular", "Times New Roman", serif;
   font-weight: 400;
+  font-style: italic;
   margin-bottom: 20px;
 }
 
@@ -1291,11 +1311,10 @@ header.masthead.shadow::after {
     padding-top: 200px;
   }
   #about .container p {
-    font-size: 1.5em !important;
-    word-spacing: 3px;
-    text-shadow: 0px 1px 0px white;
-    width: 80%;
+    font-size: 1.2em !important;
+    width: 70%;
     margin: auto;
+    text-align: justify;
   }
 }
 

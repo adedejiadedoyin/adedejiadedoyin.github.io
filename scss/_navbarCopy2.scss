@@ -17,7 +17,6 @@
     color: white;
     border: none;
     outline: none;
-    z-index: 0;
   }
   .navbar-nav {
     //opacity: 0;
@@ -84,19 +83,21 @@
 // for 992px devices and below ONLY
 @media only screen and (max-width: 992px) {
   .navbar-collapse {
-    height: 100%;
+    position: absolute;
     width: 100%;
-    position: fixed;
-    background-color: #a072f1;
-    top: 0;
-    left: -100%;
-    text-align: center;
-    overflow-x: hidden; /* Disable horizontal scroll */
-    transition: all 0.7s cubic-bezier(0.645, 0.045, 0.355, 1);
+    height: 100%;
+    top: auto;
+    left: 100%;
+    bottom: auto;
+    right: auto;
+    -webkit-transition: all 0.9s cubic-bezier(0.645, 0.045, 0.355, 1);
+    transition: all 0.9s cubic-bezier(0.645, 0.045, 0.355, 1);
+    background: #c79ecf;
+    -webkit-transition-delay: 0.3s;
     transition-delay: 0.3s;
 
     &.collapse {
-      display: block;
+      //display: block;
     }
 
     > ul {
@@ -106,8 +107,6 @@
       transition: transform 1.25s;
       width: 100%;
       z-index: 99;
-      opacity: 0;
-      transition: opacity 0.25s;
 
       > li > a {
         font-size: 20px !important;
@@ -116,46 +115,47 @@
 
     &::before {
       content: "";
-      position: fixed;
-      top: 0;
-      left: -100%;
+      position: absolute;
       width: 100%;
       height: 100%;
-      background: linear-gradient(270deg, #733be6, #5918df);
-      transition: all 0.7s cubic-bezier(0.645, 0.045, 0.355, 1);
-      //transition-delay: 0.3s;
+      top: auto;
+      left: 100%;
+      bottom: auto;
+      right: auto;
+      background: #7f4a88;
+      -webkit-transition: all 0.9s cubic-bezier(0.645, 0.045, 0.355, 1);
+      transition: all 0.9s cubic-bezier(0.645, 0.045, 0.355, 1);
     }
 
     &::after {
       content: "";
-      position: fixed;
-      top: 0;
-      left: -100%;
+      position: absolute;
       width: 100%;
       height: 100%;
-      background: linear-gradient(-180deg, #1a1527, #0e0c16 88%, #0e0c16 99%);
-      transition: all 0.7s cubic-bezier(0.645, 0.045, 0.355, 1);
+      top: auto;
+      left: 100%;
+      bottom: auto;
+      right: auto;
+      -webkit-transition: all 0.9s cubic-bezier(0.645, 0.045, 0.355, 1);
+      transition: all 0.9s cubic-bezier(0.645, 0.045, 0.355, 1);
+      background: #fe9191;
+      -webkit-transition-delay: 0.2s;
       transition-delay: 0.2s;
     }
 
-    &.active {
-      left: 0;
+    &.show {
+      left: -100%;
 
       > ul {
         transform: translateY(-50%);
-        opacity: 1;
-      }
-
-      .closebtn {
-        opacity: 1;
       }
 
       &::before {
-        left: 0;
+        width: 100%;
       }
 
       &:after {
-        left: 0;
+        width: 100%;
       }
 
       .navbar-nav {
@@ -218,13 +218,6 @@
   width: 60px;
   background: transparent;
   border: none;
-  opacity: 0;
-  transition: opacity 1s;
-
-  &:focus {
-    border-color: transparent !important;
-    outline: none;
-  }
 
   @media only screen and (min-width: 992px) {
     visibility: hidden;

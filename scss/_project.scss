@@ -42,7 +42,7 @@
   padding: 100px 40px;
 }
 
-.proj-summary {
+.proj-title {
   text-align: center;
   color: white;
 
@@ -51,10 +51,37 @@
     font-size: 1em;
     font-style: italic;
     font-weight: 400;
+    margin-top: 30px;
   }
 }
 
-// FOR SHOWCASE IN HOME PAGE
+.proj-info {
+  @include sans-serif-font;
+  text-transform: uppercase;
+  text-align: center;
+  color: white;
+  margin-top: 30px;
+  letter-spacing: 2px;
+
+  .proj-info-block {
+    z-index: 9;
+    font-size: 0.6em;
+    padding: 4px 0;
+    .proj-info-title {
+      color: #37a5eb;
+      margin-right: 7px;
+    }
+  }
+
+  // for 992px devices and above
+  @media only screen and (min-width: 992px) {
+    .proj-info-block {
+      font-size: 0.8em !important;
+    }
+  }
+}
+
+// FOR SHOWCASE-PROJECT IN HOME PAGE
 #showcase {
   padding: 70px 0;
   padding: 80px 0;

@@ -1043,16 +1043,43 @@ button.cta::before,
   padding: 100px 40px;
 }
 
-.proj-summary {
+.proj-title {
   text-align: center;
   color: white;
 }
 
-.proj-summary .proj-subtitle {
+.proj-title .proj-subtitle {
   font-family: "LibreBaskerville-Regular", "Times New Roman", serif;
   font-size: 1em;
   font-style: italic;
   font-weight: 400;
+  margin-top: 30px;
+}
+
+.proj-info {
+  font-family: League Spartan, Helvetica, Arial, sans-serif;
+  text-transform: uppercase;
+  text-align: center;
+  color: white;
+  margin-top: 30px;
+  letter-spacing: 2px;
+}
+
+.proj-info .proj-info-block {
+  z-index: 9;
+  font-size: 0.6em;
+  padding: 4px 0;
+}
+
+.proj-info .proj-info-block .proj-info-title {
+  color: #37a5eb;
+  margin-right: 7px;
+}
+
+@media only screen and (min-width: 992px) {
+  .proj-info .proj-info-block {
+    font-size: 0.8em !important;
+  }
 }
 
 #showcase {

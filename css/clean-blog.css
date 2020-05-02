@@ -297,21 +297,6 @@ p {
   display: block;
 }
 
-.horizontal-social-medias {
-  margin-top: 30px;
-}
-
-@media only screen and (min-width: 992px) {
-  .horizontal-social-medias {
-    display: none;
-  }
-}
-
-.horizontal-social-medias li {
-  display: inline;
-  margin-right: 30px;
-}
-
 .my-pic {
   width: 90%;
 }
@@ -759,36 +744,69 @@ path.two {
   }
 }
 
+@media only screen and (min-width: 992px) {
+  .horizontal-social-medias {
+    display: none;
+  }
+}
+
 @media only screen and (max-width: 992px) {
   .navbar-collapse {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    visibility: hidden;
+    text-align: center;
+    overflow-x: hidden;
+    /* Disable horizontal scroll */
+    transition: all 0.1s ease 0.5s;
+    z-index: -1;
+  }
+  .navbar-collapse .navbar-nav {
+    position: absolute;
+    top: 50%;
+    transform-style: preserve-3d;
+    transform: translateY(-50%);
+    width: 100%;
+    z-index: 99;
+    opacity: 0;
+    transition: opacity 0.3s ease, transform 0.4s cubic-bezier(0.694, 0.048, 0.335, 1);
+    transition-delay: 0s;
+    z-index: 26;
+  }
+  .navbar-collapse .navbar-nav > li > a {
+    font-size: 20px !important;
+  }
+  .navbar-collapse .horizontal-social-medias {
+    position: absolute;
+    bottom: 30px;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    transform: translateY(15px);
+    opacity: 0;
+    padding-left: 25px;
+    transition: opacity 0.3s ease, transform 0.4s cubic-bezier(0.694, 0.048, 0.335, 1);
+    transition-delay: 0s;
+    list-style: none;
+    z-index: 26;
+  }
+  .navbar-collapse .horizontal-social-medias li {
+    display: inline;
+    margin-right: 30px;
+  }
+  .navbar-collapse::before {
+    content: "";
     position: fixed;
     top: 0;
     left: -100%;
     width: 100%;
     height: 100%;
     background: linear-gradient(270deg, #733be6, #5918df);
-    text-align: center;
-    overflow-x: hidden;
-    /* Disable horizontal scroll */
-    transition: all 0.2s cubic-bezier(0.645, 0.045, 0.355, 1);
+    transition: all 0.9s cubic-bezier(0.645, 0.045, 0.355, 1);
     transition-delay: 0.2s;
-  }
-  .navbar-collapse.collapse {
-    display: block;
-  }
-  .navbar-collapse > ul {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-55%);
-    transition: transform 1.25s;
-    width: 100%;
-    z-index: 99;
-    opacity: 0;
-    transition: all 1s;
-    transition-delay: 1s;
-  }
-  .navbar-collapse > ul > li > a {
-    font-size: 20px !important;
   }
   .navbar-collapse::after {
     content: "";
@@ -797,26 +815,34 @@ path.two {
     left: -100%;
     width: 100%;
     height: 100%;
-    background-color: black;
-    transition: all 0.2s cubic-bezier(0.645, 0.045, 0.355, 1);
+    background-color: #a072f1;
+    transition: all 0.9s cubic-bezier(0.645, 0.045, 0.355, 1);
     transition-delay: 0.5s;
   }
   .navbar-collapse.active {
-    left: 0;
-  }
-  .navbar-collapse.active > ul {
-    transform: translateY(-50%);
-    opacity: 1;
+    visibility: visible;
+    transition-delay: 0.1s;
+    z-index: 45;
   }
   .navbar-collapse.active .closebtn {
     transform: scale(1);
     opacity: 1;
   }
+  .navbar-collapse.active::before {
+    left: 0;
+  }
   .navbar-collapse.active::after {
     left: 0;
   }
   .navbar-collapse.active .navbar-nav {
-    opacity: 1 !important;
+    opacity: 1;
+    transition-delay: 0.4s;
+    transform: translateY(-60%);
+  }
+  .navbar-collapse.active .horizontal-social-medias {
+    opacity: 1;
+    transition-delay: 0.45s;
+    transform: translateY(0);
   }
 }
 
@@ -865,10 +891,9 @@ path.two {
   background: transparent;
   border: none;
   opacity: 0;
-  transition: opacity 0.2s;
   transform: scale(0);
-  transition: transform 0.2s;
-  transition-delay: 0.52s;
+  transition: all 0.4s;
+  transition-delay: 0.2s;
 }
 
 .closebtn:focus {

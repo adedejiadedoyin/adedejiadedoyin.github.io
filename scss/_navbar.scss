@@ -78,42 +78,86 @@
   }
 }
 
+.horizontal-social-medias {
+  @media only screen and (min-width: 992px) {
+    display: none;
+  }
+}
+
 // for 992px devices and below ONLY
 @media only screen and (max-width: 992px) {
   .navbar-collapse {
     position: fixed;
     top: 0;
-    left: -100%;
+    left: 0;
     width: 100%;
     height: 100%;
-    //transform: translateX(-100%);
-
-    background: linear-gradient(270deg, #733be6, #5918df);
-
+    visibility: hidden;
     text-align: center;
     overflow-x: hidden; /* Disable horizontal scroll */
+    transition: all 0.1s ease 0.5s;
+    z-index: -1;
+    //transition-delay: 0.6s;
 
-    transition: all 0.2s cubic-bezier(0.645, 0.045, 0.355, 1);
-    transition-delay: 0.2s;
-
-    &.collapse {
-      display: block;
-    }
-
-    > ul {
+    .navbar-nav {
       position: absolute;
       top: 50%;
-      transform: translateY(-55%);
-      transition: transform 1.25s;
+      -webkit-transform-style: preserve-3d;
+      transform-style: preserve-3d;
+      -webkit-transform: translateY(-50%);
+      transform: translateY(-50%);
       width: 100%;
       z-index: 99;
       opacity: 0;
-      transition: all 1s;
-      transition-delay: 1s;
+      transition: opacity 0.3s ease,
+        transform 0.4s cubic-bezier(0.694, 0.048, 0.335, 1);
+      transition-delay: 0s;
+      z-index: 26;
 
       > li > a {
         font-size: 20px !important;
       }
+    }
+
+    .horizontal-social-medias {
+      //display: none;
+      position: absolute;
+      bottom: 30px;
+      //left: 15%;
+      width: 100%;
+      margin: 0;
+      padding: 0;
+      -webkit-transform: translateY(15px);
+      transform: translateY(15px);
+      opacity: 0;
+      padding-left: 25px;
+      transition: opacity 0.3s ease,
+        -webkit-transform 0.4s cubic-bezier(0.694, 0.048, 0.335, 1);
+      transition: opacity 0.3s ease,
+        transform 0.4s cubic-bezier(0.694, 0.048, 0.335, 1);
+      transition: opacity 0.3s ease,
+        transform 0.4s cubic-bezier(0.694, 0.048, 0.335, 1),
+        -webkit-transform 0.4s cubic-bezier(0.694, 0.048, 0.335, 1);
+      transition-delay: 0s;
+      list-style: none;
+      z-index: 26;
+
+      li {
+        display: inline;
+        margin-right: 30px;
+      }
+    }
+
+    &::before {
+      content: "";
+      position: fixed;
+      top: 0;
+      left: -100%;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(270deg, #733be6, #5918df);
+      transition: all 0.9s cubic-bezier(0.645, 0.045, 0.355, 1);
+      transition-delay: 0.2s;
     }
 
     &::after {
@@ -126,23 +170,24 @@
       height: 100%;
       //transform: translateX(-100%);
 
-      background-color: black; // #a072f1;
-      transition: all 0.2s cubic-bezier(0.645, 0.045, 0.355, 1);
+      background-color: #a072f1;
+      transition: all 0.9s cubic-bezier(0.645, 0.045, 0.355, 1);
       transition-delay: 0.5s;
     }
 
     &.active {
-      left: 0;
-      // transform: translateX(0);
+      visibility: visible;
+      transition-delay: 0.1s;
+      z-index: 45;
 
-      > ul {
-        transform: translateY(-50%);
+      .closebtn {
+        -webkit-transform: scale(1);
+        transform: scale(1);
         opacity: 1;
       }
 
-      .closebtn {
-        transform: scale(1);
-        opacity: 1;
+      &::before {
+        left: 0;
       }
 
       &::after {
@@ -151,7 +196,17 @@
       }
 
       .navbar-nav {
-        opacity: 1 !important;
+        opacity: 1;
+        transition-delay: 0.4s;
+        -webkit-transform: translateY(-60%);
+        transform: translateY(-60%);
+      }
+
+      .horizontal-social-medias {
+        opacity: 1;
+        transition-delay: 0.45s;
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
       }
     }
   }
@@ -211,10 +266,11 @@
   background: transparent;
   border: none;
   opacity: 0;
-  transition: opacity 0.2s;
+  //transition: opacity 0.2s;
+  -webkit-transform: scale(0);
   transform: scale(0);
-  transition: transform 0.2s;
-  transition-delay: 0.52s;
+  transition: all 0.4s;
+  transition-delay: 0.2s;
 
   &:focus {
     border-color: transparent !important;

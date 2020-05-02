@@ -36,16 +36,6 @@ header.masthead {
     padding-right: 50px;
   }
 
-  .button-wrapper {
-    margin-top: 25px;
-  }
-
-  @media only screen and (min-width: 992px) {
-    .button-wrapper {
-      margin-top: 30px;
-    }
-  }
-
   // for height
   @media only screen and (max-height: 40.5625em) {
     height: 580px !important;
@@ -106,20 +96,9 @@ header.masthead.shadow::after {
   }
 }
 
-.button-wrapper {
-  width: inherit;
-
-  .cta {
-    position: relative;
-    overflow: hidden;
-    display: block;
-    line-height: 1.2;
-  }
-}
-
 .text-container .title::after,
 .text-container .role::after,
-.button-wrapper .cta::after {
+.cta::after {
   content: "";
   position: absolute;
   top: 0;
@@ -133,7 +112,7 @@ header.masthead.shadow::after {
 
 .text-container .title::before,
 .text-container .role::before,
-.button-wrapper .cta::before {
+.cta::before {
   content: "";
   position: absolute;
   top: 0;
@@ -157,8 +136,8 @@ header.masthead.shadow::after {
   animation-delay: 2s;
 }
 
-.button-wrapper .cta::before,
-.button-wrapper .cta::after {
+.cta::before,
+.cta::after {
   animation-delay: 2.5s;
 }
 

@@ -372,25 +372,12 @@ p {
   width: 105%;
 }
 
-.my-button {
-  font-family: Arial, sans-serif;
-  color: white !important;
-  letter-spacing: 3px;
-  text-decoration: none !important;
-  outline: 0;
-  padding: 12px 20px;
-  background-color: #f06449;
-  background: linear-gradient(270deg, #f06449, #ef3636);
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
-  height: 50px;
-  font-weight: 600;
-  font-size: 0.875em;
-}
-
 a.cta,
 button.cta {
+  position: relative;
+  overflow: hidden;
+  display: block;
+  line-height: 1.2;
   font-size: 0.8em;
   letter-spacing: 3px;
   padding-top: 12px;
@@ -858,16 +845,6 @@ header.masthead .social-container {
   padding-right: 50px;
 }
 
-header.masthead .button-wrapper {
-  margin-top: 25px;
-}
-
-@media only screen and (min-width: 992px) {
-  header.masthead .button-wrapper {
-    margin-top: 30px;
-  }
-}
-
 @media only screen and (max-height: 40.5625em) {
   header.masthead {
     height: 580px !important;
@@ -934,20 +911,9 @@ header.masthead.shadow::after {
   }
 }
 
-.button-wrapper {
-  width: inherit;
-}
-
-.button-wrapper .cta {
-  position: relative;
-  overflow: hidden;
-  display: block;
-  line-height: 1.2;
-}
-
 .text-container .title::after,
 .text-container .role::after,
-.button-wrapper .cta::after {
+.cta::after {
   content: "";
   position: absolute;
   top: 0;
@@ -962,7 +928,7 @@ header.masthead.shadow::after {
 
 .text-container .title::before,
 .text-container .role::before,
-.button-wrapper .cta::before {
+.cta::before {
   content: "";
   position: absolute;
   top: 0;
@@ -989,8 +955,8 @@ header.masthead.shadow::after {
   animation-delay: 2s;
 }
 
-.button-wrapper .cta::before,
-.button-wrapper .cta::after {
+.cta::before,
+.cta::after {
   -webkit-animation-delay: 2.5s;
   animation-delay: 2.5s;
 }

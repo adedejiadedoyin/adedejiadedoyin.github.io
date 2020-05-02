@@ -380,30 +380,15 @@ p {
 }
 
 //-------- BUTTON USED ON THE SITE--------
-.my-button {
-  font-family: Arial, sans-serif;
-  color: white !important;
-  letter-spacing: 3px;
-  text-decoration: none !important;
-  outline: 0;
-  padding: 12px 20px;
-  background-color: #f06449;
-  background: linear-gradient(270deg, #f06449, #ef3636);
-  // display: block;
-  width: fit-content;
-  height: 50px;
-  font-weight: 600;
-  //margin-top: 15px; //gggg
-  font-size: 0.875em;
-
-  .button-icon {
-  }
-}
 
 // ------ CTA BUTTON --------
 
 a.cta,
 button.cta {
+  position: relative;
+  overflow: hidden;
+  display: block;
+  line-height: 1.2;
   font-size: 0.8em;
   letter-spacing: 3px;
   padding-top: 12px;

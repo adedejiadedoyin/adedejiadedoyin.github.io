@@ -1077,6 +1077,9 @@ button.cta::before,
 }
 
 @media only screen and (min-width: 992px) {
+  .proj-info {
+    margin-top: 50px;
+  }
   .proj-info .proj-info-block {
     font-size: 0.8em !important;
   }

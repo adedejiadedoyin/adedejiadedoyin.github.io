@@ -730,6 +730,9 @@ path.two {
   #mainNav .navbar-nav > li.nav-item > a:focus, #mainNav .navbar-nav > li.nav-item > a:hover {
     color: rgba(255, 255, 255, 0.3);
   }
+  #mainNav .horizontal-social-medias {
+    display: none;
+  }
   #mainNav .navbar-collapse {
     background: none !important;
   }
@@ -741,12 +744,6 @@ path.two {
   }
   #mainNav .nav-item a {
     opacity: 1 !important;
-  }
-}
-
-@media only screen and (min-width: 992px) {
-  .horizontal-social-medias {
-    display: none;
   }
 }
 
@@ -808,6 +805,7 @@ path.two {
     transition: transform 0.45s cubic-bezier(0.694, 0.048, 0.335, 1);
   }
   .navbar-collapse::before {
+    transition-delay: 0.25s;
     background-color: #f06449;
     background: linear-gradient(270deg, #f06449, #ee2828);
     z-index: 24;
@@ -1022,11 +1020,10 @@ header.masthead.shadow::after {
 
 .text-container .role {
   font-weight: 400;
-  font-size: 0.6em;
+  font-size: 0.9em;
   font-family: "Lato";
   color: #ffffff;
-  font-size: 12px;
-  text-transform: uppercase;
+  margin-top: 10px;
   letter-spacing: 5px;
   margin-bottom: 0;
   padding-right: 10px;

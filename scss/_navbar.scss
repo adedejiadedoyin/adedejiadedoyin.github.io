@@ -63,6 +63,10 @@
       }
     }
 
+    .horizontal-social-medias {
+      display: none;
+    }
+
     .navbar-collapse {
       background: none !important;
     }
@@ -75,12 +79,6 @@
     .nav-item a {
       opacity: 1 !important;
     }
-  }
-}
-
-.horizontal-social-medias {
-  @media only screen and (min-width: 992px) {
-    display: none;
   }
 }
 
@@ -165,6 +163,7 @@
     }
 
     &::before {
+      transition-delay: 0.25s;
       background-color: #f06449;
       background: linear-gradient(270deg, #f06449, #ee2828);
       z-index: 24;

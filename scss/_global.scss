@@ -383,11 +383,14 @@ p {
 
 // ------ CTA BUTTON --------
 
+a.cta {
+  display: block;
+}
+
 a.cta,
 button.cta {
   position: relative;
   overflow: hidden;
-  display: block;
   line-height: 1.2;
   font-size: 0.8em;
   letter-spacing: 3px;

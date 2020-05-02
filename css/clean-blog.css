@@ -372,11 +372,14 @@ p {
   width: 105%;
 }
 
+a.cta {
+  display: block;
+}
+
 a.cta,
 button.cta {
   position: relative;
   overflow: hidden;
-  display: block;
   line-height: 1.2;
   font-size: 0.8em;
   letter-spacing: 3px;
@@ -913,6 +916,7 @@ header.masthead.shadow::after {
 
 .text-container .title::after,
 .text-container .role::after,
+button.cta::after,
 .cta::after {
   content: "";
   position: absolute;
@@ -928,6 +932,7 @@ header.masthead.shadow::after {
 
 .text-container .title::before,
 .text-container .role::before,
+button.cta::before,
 .cta::before {
   content: "";
   position: absolute;

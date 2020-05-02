@@ -98,6 +98,7 @@ header.masthead.shadow::after {
 
 .text-container .title::after,
 .text-container .role::after,
+button.cta::after,
 .cta::after {
   content: "";
   position: absolute;
@@ -112,6 +113,7 @@ header.masthead.shadow::after {
 
 .text-container .title::before,
 .text-container .role::before,
+button.cta::before,
 .cta::before {
   content: "";
   position: absolute;

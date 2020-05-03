@@ -589,15 +589,8 @@ path.two {
 }
 
 .logo svg {
-  width: 120px;
-  height: 30px;
-}
-
-@media only screen and (min-width: 992px) {
-  .logo svg {
-    width: 180px;
-    height: 50px;
-  }
+  width: 150px;
+  height: 60px;
 }
 
 #mainNav {

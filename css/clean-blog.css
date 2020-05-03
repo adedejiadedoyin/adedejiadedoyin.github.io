@@ -576,6 +576,14 @@ path.two {
   width: 100%;
 }
 
+.svg-border-angled svg {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 5rem;
+  width: 100%;
+}
+
 .text-light {
   color: #f1f1f1 !important;
 }

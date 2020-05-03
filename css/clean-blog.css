@@ -588,6 +588,18 @@ path.two {
   color: #f1f1f1 !important;
 }
 
+.logo svg {
+  width: 45px;
+  height: 45px;
+}
+
+@media only screen and (min-width: 992px) {
+  .logo svg {
+    width: 75px;
+    height: 75px;
+  }
+}
+
 #mainNav {
   position: absolute;
   font-family: League Spartan, Helvetica, Arial, sans-serif;

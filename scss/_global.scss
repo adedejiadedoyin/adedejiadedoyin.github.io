@@ -596,3 +596,16 @@ path.two {
 .text-light {
   color: $bg-color !important;
 }
+
+//------LOGO-----
+.logo svg {
+  width: 45px;
+  height: 45px;
+}
+
+@media only screen and (min-width: 992px) {
+  .logo svg {
+    width: 75px;
+    height: 75px;
+  }
+}

@@ -633,6 +633,7 @@ path.two {
 @media only screen and (min-width: 992px) {
   #mainNav {
     border-bottom: 1px solid transparent;
+    background: rgba(28, 29, 37, 0.6);
   }
   #mainNav .navbar-brand {
     padding: 10px 20px;
@@ -847,7 +848,7 @@ path.two {
 
 header.masthead {
   background: no-repeat center center;
-  background-color: #232323;
+  background-color: #0f0d16;
   background-attachment: scroll;
   background-image: url(/img/bg.webp);
   background-position: 50%;

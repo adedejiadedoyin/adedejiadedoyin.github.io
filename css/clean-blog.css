@@ -633,7 +633,6 @@ path.two {
 @media only screen and (min-width: 992px) {
   #mainNav {
     border-bottom: 1px solid transparent;
-    background: rgba(28, 29, 37, 0.9);
   }
   #mainNav .navbar-brand {
     padding: 10px 20px;

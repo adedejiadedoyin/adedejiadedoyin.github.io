@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="228px" height="82px" viewBox="0 0 228 82" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Logo</title>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Group-5">
+            <g id="Group-4-Copy" transform="translate(0.000000, 3.000000)" fill="#5919DF">
+                <text id="/" font-family="MinionPro-Bold, Minion Pro" font-size="60" font-weight="bold" line-spacing="61" letter-spacing="0.8928575">
+                    <tspan x="186" y="44">/</tspan>
+                </text>
+                <text id="&lt;-&gt;" font-family="PTSans-Regular, PT Sans" font-size="45" font-weight="normal" letter-spacing="0.869643">
+                    <tspan x="0" y="52">&lt;              &gt;</tspan>
+                </text>
+            </g>
+            <text id="DEJI" font-family="Menlo-Regular, Menlo" font-size="70" font-weight="normal" letter-spacing="-2.45833292" fill="#FFFFFF">
+                <tspan x="27" y="65">DEJI</tspan>
+            </text>
+        </g>
+    </g>
+</svg>

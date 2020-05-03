@@ -599,13 +599,13 @@ path.two {
 
 //------LOGO-----
 .logo svg {
-  width: 45px;
-  height: 45px;
+  width: 100px;
+  height: 40px;
 }
 
 @media only screen and (min-width: 992px) {
   .logo svg {
-    width: 75px;
-    height: 75px;
+    width: 195px;
+    height: 50px;
   }
 }

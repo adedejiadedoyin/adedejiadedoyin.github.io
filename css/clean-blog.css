@@ -589,8 +589,8 @@ path.two {
 }
 
 .logo svg {
-  width: 100px;
-  height: 40px;
+  width: 120px;
+  height: 50px;
 }
 
 @media only screen and (min-width: 992px) {

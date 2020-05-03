@@ -568,6 +568,18 @@ path.two {
   padding-left: 10%;
 }
 
+.svg-border-rounded svg {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 3rem;
+  width: 100%;
+}
+
+.text-light {
+  color: #f1f1f1 !important;
+}
+
 #mainNav {
   position: absolute;
   font-family: League Spartan, Helvetica, Arial, sans-serif;

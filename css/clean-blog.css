@@ -923,6 +923,7 @@ header.masthead.shadow::after {
   overflow: hidden;
   display: block;
   line-height: 1.2;
+  height: 80px;
 }
 
 .text-container .title {

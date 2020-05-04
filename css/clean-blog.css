@@ -4,6 +4,7 @@
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-clean-blog/blob/master/LICENSE)
  */
 
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap");
 @font-face {
   font-family: "LibreBaskerville-Regular";
   src: url("/font/librebaskerville-regular-webfont.woff2") format("woff2"), url("/font/librebaskerville-regular-webfont.woff") format("woff");
@@ -22,7 +23,7 @@ body {
   font-size: 18px;
   color: #212529;
   background-color: #f1f1f1;
-  font-family: "LibreBaskerville-Regular", "Times New Roman", serif;
+  font-family: "Merriweather", "LibreBaskerville-Regular", "Times New Roman", serif;
 }
 
 a {
@@ -932,14 +933,17 @@ header.masthead.shadow::after {
 }
 
 .text-container .role {
-  font-weight: 400;
   font-size: 0.9em;
-  font-family: "Lato";
-  color: #ffffff;
-  margin-top: 10px;
+  font-family: "Merriweather", "LibreBaskerville-Regular", "Times New Roman", serif;
+  font-style: italic;
+  color: #adadad;
+  margin-top: 20px;
   letter-spacing: 5px;
   margin-bottom: 0;
   padding-right: 10px;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
 }
 
 @media only screen and (min-width: 992px) {
@@ -1048,7 +1052,7 @@ button.cta::before,
 }
 
 .proj-description div.container p {
-  font-family: "LibreBaskerville-Regular", "Times New Roman", serif;
+  font-family: "Merriweather", "LibreBaskerville-Regular", "Times New Roman", serif;
   color: white;
   line-height: 1.4;
   font-size: 0.8em;
@@ -1083,7 +1087,7 @@ button.cta::before,
 }
 
 .proj-title .proj-subtitle {
-  font-family: "LibreBaskerville-Regular", "Times New Roman", serif;
+  font-family: "Merriweather", "LibreBaskerville-Regular", "Times New Roman", serif;
   font-size: 1em;
   font-style: italic;
   font-weight: 400;
@@ -1183,7 +1187,7 @@ button.cta::before,
 }
 
 #showcase .showcase-container .showcase-description .showcase-subtitle {
-  font-family: "LibreBaskerville-Regular", "Times New Roman", serif;
+  font-family: "Merriweather", "LibreBaskerville-Regular", "Times New Roman", serif;
   font-weight: 400;
   font-style: italic;
   margin-bottom: 20px;
@@ -1243,7 +1247,7 @@ button.cta::before,
 #about .container p {
   font-size: 0.75em;
   text-shadow: 0 1px 0 #fff;
-  font-family: "LibreBaskerville-Regular", "Times New Roman", serif;
+  font-family: "Merriweather", "LibreBaskerville-Regular", "Times New Roman", serif;
   background-color: #f1f1f1;
 }
 
@@ -1276,7 +1280,7 @@ button.cta::before,
   padding: 10px 15px;
   font-size: 0.9em;
   text-shadow: 0 1px 0 #fff;
-  font-family: "LibreBaskerville-Regular", "Times New Roman", serif;
+  font-family: "Merriweather", "LibreBaskerville-Regular", "Times New Roman", serif;
   text-align: center;
 }
 

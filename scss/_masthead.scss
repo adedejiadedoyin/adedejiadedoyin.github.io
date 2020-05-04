@@ -81,15 +81,16 @@ header.masthead.shadow::after {
   }
 
   .role {
-    font-weight: 400;
     font-size: 0.9em; //************
-    font-family: "Lato";
-    color: #ffffff;
-    margin-top: 10px;
+    @include serif-font;
+    font-style: italic;
+    color: #adadad; // #ffffff;
+    margin-top: 20px;
     //text-transform: uppercase;
     letter-spacing: 5px;
     margin-bottom: 0;
     padding-right: 10px;
+    height: fit-content;
 
     @media only screen and (min-width: 992px) {
       font-size: 1.3em !important;

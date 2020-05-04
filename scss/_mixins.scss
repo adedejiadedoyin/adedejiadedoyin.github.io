@@ -61,7 +61,8 @@
   background-size: cover;
 }
 @mixin serif-font() {
-  font-family: "LibreBaskerville-Regular", "Times New Roman", serif;
+  font-family: "Merriweather", "LibreBaskerville-Regular", "Times New Roman",
+    serif;
 }
 @mixin sans-serif-font() {
   //font-family: "Montserrat", League Spartan, Helvetica, Arial, sans-serif;

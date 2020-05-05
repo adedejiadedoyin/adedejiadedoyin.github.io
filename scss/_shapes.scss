@@ -1,8 +1,9 @@
 svg.obj {
   position: absolute;
   width: 15px;
-  animation: appear 0s 3.5s forwards;
-  visibility: hidden;
+  animation: appear 0.8s 3.5s forwards;
+  opacity: 0;
+  //visibility: hidden;
   @media only screen and (min-width: 992px) {
     width: 25px;
   }
@@ -60,6 +61,7 @@ svg.obj {
 
 @keyframes appear {
   to {
-    visibility: visible;
+    //visibility: visible;
+    opacity: 1;
   }
 }

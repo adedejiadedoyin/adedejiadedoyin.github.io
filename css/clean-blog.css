@@ -1246,9 +1246,9 @@ button.cta::before,
 svg.obj {
   position: absolute;
   width: 15px;
-  -webkit-animation: appear 0s 3.5s forwards;
-  animation: appear 0s 3.5s forwards;
-  visibility: hidden;
+  -webkit-animation: appear 0.8s 3.5s forwards;
+  animation: appear 0.8s 3.5s forwards;
+  opacity: 0;
 }
 
 @media only screen and (min-width: 992px) {
@@ -1309,13 +1309,13 @@ svg.obj {
 
 @-webkit-keyframes appear {
   to {
-    visibility: visible;
+    opacity: 1;
   }
 }
 
 @keyframes appear {
   to {
-    visibility: visible;
+    opacity: 1;
   }
 }
 

@@ -1115,6 +1115,7 @@ button.cta::before,
   z-index: 9;
   font-size: 0.6em;
   padding: 4px 0;
+  font-weight: 800;
 }
 
 .proj-info .proj-info-block .proj-info-title {

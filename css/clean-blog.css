@@ -1240,6 +1240,52 @@ button.cta::before,
   width: 100%;
 }
 
+svg.obj {
+  position: absolute;
+  width: 15px;
+}
+
+@media only screen and (min-width: 992px) {
+  svg.obj {
+    width: 25px;
+  }
+}
+
+.obj1 {
+  top: 0%;
+  left: 5%;
+}
+
+.obj2 {
+  top: 10%;
+  left: 45%;
+}
+
+.obj3 {
+  top: 35%;
+  right: 10%;
+}
+
+.obj4 {
+  bottom: 10%;
+  right: 20%;
+}
+
+.obj5 {
+  bottom: 40%;
+  left: 30%;
+}
+
+.obj6 {
+  bottom: 5%;
+  right: 50%;
+}
+
+.obj7 {
+  bottom: 0%;
+  right: 90%;
+}
+
 #about {
   padding: 80px 10px;
 }

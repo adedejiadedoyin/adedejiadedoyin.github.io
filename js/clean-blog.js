@@ -145,3 +145,5 @@ var slideUp = {
 };
 
 ScrollReveal().reveal(".slideUp", slideUp);
+
+//---- SVG SHAPES-------

@@ -201,13 +201,13 @@
 // --- FOR NON-TOUCH DEVICES LIKE LAPTOPS
 #showcase.no-touch {
   a .number {
-    opacity: 0 !important;
-    top: -100px !important;
+    //opacity: 0 !important;
+    // top: -100px !important;
   }
   // when <a> is clicked , .number class will change its position
   a:hover .number {
     transform: translateY(0);
-    opacity: 1 !important;
+    // opacity: 1 !important;
   }
   a:hover .number > h1 {
     color: #d0cece;

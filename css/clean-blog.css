@@ -1228,14 +1228,8 @@ button.cta::before,
   }
 }
 
-#showcase.no-touch a .number {
-  opacity: 0 !important;
-  top: -100px !important;
-}
-
 #showcase.no-touch a:hover .number {
   transform: translateY(0);
-  opacity: 1 !important;
 }
 
 #showcase.no-touch a:hover .number > h1 {
@@ -1316,6 +1310,7 @@ svg.obj {
   text-shadow: 0 1px 0 #fff;
   font-family: "Merriweather", "LibreBaskerville-Regular", "Times New Roman", serif;
   background-color: #f1f1f1;
+  line-height: 1.7;
 }
 
 @media only screen and (min-width: 768px) {
@@ -1326,9 +1321,9 @@ svg.obj {
   }
   #about .container p {
     font-size: 1.2em !important;
-    width: 70%;
+    width: 75%;
     margin: auto;
-    text-align: justify;
+    line-height: 2;
   }
 }
 

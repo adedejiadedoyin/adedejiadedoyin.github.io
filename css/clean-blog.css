@@ -1104,10 +1104,12 @@ button.cta::before,
 
 .proj-info {
   font-family: "Prompt", League Spartan, Helvetica, Arial, sans-serif;
+  position: absolute;
+  width: 100%;
+  bottom: 20px;
   text-transform: uppercase;
   text-align: center;
   color: white;
-  margin-top: 30px;
   letter-spacing: 2px;
 }
 
@@ -1124,9 +1126,6 @@ button.cta::before,
 }
 
 @media only screen and (min-width: 992px) {
-  .proj-info {
-    margin-top: 50px;
-  }
   .proj-info .proj-info-block {
     font-size: 0.8em !important;
   }

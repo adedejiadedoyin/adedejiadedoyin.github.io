@@ -57,10 +57,13 @@
 
 .proj-info {
   @include sans-serif-font;
+  position: absolute;
+  width: 100%;
+  bottom: 20px;
   text-transform: uppercase;
   text-align: center;
   color: white;
-  margin-top: 30px;
+  //margin-top: 30px;
   letter-spacing: 2px;
 
   .proj-info-block {
@@ -76,7 +79,7 @@
 
   // for 992px devices and above
   @media only screen and (min-width: 992px) {
-    margin-top: 50px;
+    // margin-top: 50px;
     .proj-info-block {
       font-size: 0.8em !important;
     }

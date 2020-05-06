@@ -309,27 +309,6 @@ p {
   outline: none !important;
 }
 
-// -------- SHOWCASE OVERLAY ----------
-
-.showcase-overlay {
-  height: 100%;
-  width: 100%;
-  position: relative;
-  //z-index: 9999;
-  z-index: 9;
-  top: 0;
-  left: 0;
-  background-color: #000;
-  background: linear-gradient(270deg, #2e2e2f, #000);
-  overflow-x: hidden;
-  //transition: opacity 0.5s;
-  opacity: 0.8;
-}
-
-.showcase-overlay:hover {
-  //opacity: 0.3;
-}
-
 // ------- CIRCLE/DOT -------
 .dot {
   height: 7px;

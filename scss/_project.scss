@@ -109,7 +109,7 @@
         position: relative;
         display: block;
         height: 100%;
-        background-color: #2a2f36; // #1c1d25;
+        background-color: #1c1d25; // #2a2f36; // #1c1d25;
         box-shadow: 0 20px 80px 0 rgba(0, 0, 0, 0.45);
 
         .number {
@@ -176,21 +176,42 @@
         }
       }
 
-      a:after {
-        content: "";
+      a .showcase-hover-overlay {
         position: absolute;
         top: 0;
         left: 0;
-        width: 0;
+        width: 100%;
         height: 100%;
-        opacity: 0.9;
-        background-image: linear-gradient(
-          -180deg,
-          #1a1527,
-          #0e0c16 88%,
-          #0e0c16 99%
-        );
-        transition: width 0.25s;
+        overflow: hidden;
+        z-index: 0;
+
+        &::after {
+          content: "";
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          opacity: 1;
+          background-image: $blue-gradient-color;
+          transition: width 0.25s;
+          background-color: rgba(28, 29, 37, 0.9);
+          background: linear-gradient(
+            270deg,
+            rgba(35, 90, 166, 0.9),
+            rgba(16, 27, 59, 0.9)
+          );
+          -webkit-transform: translateX(-100%);
+          transform: translateX(-100%);
+          transition: opacity 0.2s,
+            -webkit-transform 0.35s cubic-bezier(0.694, 0.048, 0.335, 1) 0.2s;
+          transition: transform 0.35s cubic-bezier(0.694, 0.048, 0.335, 1) 0.2s,
+            opacity 0.2s;
+          transition: transform 0.35s cubic-bezier(0.694, 0.048, 0.335, 1) 0.2s,
+            opacity 0.2s,
+            -webkit-transform 0.35s cubic-bezier(0.694, 0.048, 0.335, 1) 0.2s;
+          //z-index: 9;
+        }
       }
     }
 
@@ -200,6 +221,21 @@
       }
     }
   }
+}
+
+.showcase-overlay {
+  height: 100%;
+  width: 100%;
+  position: relative;
+  //z-index: 9999;
+  z-index: 9;
+  top: 0;
+  left: 0;
+  background-color: #000;
+  background: linear-gradient(270deg, #2e2e2f, #000);
+  overflow-x: hidden;
+  //transition: opacity 0.5s;
+  opacity: 0.4;
 }
 
 // --- FOR NON-TOUCH DEVICES LIKE LAPTOPS
@@ -217,7 +253,8 @@
     color: #d0cece;
   }
 
-  a:hover::after {
-    width: 100%;
+  a:hover .showcase-hover-overlay::after {
+    // width: 100%;
+    transform: translateX(0);
   }
 }

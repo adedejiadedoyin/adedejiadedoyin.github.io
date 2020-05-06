@@ -315,19 +315,6 @@ p {
   outline: none !important;
 }
 
-.showcase-overlay {
-  height: 100%;
-  width: 100%;
-  position: relative;
-  z-index: 9;
-  top: 0;
-  left: 0;
-  background-color: #000;
-  background: linear-gradient(270deg, #2e2e2f, #000);
-  overflow-x: hidden;
-  opacity: 0.8;
-}
-
 .dot {
   height: 7px;
   width: 7px;
@@ -1139,7 +1126,7 @@ button.cta::before,
   position: relative;
   display: block;
   height: 100%;
-  background-color: #2a2f36;
+  background-color: #1c1d25;
   box-shadow: 0 20px 80px 0 rgba(0, 0, 0, 0.45);
 }
 
@@ -1199,20 +1186,46 @@ button.cta::before,
   #showcase li a .number {
     font-size: 3em !important;
   }
-  #showcase li a:after {
+  #showcase li a .showcase-hover-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: 0;
+  }
+  #showcase li a .showcase-hover-overlay::after {
     content: "";
     position: absolute;
     top: 0;
     left: 0;
-    width: 0;
+    width: 100%;
     height: 100%;
-    opacity: 0.9;
-    background-image: linear-gradient(-180deg, #1a1527, #0e0c16 88%, #0e0c16 99%);
+    opacity: 1;
+    background-image: linear-gradient(270deg, #1894cf, #101b3b);
     transition: width 0.25s;
+    background-color: rgba(28, 29, 37, 0.9);
+    background: linear-gradient(270deg, rgba(35, 90, 166, 0.9), rgba(16, 27, 59, 0.9));
+    transform: translateX(-100%);
+    transition: transform 0.35s cubic-bezier(0.694, 0.048, 0.335, 1) 0.2s, opacity 0.2s;
   }
   #showcase .project-heading hr {
     width: 100% !important;
   }
+}
+
+.showcase-overlay {
+  height: 100%;
+  width: 100%;
+  position: relative;
+  z-index: 9;
+  top: 0;
+  left: 0;
+  background-color: #000;
+  background: linear-gradient(270deg, #2e2e2f, #000);
+  overflow-x: hidden;
+  opacity: 0.4;
 }
 
 #showcase.no-touch a:hover .number {
@@ -1223,8 +1236,8 @@ button.cta::before,
   color: #d0cece;
 }
 
-#showcase.no-touch a:hover::after {
-  width: 100%;
+#showcase.no-touch a:hover .showcase-hover-overlay::after {
+  transform: translateX(0);
 }
 
 svg.obj {

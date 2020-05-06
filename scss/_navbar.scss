@@ -1,6 +1,9 @@
 // Styling for the navbar
 #mainNav {
+  background: rgba(28, 29, 37, 0.6);
   position: absolute;
+  opacity: 0;
+  animation: show-nav 0.8s 3.5s forwards;
 
   @include sans-serif-font;
   .navbar-brand {
@@ -39,7 +42,7 @@
     //margin-top: 30px;
     border-bottom: 1px solid transparent;
     //background: transparent;
-    background: rgba(28, 29, 37, 0.6);
+    //background: rgba(28, 29, 37, 0.6);
     .navbar-brand {
       padding: 10px 20px;
       color: $white;
@@ -303,4 +306,10 @@
   //margin-left: 0;
   transform: rotate(-45deg);
   transform-origin: 10% 90%;
+}
+
+@keyframes show-nav {
+  to {
+    opacity: 1;
+  }
 }

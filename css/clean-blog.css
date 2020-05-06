@@ -563,7 +563,7 @@ path.two {
 }
 
 #mainNav {
-  background: rgba(0, 0, 0, 0.28);
+  background-color: rgba(0, 0, 0, 0.7);
   position: absolute;
   width: 100%;
   z-index: 9;
@@ -574,14 +574,6 @@ path.two {
   opacity: 0;
   -webkit-animation: show-nav 2s 3.5s forwards;
   animation: show-nav 2s 3.5s forwards;
-}
-
-#mainNav .navbar-brand {
-  font-family: "Prompt", League Spartan, Helvetica, Arial, sans-serif;
-  font-weight: 800;
-  color: white;
-  font-size: 16px;
-  padding-left: 10px;
 }
 
 #mainNav .navbar-toggler {
@@ -602,16 +594,42 @@ path.two {
 }
 
 @media only screen and (min-width: 992px) {
-  #mainNav {
-    border-bottom: 1px solid transparent;
-  }
-  #mainNav .navbar-brand {
+  #mainNav .navbar-nav > li.nav-item > a {
     padding: 10px 20px;
     color: #fff;
   }
-  #mainNav .navbar-brand:focus, #mainNav .navbar-brand:hover {
+  #mainNav .navbar-nav > li.nav-item > a:focus, #mainNav .navbar-nav > li.nav-item > a:hover {
     color: rgba(255, 255, 255, 0.8);
   }
+}
+
+@media only screen and (min-width: 992px) {
+  #mainNav {
+    transition: background-color 0.2s;
+    /* Force Hardware Acceleration in WebKit */
+    transform: translate3d(0, 0, 0);
+    -webkit-backface-visibility: hidden;
+  }
+  #mainNav.is-fixed {
+    /* when the user scrolls down, we hide the header right above the viewport */
+    position: fixed;
+    top: -100px;
+    transition: transform 0.2s;
+    background-color: black;
+  }
+  #mainNav.is-fixed .navbar-nav > li.nav-item > a {
+    color: white !important;
+  }
+  #mainNav.is-fixed .navbar-nav > li.nav-item > a:focus, #mainNav.is-fixed .navbar-nav > li.nav-item > a:hover {
+    color: rgba(255, 255, 255, 0.5) !important;
+  }
+  #mainNav.is-visible {
+    /* if the user changes the scrolling direction, we show the header */
+    transform: translate3d(0, 100%, 0);
+  }
+}
+
+@media only screen and (min-width: 992px) {
   #mainNav .navbar-nav > li.nav-item > a {
     font-size: 0.9em;
     margin: 10px 15px;

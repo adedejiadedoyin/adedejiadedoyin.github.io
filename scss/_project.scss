@@ -147,9 +147,11 @@
     .showcase-description {
       position: absolute;
       bottom: 15%;
-      //left: 10%;
+      opacity: 0.9;
       color: white;
       z-index: 9;
+      transition: transform 0.45s, opacity 0.25s;
+      transition-delay: 0.4s;
 
       .showcase-subtitle {
         @include serif-font;
@@ -256,5 +258,10 @@
   a:hover .showcase-hover-overlay::after {
     // width: 100%;
     transform: translateX(0);
+  }
+
+  a:hover .showcase-description {
+    opacity: 1;
+    transform: scale(1.05) translateY(0);
   }
 }

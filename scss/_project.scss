@@ -126,7 +126,7 @@
           transform: translateY(4rem);
 
           h1 {
-            @include sans-serif-font;
+            font-family: League Spartan;
             font-size: 3.5em;
             color: white;
           }

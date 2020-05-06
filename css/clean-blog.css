@@ -1145,7 +1145,7 @@ button.cta::before,
 }
 
 #showcase .showcase-container li a .number h1 {
-  font-family: "Prompt", League Spartan, Helvetica, Arial, sans-serif;
+  font-family: League Spartan;
   font-size: 3.5em;
   color: white;
 }

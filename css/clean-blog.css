@@ -103,7 +103,7 @@ a {
 }
 
 a:focus, a:hover {
-  color: #5918df;
+  color: #868e96;
 }
 
 blockquote {
@@ -131,13 +131,13 @@ blockquote {
 
 ::-moz-selection {
   color: #fff;
-  background: #5918df;
+  background: #868e96;
   text-shadow: none;
 }
 
 ::selection {
   color: #fff;
-  background: #5918df;
+  background: #868e96;
   text-shadow: none;
 }
 
@@ -157,7 +157,7 @@ img::-moz-selection {
 }
 
 .primary {
-  color: #5918df;
+  color: #868e96;
 }
 
 p {
@@ -175,7 +175,7 @@ p {
 }
 
 .text-primary {
-  color: #5918df !important;
+  color: #868e96 !important;
 }
 
 .sm-link {
@@ -558,7 +558,6 @@ path.two {
 }
 
 .contact-button {
-  width: 240px !important;
   height: 80px;
   font-size: 1.2em !important;
 }
@@ -1053,7 +1052,9 @@ button.cta::before,
   }
   .proj-description div.container p {
     text-align: justify;
-    font-size: 1.2em !important;
+    font-size: 1.1em !important;
+    line-height: 1.6;
+    letter-spacing: 0.2px;
   }
 }
 
@@ -1473,14 +1474,14 @@ footer .fa-stack {
 }
 
 .btn-primary {
-  background-color: #5918df;
-  border-color: #5918df;
+  background-color: #868e96;
+  border-color: #868e96;
 }
 
 .btn-primary:hover, .btn-primary:focus, .btn-primary:active {
   color: #fff;
-  background-color: #4b14bc !important;
-  border-color: #4b14bc !important;
+  background-color: #727b84 !important;
+  border-color: #727b84 !important;
 }
 
 .btn-lg {

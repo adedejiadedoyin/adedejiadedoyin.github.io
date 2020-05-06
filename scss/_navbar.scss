@@ -171,14 +171,14 @@
 
     &::before {
       transition-delay: 0.25s;
-      background-color: #f06449;
-      background: linear-gradient(270deg, #f06449, #ee2828);
+      background-color: $red-color;
+      background: $red-gradient-color;
       z-index: 24;
     }
 
     &::after {
-      background-color: #1c1d25;
-      background: linear-gradient(270deg, #235aa6, #101b3b);
+      background-color: $blue-color;
+      background: $blue-gradient-color;
       z-index: 25;
     }
 

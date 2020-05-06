@@ -340,40 +340,6 @@ p {
   margin: 0;
 }
 
-.highlight {
-  display: inline-block;
-  color: #343434;
-  transition: color 250ms, text-shadow 250ms;
-  text-decoration: none;
-  text-shadow: 0px 1px 0px white;
-  position: relative;
-  z-index: 0;
-}
-
-.highlight::after {
-  position: absolute;
-  z-index: -1;
-  bottom: -5px;
-  left: 50%;
-  transform: translateX(-50%);
-  content: "";
-  width: 100%;
-  height: 3px;
-  background-color: #343434;
-  transition: all 250ms;
-}
-
-.highlight:hover {
-  color: white;
-  text-decoration: none;
-  text-shadow: 0px 1px 0px black;
-}
-
-.highlight:hover::after {
-  height: 105%;
-  width: 105%;
-}
-
 a.cta {
   display: block;
 }
@@ -744,13 +710,13 @@ path.two {
   }
   .navbar-collapse::before {
     transition-delay: 0.25s;
-    background-color: #f06449;
-    background: linear-gradient(270deg, #f06449, #ee2828);
+    background-color: #c0392b;
+    background: linear-gradient(270deg, #c0392b, #ef3636);
     z-index: 24;
   }
   .navbar-collapse::after {
-    background-color: #1c1d25;
-    background: linear-gradient(270deg, #235aa6, #101b3b);
+    background-color: #1894cf;
+    background: linear-gradient(270deg, #1894cf, #101b3b);
     z-index: 25;
   }
   .navbar-collapse.active {
@@ -1346,7 +1312,7 @@ svg.obj {
   text-shadow: 0 1px 0 #fff;
   font-family: "Merriweather", "LibreBaskerville-Regular", "Times New Roman", serif;
   background-color: #f1f1f1;
-  line-height: 1.7;
+  line-height: 1.9;
   letter-spacing: 0.2px;
 }
 
@@ -1363,6 +1329,43 @@ svg.obj {
     line-height: 2;
     letter-spacing: 0.5px;
   }
+}
+
+.highlight {
+  display: inline-block;
+  color: #343434;
+  transition: color 250ms, text-shadow 250ms;
+  text-decoration: none;
+  text-shadow: 0px 1px 0px white;
+  position: relative;
+  z-index: 0;
+  color: #c0392b;
+}
+
+@media only screen and (min-width: 992px) {
+  .highlight::after {
+    position: absolute;
+    z-index: -1;
+    bottom: -5px;
+    left: 50%;
+    transform: translateX(-50%);
+    content: "";
+    width: 100%;
+    height: 3px;
+    background-color: #343434;
+    transition: all 250ms;
+  }
+}
+
+.highlight:hover {
+  color: white;
+  text-decoration: none;
+  text-shadow: 0px 1px 0px black;
+}
+
+.highlight:hover::after {
+  height: 105%;
+  width: 105%;
 }
 
 #contact {

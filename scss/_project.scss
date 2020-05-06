@@ -1,3 +1,13 @@
+.proj-header-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: $gray-900;
+  opacity: 0;
+}
+
 .proj-description {
   background-color: #060c10;
   padding: 40px 10px;
@@ -61,11 +71,10 @@
   @include sans-serif-font;
   position: absolute;
   width: 100%;
-  bottom: 20px;
+  bottom: 40px;
   text-transform: uppercase;
   text-align: center;
   color: white;
-  //margin-top: 30px;
   letter-spacing: 2px;
 
   .proj-info-block {
@@ -81,7 +90,6 @@
 
   // for 992px devices and above
   @media only screen and (min-width: 992px) {
-    // margin-top: 50px;
     .proj-info-block {
       font-size: 0.8em !important;
     }
@@ -99,13 +107,6 @@
       margin: 0 auto;
       margin-bottom: 140px;
       width: 90%;
-      /*
-      transform: skewY(-2deg); // W3C
-      -webkit-transform: skewY(-2deg); // Safari & Chrome
-      -moz-transform: skewY(-2deg); // Firefox
-      -ms-transform: skewY(-2deg); // Internet Explorer
-      -o-transform: skewY(-2deg); // Opera
-      */
 
       a {
         position: relative;

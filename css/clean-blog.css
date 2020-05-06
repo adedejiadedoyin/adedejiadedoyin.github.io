@@ -613,8 +613,8 @@ path.two {
   background: rgba(28, 29, 37, 0.6);
   position: absolute;
   opacity: 0;
-  -webkit-animation: show-nav 0.8s 3.5s forwards;
-  animation: show-nav 0.8s 3.5s forwards;
+  -webkit-animation: show-nav 2s 3.5s forwards;
+  animation: show-nav 2s 3.5s forwards;
   font-family: "Prompt", League Spartan, Helvetica, Arial, sans-serif;
 }
 

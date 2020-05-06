@@ -603,7 +603,7 @@ path.two {
   #mainNav.is-fixed {
     /* when the user scrolls down, we hide the header right above the viewport */
     position: fixed;
-    top: -100px;
+    top: -90px;
     transition: transform 0.2s;
     background-color: black;
   }

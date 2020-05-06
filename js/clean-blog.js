@@ -146,4 +146,16 @@ var slideUp = {
 
 ScrollReveal().reveal(".slideUp", slideUp);
 
-//---- SVG SHAPES-------
+//---- STICKY ON SCROLL-------
+/*
+$(document).scroll(function (e) {
+  var scrollTop = $(document).scrollTop();
+  if (scrollTop > 0) {
+    console.log(scrollTop);
+    $(".navbar").addClass("fixed-top");
+  } else {
+    console.log(scrollTop);
+    $(".navbar").removeClass("fixed-top");
+  }
+});
+*/

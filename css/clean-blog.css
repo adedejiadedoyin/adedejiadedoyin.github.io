@@ -565,6 +565,8 @@ path.two {
 #mainNav {
   background: rgba(0, 0, 0, 0.28);
   position: absolute;
+  width: 100%;
+  z-index: 9;
   font-family: "Prompt", League Spartan, Helvetica, Arial, sans-serif;
 }
 

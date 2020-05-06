@@ -2,6 +2,8 @@
 #mainNav {
   background: rgba(0, 0, 0, 0.28);
   position: absolute;
+  width: 100%;
+  z-index: 9;
   @include sans-serif-font;
 
   &.anime-nav {

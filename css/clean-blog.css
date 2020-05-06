@@ -397,7 +397,8 @@ button.cta {
   width: fit-content;
   border: none;
   color: white;
-  background: #5627df;
+  background-color: #c0392b;
+  background: linear-gradient(270deg, #c0392b, #ef3636);
   transition: 1s;
 }
 
@@ -610,12 +611,15 @@ path.two {
 }
 
 #mainNav {
-  background: rgba(28, 29, 37, 0.6);
+  background: rgba(0, 0, 0, 0.28);
   position: absolute;
+  font-family: "Prompt", League Spartan, Helvetica, Arial, sans-serif;
+}
+
+#mainNav.anime-nav {
   opacity: 0;
   -webkit-animation: show-nav 2s 3.5s forwards;
   animation: show-nav 2s 3.5s forwards;
-  font-family: "Prompt", League Spartan, Helvetica, Arial, sans-serif;
 }
 
 #mainNav .navbar-brand {
@@ -872,7 +876,7 @@ path.two {
 
 header.masthead {
   background: no-repeat center center;
-  background-color: #0f0d16;
+  background-color: #1c1d25;
   background-attachment: scroll;
   background-image: url(/img/bg.webp);
   background-position: 50%;
@@ -1260,8 +1264,8 @@ button.cta::before,
 svg.obj {
   position: absolute;
   width: 15px;
-  -webkit-animation: appear 0.8s 3.5s forwards;
-  animation: appear 0.8s 3.5s forwards;
+  -webkit-animation: show-shapes 0.8s 3.5s forwards;
+  animation: show-shapes 0.8s 3.5s forwards;
   opacity: 0;
 }
 
@@ -1321,13 +1325,13 @@ svg.obj {
   right: 0%;
 }
 
-@-webkit-keyframes appear {
+@-webkit-keyframes show-shapes {
   to {
     opacity: 1;
   }
 }
 
-@keyframes appear {
+@keyframes show-shapes {
   to {
     opacity: 1;
   }

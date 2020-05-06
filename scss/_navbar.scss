@@ -1,11 +1,14 @@
 // Styling for the navbar
 #mainNav {
-  background: rgba(28, 29, 37, 0.6);
+  background: rgba(0, 0, 0, 0.28);
   position: absolute;
-  opacity: 0;
-  animation: show-nav 2s 3.5s forwards;
-
   @include sans-serif-font;
+
+  &.anime-nav {
+    opacity: 0;
+    animation: show-nav 2s 3.5s forwards;
+  }
+
   .navbar-brand {
     @include sans-serif-font;
     font-weight: 800;

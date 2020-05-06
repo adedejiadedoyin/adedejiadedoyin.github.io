@@ -38,20 +38,6 @@
   }
 
   @media only screen and (min-width: 992px) {
-    .navbar-nav {
-      > li.nav-item {
-        > a {
-          padding: 10px 20px;
-          color: $white;
-          &:focus,
-          &:hover {
-            color: fade-out($white, 0.2);
-          }
-        }
-      }
-    }
-  }
-  @media only screen and (min-width: 992px) {
     -webkit-transition: background-color 0.2s;
     -moz-transition: background-color 0.2s;
     transition: background-color 0.2s;

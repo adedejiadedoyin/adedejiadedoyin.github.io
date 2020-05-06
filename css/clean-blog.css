@@ -515,7 +515,7 @@ path.two {
   bottom: auto;
   right: auto;
   z-index: 9999;
-  background: #0f0d16;
+  background: #c0392b;
   transition: all 0.9s cubic-bezier(0.6, 0.05, 0.4, 1);
 }
 
@@ -532,7 +532,7 @@ path.two {
   bottom: auto;
   right: auto;
   z-index: 9999;
-  background: #4d606e;
+  background: #1894cf;
   transition: all 0.9s cubic-bezier(0.6, 0.05, 0.4, 1);
 }
 
@@ -541,22 +541,22 @@ path.two {
 }
 
 .left-layer--2 {
-  background: #393e46;
+  background: #c0392b;
   transition-delay: 0.6s;
 }
 
 .left-layer--3 {
-  background: #6c5b7b;
+  background: #1894cf;
   transition-delay: 0.4s;
 }
 
 .left-layer--4 {
-  background: #c06c84;
+  background: #b99625;
   transition-delay: 0.2s;
 }
 
 .left-layer--5 {
-  background: #f67280;
+  background: #b99625;
   transition-delay: 0.1s;
 }
 

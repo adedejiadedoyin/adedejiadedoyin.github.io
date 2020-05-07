@@ -570,12 +570,6 @@ path.two {
   font-family: "Prompt", League Spartan, Helvetica, Arial, sans-serif;
 }
 
-#mainNav.anime-nav {
-  opacity: 0;
-  -webkit-animation: show-nav 2s 3.5s forwards;
-  animation: show-nav 2s 3.5s forwards;
-}
-
 #mainNav .navbar-toggler {
   text-transform: uppercase;
   color: white;
@@ -820,18 +814,6 @@ path.two {
 
 .closebtn .bottom-bar {
   transform: rotate(-45deg);
-}
-
-@-webkit-keyframes show-nav {
-  to {
-    opacity: 1;
-  }
-}
-
-@keyframes show-nav {
-  to {
-    opacity: 1;
-  }
 }
 
 header.masthead {

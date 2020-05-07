@@ -8,11 +8,6 @@
   z-index: 9;
   @include sans-serif-font;
 
-  &.anime-nav {
-    opacity: 0;
-    animation: show-nav 2s 3.5s forwards;
-  }
-
   .navbar-toggler {
     //font-size: 30px;
     //position: fixed;
@@ -332,10 +327,4 @@
 
 .closebtn .bottom-bar {
   transform: rotate(-45deg);
-}
-
-@keyframes show-nav {
-  to {
-    opacity: 1;
-  }
 }

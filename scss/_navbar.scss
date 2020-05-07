@@ -320,22 +320,14 @@
 .closebtn .top-bar {
   width: 100%;
   transform: rotate(45deg);
-  transform-origin: 50% 600%;
-  //transform-origin: 10% 10%;
-}
-
-.closebtn .middle-bar {
-  width: 85%;
-  margin-left: 15%;
-  opacity: 0;
+  transform-origin: 60% 600%;
 }
 
 .closebtn .bottom-bar {
   width: 100%;
   margin-left: 40%;
-  //margin-left: 0;
   transform: rotate(-45deg);
-  transform-origin: 10% 90%;
+  transform-origin: 20% 0%;
 }
 
 @keyframes show-nav {

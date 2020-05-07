@@ -306,6 +306,15 @@
   transform: scale(0);
   transition: all 0.4s;
   transition-delay: 0.2s;
+  margin-top: 10px;
+
+  .icon-bar {
+    height: 3px;
+    background-color: #fff;
+    display: block;
+    transition: all 0.2s;
+    margin-top: 0;
+  }
 
   &:focus {
     border-color: transparent !important;
@@ -318,16 +327,11 @@
 }
 
 .closebtn .top-bar {
-  width: 100%;
   transform: rotate(45deg);
-  transform-origin: 60% 600%;
 }
 
 .closebtn .bottom-bar {
-  width: 100%;
-  margin-left: 40%;
   transform: rotate(-45deg);
-  transform-origin: 20% 0%;
 }
 
 @keyframes show-nav {

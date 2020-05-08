@@ -110,12 +110,7 @@ function css() {
 // JS task
 function js() {
   return gulp
-    .src([
-      "./js/*.js",
-      "!./js/*.min.js",
-      "!./js/contact_me.js",
-      "!./js/jqBootstrapValidation.js",
-    ])
+    .src(["./js/*.js", "!./js/*.min.js"])
     .pipe(uglify())
     .pipe(
       header(banner, {

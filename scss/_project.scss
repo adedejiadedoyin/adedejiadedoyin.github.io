@@ -270,3 +270,29 @@
     transform: scale(1.05) translateY(0);
   }
 }
+
+//--  PROJECT NAVIGATION ------
+.proj-nav {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background-color: $trans-masthead-bg-color !important;
+  color: white !important;
+  @include sans-serif-font;
+  font-weight: 800;
+
+  &.is-fixed {
+    top: -70px !important ;
+  }
+
+  .proj-nav-container {
+    a {
+      font-size: 0.7em;
+      color: white;
+
+      // for screens 540px and above
+      @media only screen and (min-width: 540px) {
+        font-size: 1em;
+      }
+    }
+  }
+}

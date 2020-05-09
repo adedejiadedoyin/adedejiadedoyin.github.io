@@ -561,3 +561,18 @@ path.two {
   height: 80px;
   font-size: 1.2em !important;
 }
+
+//------------
+.pull-right {
+  float: right;
+}
+
+//----
+.color-gray {
+  cursor: not-allowed;
+  color: #696868 !important;
+
+  &:hover {
+    text-decoration: none;
+  }
+}

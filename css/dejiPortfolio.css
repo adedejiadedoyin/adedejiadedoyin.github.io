@@ -562,6 +562,19 @@ path.two {
   font-size: 1.2em !important;
 }
 
+.pull-right {
+  float: right;
+}
+
+.color-gray {
+  cursor: not-allowed;
+  color: #696868 !important;
+}
+
+.color-gray:hover {
+  text-decoration: none;
+}
+
 #mainNav {
   background-color: rgba(0, 0, 0, 0.7);
   position: absolute;
@@ -597,7 +610,7 @@ path.two {
   #mainNav.is-fixed {
     /* when the user scrolls down, we hide the header right above the viewport */
     position: fixed;
-    top: -90px;
+    top: -86px;
     transition: transform 0.2s;
     background-color: black;
   }
@@ -1232,6 +1245,30 @@ button.cta::before,
 #showcase.no-touch a:hover .showcase-description {
   opacity: 1;
   transform: scale(1.05) translateY(0);
+}
+
+.proj-nav {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background-color: rgba(28, 29, 37, 0.8) !important;
+  color: white !important;
+  font-family: "Prompt", League Spartan, Helvetica, Arial, sans-serif;
+  font-weight: 800;
+}
+
+.proj-nav.is-fixed {
+  top: -70px !important;
+}
+
+.proj-nav .proj-nav-container a {
+  font-size: 0.7em;
+  color: white;
+}
+
+@media only screen and (min-width: 540px) {
+  .proj-nav .proj-nav-container a {
+    font-size: 1em;
+  }
 }
 
 svg.obj {

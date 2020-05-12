@@ -627,6 +627,7 @@ path.two {
   #mainNav.is-visible {
     /* if the user changes the scrolling direction, we show the header */
     transform: translate3d(0, 100%, 0);
+    box-shadow: 0 2px 30px 1px rgba(0, 0, 0, 0.5);
   }
 }
 

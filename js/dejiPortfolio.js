@@ -1,3 +1,6 @@
+// Printed to Console
+Console.log("Hi...thanks for peeping");
+
 // smooth scrolling
 
 $('a[href*="#"]').on("click", function (e) {

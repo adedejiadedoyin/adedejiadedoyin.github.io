@@ -1,304 +1,310 @@
 // Styling for the navbar
 // Styling for the navbar
 #mainNav {
-    background-color: rgba(0, 0, 0, 0.7);
-    position: absolute;
-    width: 100%;
-    z-index: 9;
-    @include sans-serif-font;
-    .navbar-toggler {
-        //font-size: 30px;
-        //position: fixed;
-        //right: 5px;
-        text-transform: uppercase;
+  background-color: rgba(0, 0, 0, 0.7);
+  position: absolute;
+  width: 100%;
+  z-index: 999;
+  @include sans-serif-font;
+  .navbar-toggler {
+    //font-size: 30px;
+    //position: fixed;
+    //right: 5px;
+    text-transform: uppercase;
+    color: white;
+    border: none;
+    outline: none;
+    z-index: 0;
+  }
+  .navbar-nav {
+    > li.nav-item {
+      > a {
+        padding: 10px 10px;
+        font-size: 1.2em;
+        font-weight: 800;
+        letter-spacing: 1px;
+        //text-transform: uppercase;
         color: white;
-        border: none;
-        outline: none;
-        z-index: 0;
+        @include sans-serif-font;
+      }
     }
+  }
+  @media only screen and (min-width: 992px) {
+    -webkit-transition: background-color 0.2s;
+    -moz-transition: background-color 0.2s;
+    transition: background-color 0.2s;
+    /* Force Hardware Acceleration in WebKit */
+    -webkit-transform: translate3d(0, 0, 0);
+    -moz-transform: translate3d(0, 0, 0);
+    -ms-transform: translate3d(0, 0, 0);
+    -o-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    -webkit-backface-visibility: hidden;
+    &.is-fixed {
+      /* when the user scrolls down, we hide the header right above the viewport */
+      position: fixed;
+      top: -86px;
+      -webkit-transition: -webkit-transform 0.2s;
+      -moz-transition: -moz-transform 0.2s;
+      transition: transform 0.2s;
+      //border-bottom: 1px solid darken($white, 0.05);
+      background-color: rgba(0, 0, 0, 1);
+      .navbar-nav {
+        > li.nav-item {
+          > a {
+            color: rgba(255, 255, 255, 1) !important;
+            &:focus,
+            &:hover {
+              color: rgba(255, 255, 255, 0.5) !important;
+            }
+          }
+        }
+      }
+    }
+    &.is-visible {
+      /* if the user changes the scrolling direction, we show the header */
+      -webkit-transform: translate3d(0, 100%, 0);
+      -moz-transform: translate3d(0, 100%, 0);
+      -ms-transform: translate3d(0, 100%, 0);
+      -o-transform: translate3d(0, 100%, 0);
+      transform: translate3d(0, 100%, 0);
+      box-shadow: 0 2px 30px 1px rgba(0, 0, 0, 0.5);
+    }
+  }
+  // for 992px devices and above ONLY
+  @media only screen and (min-width: 992px) {
     .navbar-nav {
-        >li.nav-item {
-            >a {
-                padding: 10px 10px;
-                font-size: 1.2em;
-                font-weight: 800;
-                letter-spacing: 1px;
-                //text-transform: uppercase;
-                color: white;
-                @include sans-serif-font;
-            }
+      > li.nav-item {
+        > a {
+          font-size: 0.9em;
+          margin: 10px 15px;
+          padding: 0;
+          padding-bottom: 5px;
+          color: $white;
+          &:focus,
+          &:hover {
+            color: fade-out($white, 0.7);
+          }
         }
+      }
     }
-    @media only screen and (min-width: 992px) {
-        -webkit-transition: background-color 0.2s;
-        -moz-transition: background-color 0.2s;
-        transition: background-color 0.2s;
-        /* Force Hardware Acceleration in WebKit */
-        -webkit-transform: translate3d(0, 0, 0);
-        -moz-transform: translate3d(0, 0, 0);
-        -ms-transform: translate3d(0, 0, 0);
-        -o-transform: translate3d(0, 0, 0);
-        transform: translate3d(0, 0, 0);
-        -webkit-backface-visibility: hidden;
-        &.is-fixed {
-            /* when the user scrolls down, we hide the header right above the viewport */
-            position: fixed;
-            top: -86px;
-            -webkit-transition: -webkit-transform 0.2s;
-            -moz-transition: -moz-transform 0.2s;
-            transition: transform 0.2s;
-            //border-bottom: 1px solid darken($white, 0.05);
-            background-color: rgba(0, 0, 0, 1);
-            .navbar-nav {
-                >li.nav-item {
-                    >a {
-                        color: rgba(255, 255, 255, 1) !important;
-                        &:focus,
-                        &:hover {
-                            color: rgba(255, 255, 255, 0.5) !important;
-                        }
-                    }
-                }
-            }
-        }
-        &.is-visible {
-            /* if the user changes the scrolling direction, we show the header */
-            -webkit-transform: translate3d(0, 100%, 0);
-            -moz-transform: translate3d(0, 100%, 0);
-            -ms-transform: translate3d(0, 100%, 0);
-            -o-transform: translate3d(0, 100%, 0);
-            transform: translate3d(0, 100%, 0);
-            box-shadow: 0 2px 30px 1px rgba(0, 0, 0, 0.5);
-        }
+    .horizontal-social-medias {
+      display: none;
     }
-    // for 992px devices and above ONLY
-    @media only screen and (min-width: 992px) {
-        .navbar-nav {
-            >li.nav-item {
-                >a {
-                    font-size: 0.9em;
-                    margin: 10px 15px;
-                    padding: 0;
-                    padding-bottom: 5px;
-                    color: $white;
-                    &:focus,
-                    &:hover {
-                        color: fade-out($white, 0.7);
-                    }
-                }
-            }
-        }
-        .horizontal-social-medias {
-            display: none;
-        }
-        .navbar-collapse {
-            background: none !important;
-        }
-        .navbar-collapse::before {
-            background: none !important;
-        }
-        .navbar-collapse::after {
-            background: none !important;
-        }
-        .nav-item a {
-            opacity: 1 !important;
-        }
+    .navbar-collapse {
+      background: none !important;
     }
+    .navbar-collapse::before {
+      background: none !important;
+    }
+    .navbar-collapse::after {
+      background: none !important;
+    }
+    .nav-item a {
+      opacity: 1 !important;
+    }
+  }
 }
 
 // for 992px devices and below ONLY
 @media only screen and (max-width: 992px) {
-    .navbar-collapse {
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        visibility: hidden;
-        text-align: center;
-        overflow-x: hidden;
-        /* Disable horizontal scroll */
-        transition: all 0.1s ease 0.5s;
-        z-index: -1;
-        //transition-delay: 0.6s;
-        .navbar-nav {
-            position: absolute;
-            top: 50%;
-            -webkit-transform-style: preserve-3d;
-            transform-style: preserve-3d;
-            -webkit-transform: translateY(-50%);
-            transform: translateY(-50%);
-            width: 100%;
-            z-index: 99;
-            opacity: 0;
-            transition: opacity 0.3s ease, transform 0.4s cubic-bezier(0.694, 0.048, 0.335, 1);
-            transition-delay: 0s;
-            z-index: 26;
-            >li>a {
-                font-size: 20px !important;
-            }
-        }
-        .horizontal-social-medias {
-            //display: none;
-            position: absolute;
-            bottom: 30px;
-            //left: 15%;
-            width: 100%;
-            margin: 0;
-            padding: 0;
-            -webkit-transform: translateY(15px);
-            transform: translateY(15px);
-            opacity: 0;
-            padding-left: 25px;
-            transition: opacity 0.3s ease, -webkit-transform 0.4s cubic-bezier(0.694, 0.048, 0.335, 1);
-            transition: opacity 0.3s ease, transform 0.4s cubic-bezier(0.694, 0.048, 0.335, 1);
-            transition: opacity 0.3s ease, transform 0.4s cubic-bezier(0.694, 0.048, 0.335, 1), -webkit-transform 0.4s cubic-bezier(0.694, 0.048, 0.335, 1);
-            transition-delay: 0s;
-            list-style: none;
-            z-index: 26;
-            li {
-                display: inline;
-                margin-right: 30px;
-            }
-        }
-        &::after,
-        &::before {
-            content: "";
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            -webkit-transform: translateX(-100%);
-            transform: translateX(-100%);
-            transition: -webkit-transform 0.45s cubic-bezier(0.694, 0.048, 0.335, 1);
-            transition: transform 0.45s cubic-bezier(0.694, 0.048, 0.335, 1);
-            transition: transform 0.45s cubic-bezier(0.694, 0.048, 0.335, 1), -webkit-transform 0.45s cubic-bezier(0.694, 0.048, 0.335, 1);
-        }
-        &::before {
-            transition-delay: 0.25s;
-            background-color: $red-color;
-            background: $red-gradient-color;
-            z-index: 24;
-        }
-        &::after {
-            background-color: $blue-color;
-            background: $blue-gradient-color;
-            z-index: 25;
-        }
-        &.active {
-            visibility: visible;
-            transition-delay: 0.1s;
-            z-index: 45;
-            .closebtn {
-                -webkit-transform: scale(1);
-                transform: scale(1);
-                opacity: 1;
-            }
-            &::before {
-                transition-delay: 0s;
-                transform: translateX(0);
-            }
-            &::after {
-                transition-delay: 0.15s;
-                transform: translateX(0);
-            }
-            .navbar-nav {
-                opacity: 1;
-                transition-delay: 0.4s;
-                -webkit-transform: translateY(-60%);
-                transform: translateY(-60%);
-            }
-            .horizontal-social-medias {
-                opacity: 1;
-                transition-delay: 0.45s;
-                -webkit-transform: translateY(0);
-                transform: translateY(0);
-            }
-        }
+  .navbar-collapse {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    visibility: hidden;
+    text-align: center;
+    overflow-x: hidden;
+    /* Disable horizontal scroll */
+    transition: all 0.1s ease 0.5s;
+    z-index: -1;
+    //transition-delay: 0.6s;
+    .navbar-nav {
+      position: absolute;
+      top: 50%;
+      -webkit-transform-style: preserve-3d;
+      transform-style: preserve-3d;
+      -webkit-transform: translateY(-50%);
+      transform: translateY(-50%);
+      width: 100%;
+      z-index: 99;
+      opacity: 0;
+      transition: opacity 0.3s ease,
+        transform 0.4s cubic-bezier(0.694, 0.048, 0.335, 1);
+      transition-delay: 0s;
+      z-index: 26;
+      > li > a {
+        font-size: 20px !important;
+      }
     }
+    .horizontal-social-medias {
+      //display: none;
+      position: absolute;
+      bottom: 30px;
+      //left: 15%;
+      width: 100%;
+      margin: 0;
+      padding: 0;
+      -webkit-transform: translateY(15px);
+      transform: translateY(15px);
+      opacity: 0;
+      padding-left: 25px;
+      transition: opacity 0.3s ease,
+        -webkit-transform 0.4s cubic-bezier(0.694, 0.048, 0.335, 1);
+      transition: opacity 0.3s ease,
+        transform 0.4s cubic-bezier(0.694, 0.048, 0.335, 1);
+      transition: opacity 0.3s ease,
+        transform 0.4s cubic-bezier(0.694, 0.048, 0.335, 1),
+        -webkit-transform 0.4s cubic-bezier(0.694, 0.048, 0.335, 1);
+      transition-delay: 0s;
+      list-style: none;
+      z-index: 26;
+      li {
+        display: inline;
+        margin-right: 30px;
+      }
+    }
+    &::after,
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      -webkit-transform: translateX(-100%);
+      transform: translateX(-100%);
+      transition: -webkit-transform 0.45s cubic-bezier(0.694, 0.048, 0.335, 1);
+      transition: transform 0.45s cubic-bezier(0.694, 0.048, 0.335, 1);
+      transition: transform 0.45s cubic-bezier(0.694, 0.048, 0.335, 1),
+        -webkit-transform 0.45s cubic-bezier(0.694, 0.048, 0.335, 1);
+    }
+    &::before {
+      transition-delay: 0.25s;
+      background-color: $red-color;
+      background: $red-gradient-color;
+      z-index: 24;
+    }
+    &::after {
+      background-color: $blue-color;
+      background: $blue-gradient-color;
+      z-index: 25;
+    }
+    &.active {
+      visibility: visible;
+      transition-delay: 0.1s;
+      z-index: 45;
+      .closebtn {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+        opacity: 1;
+      }
+      &::before {
+        transition-delay: 0s;
+        transform: translateX(0);
+      }
+      &::after {
+        transition-delay: 0.15s;
+        transform: translateX(0);
+      }
+      .navbar-nav {
+        opacity: 1;
+        transition-delay: 0.4s;
+        -webkit-transform: translateY(-60%);
+        transform: translateY(-60%);
+      }
+      .horizontal-social-medias {
+        opacity: 1;
+        transition-delay: 0.45s;
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+      }
+    }
+  }
 }
 
 // Hamburger Menu Bars
 .icon-bar {
-    //width: 42px;
-    height: 3px; //2px
-    background-color: white;
-    display: block;
-    transition: all 0.2s;
-    margin-top: 4px;
-    margin-top: 6px;
+  //width: 42px;
+  height: 3px; //2px
+  background-color: white;
+  display: block;
+  transition: all 0.2s;
+  margin-top: 4px;
+  margin-top: 6px;
 }
 
 .navbar-toggler {
-    z-index: 999;
-    width: 67px;
-    border: none;
-    background: transparent !important;
+  z-index: 999;
+  width: 67px;
+  border: none;
+  background: transparent !important;
 }
 
-.collapsed>span.icon-bar {
-    background-color: #d0d0d0;
+.collapsed > span.icon-bar {
+  background-color: #d0d0d0;
 }
 
 // Hamburger Menu Animation
 .navbar-toggler .top-bar {
-    width: 100%;
-    //transform: rotate(45deg);
-    transform-origin: 50% 600%;
-    //transform-origin: 10% 10%;
+  width: 100%;
+  //transform: rotate(45deg);
+  transform-origin: 50% 600%;
+  //transform-origin: 10% 10%;
 }
 
 .navbar-toggler .middle-bar {
-    width: 85%;
-    margin-left: 15%;
-    //opacity: 0;
+  width: 85%;
+  margin-left: 15%;
+  //opacity: 0;
 }
 
 .navbar-toggler .bottom-bar {
-    width: 60%;
-    margin-left: 40%;
-    //margin-left: 0;
-    //transform: rotate(-45deg);
-    transform-origin: 10% 90%;
+  width: 60%;
+  margin-left: 40%;
+  //margin-left: 0;
+  //transform: rotate(-45deg);
+  transform-origin: 10% 90%;
 }
 
 //-------- Cancle button
 .closebtn {
-    position: absolute;
-    top: 22px;
-    right: 15px;
-    z-index: 99;
-    width: 60px;
-    background: transparent;
-    border: none;
-    opacity: 0;
-    //transition: opacity 0.2s;
-    -webkit-transform: scale(0);
-    transform: scale(0);
-    transition: all 0.4s;
-    transition-delay: 0.2s;
-    margin-top: 10px;
-    .icon-bar {
-        height: 3px;
-        background-color: #fff;
-        display: block;
-        transition: all 0.2s;
-        margin-top: 0;
-    }
-    &:focus {
-        border-color: transparent !important;
-        outline: none;
-    }
-    @media only screen and (min-width: 992px) {
-        visibility: hidden;
-    }
+  position: absolute;
+  top: 22px;
+  right: 15px;
+  z-index: 99;
+  width: 60px;
+  background: transparent;
+  border: none;
+  opacity: 0;
+  //transition: opacity 0.2s;
+  -webkit-transform: scale(0);
+  transform: scale(0);
+  transition: all 0.4s;
+  transition-delay: 0.2s;
+  margin-top: 10px;
+  .icon-bar {
+    height: 3px;
+    background-color: #fff;
+    display: block;
+    transition: all 0.2s;
+    margin-top: 0;
+  }
+  &:focus {
+    border-color: transparent !important;
+    outline: none;
+  }
+  @media only screen and (min-width: 992px) {
+    visibility: hidden;
+  }
 }
 
 .closebtn .top-bar {
-    transform: rotate(45deg);
+  transform: rotate(45deg);
 }
 
 .closebtn .bottom-bar {
-    transform: rotate(-45deg);
+  transform: rotate(-45deg);
 }

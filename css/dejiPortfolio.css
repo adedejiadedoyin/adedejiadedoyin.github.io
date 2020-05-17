@@ -583,7 +583,7 @@ path.two {
   background-color: rgba(0, 0, 0, 0.7);
   position: absolute;
   width: 100%;
-  z-index: 9;
+  z-index: 999;
   font-family: "Prompt", League Spartan, Helvetica, Arial, sans-serif;
 }
 

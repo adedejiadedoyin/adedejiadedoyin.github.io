@@ -1,5 +1,5 @@
 // Printed to Console
-Console.log("Hi...thanks for peeping");
+console.log("Hi...thanks for peeping");
 
 // smooth scrolling
 
